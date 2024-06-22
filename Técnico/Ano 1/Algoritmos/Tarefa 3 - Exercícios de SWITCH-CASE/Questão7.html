@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questão 7</title>
+</head>
+
+<body>
+    <script type="text/javascript">
+        /*7. Faça um algoritmo que peça o mês do ano e diga a qual estação do ano este mês pertence, com as seguintes mensagens:
+        a. Se o mês esteja entre abril e junho: "Neste mês a estação é o outono."
+        b. Se o mês esteja entre julho e setembro: "Neste mês a estação é o inverno."
+        c. Se o mês esteja entre outubro e dezembro: "Neste mês a estação é a primavera."
+        d. Se o mês esteja entre janeiro e março:"Neste mês a estação é o verão."
+        e. Se o valor informado não seja um mês: "Mês inválido."*/
+
+        var MES;
+        MES = parseInt(prompt("Insira o número que corresponde ao mês"));
+
+        switch (MES) {
+            case 4:
+            case 5:
+            case 6:
+                document.write("Neste mês a estação é o outono.");
+                break;
+
+            case 7:
+            case 8:
+            case 9:
+                document.write("Neste mês a estação é o inverno.");
+                break;
+
+            case 10:
+            case 11:
+            case 12:
+                document.write("Neste mês a estação é o primavera.");
+                break;
+
+            case 1:
+            case 2:
+            case 3:
+                document.write("Neste mês a estação é o verão.");
+                break;
+
+            default:
+                document.write("Mês inválido.");
+        }
+    </script>
+</body>
+
+</html>

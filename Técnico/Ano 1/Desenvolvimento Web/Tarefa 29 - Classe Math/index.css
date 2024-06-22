@@ -1,0 +1,42 @@
+form {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    box-shadow: 10px 10px 10px;
+
+    width: 400px;
+    height: 550px;
+
+    border-style: inset;
+    border-width: 0.2cm;
+    border-color: rgb(24, 22, 41);
+    background-image: linear-gradient(rgb(21, 93, 121), rgb(42, 71, 105));
+    color: rgb(255, 255, 255);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+input {
+    border-style: inset;
+    border-width: 1px;
+    border-color: rgb(24, 22, 41);
+    font-size: 17px;
+}
+
+p {
+    font-size: large;
+}
+
+#button:hover {
+    color: white;
+    transition: 0.5s;
+    border-style: inset;
+    border-width: 1px;
+    border-color: rgb(125, 189, 241);
+    background-color: rgb(21, 93, 121);
+}

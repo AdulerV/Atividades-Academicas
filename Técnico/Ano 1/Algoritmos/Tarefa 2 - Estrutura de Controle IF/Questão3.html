@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questão 3</title>
+</head>
+
+<body>
+    <script type="text/javascript">
+        /*3. Ler 4 valores (N1, N2, N3 e N4) referentes às quatro notas de um aluno. 
+        A seguir, se a média ponderada com pesos 2, 3, 4 e 1 para as respectivas provas for maior ou igual a 7, 
+        mostre uma mensagem: "Aluno foi aprovado". Se a nota for inferior a 5, mostrar uma mensagem: "Aluno foi reprovado". 
+        Se a média ficou entre 5 e 7, fazer a leitura de uma variável (EX) correspondente a nota da recuperação final, 
+        recalcular a média (somar a nota do exame com a nota anterior a média calculada anteriormente e dividir por 2) 
+        e mostrar se o aluno foi ou não aprovado.*/
+
+        var N1, N2, N3, N4, media;
+        N1 = parseFloat(prompt("Insira o valor da primeira nota (N1)"));
+        N2 = parseFloat(prompt("Insira o valor da segunda nota (N2)"));
+        N3 = parseFloat(prompt("Insira o valor da terceira nota (N3)"));
+        N4 = parseFloat(prompt("Insira o valor da quarta nota (N4)"));
+        media = ((N1 * 2 + N2 * 3 + N3 * 4 + N4 * 1) / (2 + 3 + 4 + 1));
+
+        if (media >= 7) {
+            document.write("Aluno foi aprovado.");
+        }
+        else if (media < 5) {
+            document.write("Aluno foi reprovado.");
+        }
+        else if ((media >= 5) && (media < 7)) {
+            var EX, final
+            EX = parseFloat(prompt("Insira a nota da recuperação final"));
+            final = ((media + EX) / 2)
+        }
+        if (final >= 7) {
+            document.write("Aluno foi aprovado depois da recuperação final");
+        }
+        else if (final < 7) {
+            document.write("Aluno foi reprovado mesmo com a recuperação final");
+        }
+    </script>
+</body>
+
+</html>

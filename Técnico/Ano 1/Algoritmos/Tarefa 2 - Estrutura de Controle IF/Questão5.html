@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questão 5</title>
+</head>
+
+<body>
+    <script type="text/javascript">
+        /*5. Faça um algoritmo que leia 3 valores e ordene-os em ordem crescente.
+        No final, mostre os valores em ordem crescente e a seguir, como foram lidos.*/
+
+        var V1, V2, V3;
+        V1 = parseFloat(prompt("Insira um número para a primeira variável (V1)"));
+        V2 = parseFloat(prompt("Insira um número para a segunda variável (V2)"));
+        V3 = parseFloat(prompt("Insira um número para a terceira variável (V3)"));
+
+        if ((V1 <= V2) && (V2 <= V3)) {
+            document.write("Ordem crescente: ", V1, ",", V2, ",", V3, "/ Como foram lidos: ", V1, ",", V2, ",", V3);
+        }
+        else if ((V2 <= V1) && (V1 <= V3)) {
+            document.write("Ordem crescente: ", V2, ",", V1, ",", V3, "/ Como foram lidos: ", V1, ",", V2, ",", V3);
+        }
+        else if ((V2 <= V3) && (V3 <= V1)) {
+            document.write("Ordem crescente: ", V2, ",", V3, ",", V1, "/ Como foram lidos: ", V1, ",", V2, ",", V3);
+        }
+        else if ((V3 <= V2) && (V2 <= V1)) {
+            document.write("Ordem crescente: ", V3, ",", V2, ",", V1, "/ Como foram lidos: ", V1, ",", V2, ",", V3);
+        }
+        else if ((V1 <= V3) && (V3 <= V2)) {
+            document.write("Ordem crescente: ", V1, ",", V3, ",", V2, "/ Como foram lidos: ", V1, ",", V2, ",", V3);
+        }
+        else if ((V3 <= V1) && (V1 <= V2)) {
+            document.write("Ordem crescente: ", V3, ",", V1, ",", V2, "/ Como foram lidos: ", V1, ",", V2, ",", V3);
+        }
+    </script>
+</body>
+
+</html>

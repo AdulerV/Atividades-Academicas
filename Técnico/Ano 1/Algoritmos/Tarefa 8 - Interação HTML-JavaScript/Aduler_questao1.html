@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questão1</title>
+    <link rel="stylesheet" href="Aduler_questao1.css">
+
+    <script>
+        function funcaoInput() {
+
+            let Nome = document.getElementById('inputName').value;
+            let Idade = document.getElementById('inputIdade').value;
+
+            if (((Nome.length < 1) || (Nome == "") || (Idade.length < 1) || (Idade == ""))) {
+                alert('Preencha os campos!')
+                return false;
+            }
+
+            else if (Idade < 18) {
+                alert(`${Nome}, você ainda não pode solicitar sua habilitação.`)
+                return true;
+            }
+
+            else if (Idade >= 18) {
+                alert(`${Nome}, você já pode solicitar sua habilitação.`)
+                return true;
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <div>
+        <h1>Autorização para tirar Carteira Nacional de Habilitação (CNH)</h1>
+        <br>
+        <form>
+            <fieldset>
+                <label for="inputName" class="labelClass">Nome:</label><input type="text" name="inputName"
+                    id="inputName">
+                <br>
+                <label for="inputIdade" class="labelClass">Idade:</label><input type="Number" min="0" name="inputIdade"
+                    id="inputIdade">
+                <br>
+                <br>
+                <label for="button"><input type="button" name="button" id="button" value="Enviar"
+                        onclick="return funcaoInput()"></label>
+            </fieldset>
+        </form>
+    </div>
+</body>
+
+</html>

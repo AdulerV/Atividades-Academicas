@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questão1</title>
+    <script>
+        /*1. Construa uma função em JavaScript que receba 
+        três valores por parâmetro e retorneo maior valor.*/
+
+        function funcaoMaior(A, B, C) {
+
+            let num = A;
+
+            if (B > num) {
+                num = B;
+            }
+
+            if (C > num) {
+                num = C;
+            }
+
+            return (num);
+        }
+
+        let A = parseFloat(prompt("Insira algum número"));
+        let B = parseFloat(prompt("Insira algum número novamente"));
+        let C = parseFloat(prompt("Insira algum número novamente"));
+        document.write("<b>O maior numero é: </b>", funcaoMaior(A, B, C))
+    </script>
+</head>
+
+<body>
+</body>
+
+</html>

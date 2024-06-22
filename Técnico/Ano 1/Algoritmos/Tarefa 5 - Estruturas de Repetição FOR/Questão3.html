@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questão3</title>
+</head>
+
+<body>
+    <script>
+        /*Calcular o valor de S dado por: 
+        [s = 2/50 + 2^1/48 + 2^2/46 ... 2^25/2] */
+
+        var S, expoente, denominador;
+        S = 0;
+        denominador = 50;
+
+        for (expoente = 1; expoente <= 25; expoente = expoente + 1) {
+            S = S + (2 ** expoente) / denominador;
+            denominador = denominador - 2
+        }
+        document.write("S : ", S);
+    </script>
+</body>
+
+</html>

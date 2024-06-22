@@ -1,0 +1,9 @@
+footer.rodape {
+    margin: 10px;
+    border-top: solid 1px #000;
+    flex: 0.2;
+}
+
+footer.rodape p {
+    margin-left: 10px;
+}

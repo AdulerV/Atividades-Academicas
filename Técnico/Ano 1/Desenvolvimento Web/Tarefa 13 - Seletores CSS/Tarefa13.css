@@ -1,0 +1,51 @@
+li h2
+{
+color: cornflowerblue
+}
+
+.titulo
+{
+text-align: center;
+color: blue;
+text-decoration:underline;
+}
+
+#ItemGodOfWar:hover
+{
+width: 130px;
+text-decoration: underline;
+background-color: brown;
+}
+
+#ItemTheLast:hover
+{
+width: 220px;
+text-decoration: underline;
+background-color: white
+}
+
+#ItemTheWitcher:hover
+{
+width: 270px;
+text-decoration: underline;
+background-color: yellow;
+}
+
+#ItemReadDead:hover
+{
+width: 265px;
+text-decoration: underline;
+background-color: red;
+}
+
+#ItemResident:hover
+{
+width: 250px;
+text-decoration: underline;
+background-color: blue;
+}
+
+*
+{
+background-color: aqua;
+}

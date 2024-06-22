@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questão1</title>
+</head>
+
+<body>
+    <script>
+        /*1. Construa um algoritmo para ler uma sequência de números inteiros e imprimir a soma desses números.
+        Para terminar a inserção dos números o usuário deve inserir um número menor ou igual a 0.*/
+
+        var num, soma;
+        soma = 0;
+
+        do {
+            num = parseInt(prompt("Insira número inteiro"));
+            soma = soma + num;
+        } while (num > 0)
+
+        document.write("Soma dos números: ", soma, "<br>");
+    </script>
+</body>
+
+</html>

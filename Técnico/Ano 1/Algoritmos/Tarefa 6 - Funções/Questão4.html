@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <title>Questão 2</title>
+    <meta charset="utf-8">
+    <script>
+        /*4. Construa um algoritmo que contenha a seguinte estrutura
+            a. Contenha uma função denominada AreaCirculo. 
+            Essa função recebe como parâmetro o raio de um círculo e retorna a área desse círculo.
+            b. Contenha uma função denominada CompCirculo. 
+            Essa função recebe como parâmetro o raio de um círculo e retorna o comprimento desse círculo.
+            c. Escreva o código de um programa que leia 5 valores que representam os raios de cinco círculos. 
+        Para cada valor informado o programa deve imprimir a área e o comprimento (perímetro) do círculo. 
+        Para obter o valor da área do círculo o programa deve chamar a função AreaCirculo. 
+        Para obter o valor do seu perímetro o programa deverá chamar a função CompCirculo.*/
+
+        function funcaoArea(r) {
+            area = 3.14 * (r ** 2);
+            return area;
+        }
+
+        function funcaoComprimento(r) {
+            area = 2 * 3.14 * r;
+            return area;
+        }
+
+        for (parametro = 0; parametro < 5; parametro++) {
+            r = parseFloat(prompt("Insira o raio"));
+            document.write("<br><br> <b>Área do circulo:</b> ", funcaoArea(r));
+            document.write("<br><br> <b>Circunferencia do circulo:</b> ", funcaoComprimento(r));
+        } 
+    </script>
+</head>
+
+<body>
+</body>
+
+</html>

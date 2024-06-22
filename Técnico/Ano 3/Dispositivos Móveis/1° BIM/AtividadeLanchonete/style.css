@@ -1,0 +1,30 @@
+body {
+    background-image: url(https://thumbs.dreamstime.com/b/fundo-sem-emenda-do-teste-padr%C3%A3o-dos-hamburgueres-hamburger-e-batatas-fritas-tirados-m%C3%A3o-fast-food-da-comida-lixo-alimento-143495721.jpg);
+}
+
+label {
+    color: aliceblue;
+}
+
+div {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 0.5cm;
+    text-align: center;
+    box-shadow: 1px 5px 5px 5px gray;
+    background-color: rgb(51, 50, 50);
+    color: aliceblue;
+    border: 1px rgb(143, 226, 0) solid;
+    border-radius: 0.2cm;
+}
+
+input,
+input::placeholder {
+    color: aliceblue;
+}
+
+input {
+    background-color: rgb(115, 132, 85);
+}

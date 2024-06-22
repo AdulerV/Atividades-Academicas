@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questão 2</title>
+</head>
+
+<body>
+    <script>
+        /*2. A Imobiliária Imóveis Fáceis deseja comprar um sistema que calcule o valor
+        do aluguel de suas casas e apartamentos. Para calcular o valor de cada aluguel, essa
+        imobiliária considera a metragem do imóvel (quantos metros quadrados ele possui), o
+        valor do aluguel do metro quadrado na região do imóvel e a taxa que ela receberá para
+        cada aluguel (valor fixo de 5%). Crie um algoritmo em JavaScript que solicite esses
+        dados ao usuário, calcule o valor do aluguel e escreva na tela o valor calculado.
+        Para o cálculo do aluguel utilize: aluguel = metragem * valorPorMetro * 1.05;
+        */
+
+        var metragem, valorPorMetro, aluguel
+        metragem = parseFloat(prompt("Insira a metragem do imóvel (quantos metros quadrados ele possui)"));
+        valorPorMetro = parseFloat(prompt("Insira o valor do aluguel do metro quadrado na região do imóvel"));
+        aluguel = metragem * valorPorMetro * 1.05
+
+        document.write("Valor do aluguel: R$ ", aluguel);
+    </script>
+</body>
+
+</html>

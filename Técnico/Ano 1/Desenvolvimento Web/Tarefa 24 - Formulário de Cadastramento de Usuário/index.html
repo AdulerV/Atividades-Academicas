@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="index.css">
+
+    <script src="index.js"></script>
+</head>
+
+<body>
+    <form action="http://hipotetico.com.br/cadastraCliente.php." method="post" onsubmit="return minhaFuncao()" id="form">
+        <h1>Cadastro Hipotetico</h1>
+        <label for="inputEmail" class="labelTipo1">Insira seu Email:</label><br><input type="email" name="inputEmail" id="inputEmail">
+        <br>
+        <br>
+        <label for="inputEmail2" class="labelTipo1">Cofirme o Email:</label><br><input type="email" name="inputEmail2" id="inputEmail2">
+        <br>
+        <br>
+        <label for="inputSenha" class="labelTipo1">Insira uma senha:<br><input type="password" name="inputSenha"
+                id="inputSenha"></label>
+        <br>
+        <br>
+        <label for="inputTel" class="labelTipo2">Insira seu Telefone: <br><input type="tel" name="inputTel"
+                id="inputTel"></label>
+        <br>
+        <br>
+        <label for="inputNome" class="labelTipo2">Insira seu Nome: <br><input type="text" name="inputNome"
+                id="inputNome"></label>
+        <br>
+        <br>
+        <label for="inputDate" class="labelTipo2">Data de nascimento: <br><input type="date" name="inputDate"
+                id="inputDate"></label>
+        <br>
+        <br>
+        <label for="inputReset"><input type="reset" name="inputReset" id="inputReset"></label>
+        <label for="inputButton"><input type="submit" name="inputButton" id="inputButton" value="Enviar"></label>
+        <br>
+    </form>
+</body>
+
+</html>

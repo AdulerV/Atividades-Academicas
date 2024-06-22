@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questão5</title>
+</head>
+
+<body>
+    <script>
+        /*5. Escreva um algoritmo que leia 10 valores (usando a mesma variável) e encontre o maior e o menor deles. 
+        Mostre o resultado.*/
+
+        var num, maior, menor, c = 0;
+
+        num = parseInt(prompt("Informe um valor"));
+        maior = num;
+        menor = num;
+
+        while (c > 0) {
+            num = parseInt(prompt("Informe um valor"));
+
+            if (num > maior) {
+                maior = num;
+            }
+            if (num < menor) {
+                menor = num;
+            }
+            c = c + 1;
+        }
+
+        document.write("O maior peso informado foi ", maior, " e o menor foi ", menor);
+    </script>
+</body>
+
+</html>

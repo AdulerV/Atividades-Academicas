@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questão5</title>
+    <script>
+        /*5. Sua função é construir um programa que armazene em um vetor chamado HDL o valor do
+        colesterol bom encontrado em 6 exames de sangue e em um vetor chamado LDL o valor do
+        colesterol ruim encontrado em outros 6 exames de sangue. Em seguida seu programa informar 
+        em quantos exames foram encontrados problemas (valores que estão fora da margem de referência estipulada).*/
+
+        let HDL = []; LDL = []; contador = 0;
+
+        for (let x = 1; x <= 6; x++) {
+            HDL[x] = parseFloat(prompt("Insira o valor dos exames do HDL"));
+
+            if (HDL[x] < 40) {
+                contador++
+            }
+        }
+
+        for (let i = 1; i <= 6; i++) {
+            LDL[i] = parseFloat(prompt("Insira o valor dos exames do LDL"));
+
+            if (LDL[i] > 130) {
+                contador++
+            }
+        }
+
+        document.write("<b>Quantidade de exames que foram encontrados problemas é: </b>", contador)
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

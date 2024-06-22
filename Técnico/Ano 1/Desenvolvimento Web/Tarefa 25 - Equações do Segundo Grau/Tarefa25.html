@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarefa 25</title>
+    <script>
+        function funçaoBhaskara() {
+
+            let A = document.getElementById("coeficenteA").value;
+            let B = document.getElementById("coeficenteB").value;
+            let C = document.getElementById("coeficenteC").value;
+            let X1;
+            let X2;
+
+            let delta = B * B - 4 * A * C
+
+            if (delta < 0) {
+                X1 = 'Não possui raízes reais';
+                X2 = '';
+                document.getElementById("resultado1").innerHTML = X1;
+                document.getElementById("resultado2").innerHTML = X2;
+            }
+
+            else if (X1 = (-B - Math.sqrt(delta)) / (2 * A)) {
+                document.getElementById("resultado2").innerHTML = X1;
+            }
+
+            if (X2 = (-B + Math.sqrt(delta)) / (2 * A)) {
+                document.getElementById("resultado1").innerHTML = X2;
+            }
+        }
+    </script>
+
+    <style>
+        #coeficenteA {
+            width: 40px;
+        }
+
+        #coeficenteB {
+            width: 40px;
+        }
+
+        #coeficenteC {
+            width: 40px;
+        }
+
+        img {
+            border-width: 5px;
+            border-style: inset;
+            border-color: black;
+            width: 250px;
+            height: 200px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <label for="coeficenteA"><input id="coeficenteA" type="number"> x² +</label>
+    <label for="coeficenteB"><input id="coeficenteB" type="number"> x +</label>
+    <label for="coeficenteC"><input id="coeficenteC" type="number"> = 0</label>
+
+    <button onclick="funçaoBhaskara()">Calcular</button>
+
+    <p id="resultado1">Aqui o resultado da primeira raiz real</p>
+    <p id="resultado2">Aqui o resultado da segunda raiz real</p>
+    <br>
+
+    <p>formula utilizada:</p>
+    <img src="formula.png" alt="formula">
+    <br>
+    <br>
+    <a href="https://www.youtube.com/watch?v=2HDdXfWWF3E&t=40s">Fontes de consulta 1</a>
+    <br>
+    <br>
+    <a href="https://www.youtube.com/watch?v=Xv2QrQK9I7E&t=208s">Fontes de consulta 2</a>
+</body>
+
+</html>

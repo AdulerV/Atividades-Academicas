@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <title>Questão 2</title>
+    <meta charset="utf-8">
+    <script>
+        /*3. Faça uma função que recebe a média final de um aluno por parâmetro e retorna o seu conceito, 
+        conforme a tabela*/
+
+        function funcao(x) {
+            if (x >= 0.0 && x <= 4.9) {
+                document.write("Conceito D")
+            }
+            else {
+                if (x >= 5.0 && x <= 6.9) {
+                    document.write("Conceito C")
+                }
+                else {
+                    if (x >= 7.0 && x <= 8.9) {
+                        document.write("Conceito B")
+                    }
+                    else {
+                        if (x >= 9.0 && x <= 10.0) {
+                            document.write("Conceito A")
+                        }
+                        else {
+                            document.write("Não cadastrado")
+                        }
+                    }
+                }
+            }
+        }
+
+        x = parseInt(prompt("Insira a média do aluno"));
+        funcao(x);
+    </script>
+</head>
+
+<body>
+</body>
+
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questão2</title>
+    <script>
+
+        /*2. Faça um algoritmo que leia um vetor X[10]. 
+        Substitua, a seguir, todos os valores nulos do vetor X por 1 e escreva novamente o vetor X.*/
+
+        var Y = [];
+
+        for (let X = 0; X < 10; X++) {
+            Y[X] = Number(prompt("Insira algum número"));
+            if (Y[X] == 0) {
+                Y[X] = 1;
+            }
+        }
+        document.write(`( ${Y} )`);
+    </script>
+</head>
+
+<body>
+</body>
+
+</html>

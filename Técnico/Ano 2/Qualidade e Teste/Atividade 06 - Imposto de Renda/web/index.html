@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalho 3 Bim</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="img/irpf.jpg" type="image/x-icon">
+    <script type="module" src="/src/script.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <h2>Cálculo de Salário e Imposto de Renda</h2><br>
+        <label for="SalarioBase"><b>Digite um Salário Base:</b></label><br>
+        <input id="SalarioBase" type="number" name="SalarioBase" class="campo" />
+        <br><br>
+        <label for="numFilhos"><b>Digite o número de filhos que você possui:</b></label><br>
+        <input id="numFilhos" type="number" name="numFilhos" class="campo" />
+        <br><br>
+        <label class="labRadio">Vale Transporte?
+            <label class="radio">Sim<input type="radio" name="valeT" value="valeT_sim" class="radio"></label>
+            <label class="radio">Não<input type="radio" name="valeT" value="valeT_nao" class="radio"></label>
+        </label>
+        <br><br>
+        <label class="labRadio">Trabalha à noite?
+            <label class="radio">Sim<input type="radio" name="tNoite" value="tNoite_sim" class="radio"></label>
+            <label class="radio">Não<input type="radio" name="tNoite" value="tNoite_nao" class="radio"></label>
+        </label>
+        <br><br>
+        <button>Calcular</button>
+        <br><br>
+        <span>Resultado</span>
+    </div>
+</body>
+
+</html>

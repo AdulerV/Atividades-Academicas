@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questão3</title>
+</head>
+
+<body>
+    <script>
+        //3. Ler um número inteiro e positivo e verificar se este é ou não um número primo.
+
+        var guarda, conta, varWhile, num;
+        num = parseInt(prompt("Digite um número"));
+        guarda = 0;
+        conta = 0;
+        varWhile = 0;
+        if (num > 0) {
+            while (varWhile <= num) {
+                conta = num / varWhile;
+                varWhile = varWhile + 1;
+                if (num % varWhile == 0) {
+                    guarda = guarda + 1;
+                }
+            }
+            if ((guarda == 2) || (guarda == 1)) {
+                document.write("O número é primo");
+            }
+            else {
+                document.write("O número não é primo");
+            }
+        }
+    </script>
+</body>
+
+</html>

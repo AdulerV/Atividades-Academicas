@@ -1,0 +1,52 @@
+Exercícios – Variáveis e expressões lógicas
+
+1. Variáveis - Assinale os tipos de dados abaixo, da seguinte maneira: (I) inteiro, (R) real, (C) caracter e 
+(L) lógico.
+
+(R) -678
+(C) “0,87”
+(C) “-9,12”
+(L) Verdadeiro
+(I) –456
+(I/R) –99,8 - Inteiro se for considerado o sistema americano
+(C) “Cinco”
+(R/I) 45,8976 - Inteiro se for considerado o sistema americano
+(L) Falso
+(R) –1.56
+
+2. Nome de variável
+Todas as variáveis no PHP possuem um $ na frente e seguem as regras de construção:
+
+1. Devem começar com uma letra (após o $)
+2. Podem conter letras e números
+3. Não podem conter caracteres acentuados
+4. Não podem conter símbolos como % # * & etc (exceto _ e $)
+5. OBS: O PHP faz a diferenciação entre as letras maiúsculas e minúsculas (recomenda-se usar 
+minúsculas)
+
+Assinale com um X os nomes válidos para uma variável.
+( ) $ENDEREÇO
+( ) $21BRASIL
+(X) $FONECOM
+( ) $NOMEUSUÁRIO
+(X) $NOME_USUARIO
+( ) $NOME*USUÁRIO
+( ) $END*A-6
+(X) $CIDADE3
+( ) $#CABEC
+
+3. Expressões lógicas – Determine o resultado lógico das expressões abaixo, assinalando se 
+são verdadeiras ou falsas. Considere para as respostas os seguintes valores: $x=1, $a=3, 
+$b=5, $c=8 e $d=7.
+Verdadeiro Falso
+
+a) não ($x>3) V - Por causa do "não" ("Não" + informação falso = V 'Tipo: menos + menos = mais').
+b) ($x<1) e não ($b>$d) F
+c) não ($d<0) e ($c>5) V
+d) não ($x>3) ou ($c<7) V - Por causa do "ou", uma variável deve ser falsa e a outra verdadeira.
+e) ($a>$b) ou ($c>$b) V
+f) ($x>=2) F
+g) ($x<1) e ($b>=$d) F
+h) ($d<0) ou ($c>5) V
+i) não ($d>3) ou não ($b<7) V
+j) ($a>$b) ou não ($c>$b) F

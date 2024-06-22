@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questão 3</title>
+</head>
+
+<body>
+    <script>
+        var L1, L2, L3
+        L1 = parseFloat(prompt("Insira algum valor para a primeira variável (L1)"));
+        L2 = parseFloat(prompt("Insira algum valor para a segunda variável (L2)"));
+        L3 = parseFloat(prompt("Insira algum valor para a terceira variável (L3)"));
+
+        if ((L1 >= L2 + L3) || (L2 >= L1 + L3) || (L3 >= L1 + L2)) {
+            document.write("As medidas não podem formar um triângulo.");
+        }
+        else {
+            document.write("As medidas podem formar um triângulo.");
+        }
+    </script>
+</body>
+
+</html>

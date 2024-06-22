@@ -1,0 +1,23 @@
+form {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    background-image: linear-gradient(rgb(56, 65, 71), rgb(9, 9, 18));
+    color: rgb(255, 255, 255);
+    border-width: 10px;
+    border-style: ridge;
+    border-radius: 1cm;
+    border-color: rgb(48, 48, 69);
+
+    height: 350px;
+    width: 500px;
+
+
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}

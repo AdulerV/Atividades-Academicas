@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questão 1</title>
+</head>
+
+<body>
+    <script>
+        /*Crie um algoritmo em JavaScript que será utilizado para cadastrar os dados
+        pessoais do usuário. Você deve solicitar do usuário o nome, o CPF, a data de
+        nascimento, o endereço e o telefone. Após pegar esses dados, imprima na página os
+        dados lidos, conforme o exemplo abaixo:
+    
+        Dados cadastrados
+        Nome: Pedro da Silva
+        CPF: 111.222.333-44
+        Data de Nascimento: 01/01/2000
+        Endereço: Rua Treze, 13, Bairro Flores, Juiz de Fora, MG, 36000-000
+        Telefone: (32) 99999-9999 */
+
+        var nome, CPF, data, endereço, telefone
+        nome = prompt("Insira seu nome completo:");
+        CPF = prompt("Insira seu CPF (Exemplo: 111.222.333-44):");
+        data = prompt("Insira sua data de nascimento (Exemplo: 01/01/2000):");
+        endereço = prompt("Insira seu endereço (Rua, Número, Bairro, Cidade, Estado e CEP):");
+        telefone = prompt("Insira o número de seu telefone:");
+
+
+        document.write("<b>Dados cadastrados</b>");
+        document.write("<br><b>Nome: </b>", nome);
+        document.write("<br><b>CPF: </b>", CPF);
+        document.write("<br><b>Data de Nascimento: </b>", data);
+        document.write("<br><b>Endereço: </b>", endereço)
+        document.write("<br><b>Telefone: </b>", telefone);
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questão 2</title>
+</head>
+
+<body>
+    <script type="text/javascript">
+        /*2. Com base na tabela, escreva um algoritmo que leia o código de um item e a quantidade deste item. 
+        A seguir, calcule e mostre o valor da conta a pagar.*/
+        
+        var CODE, Quantidade;
+        CODE = parseFloat(prompt("insira o código do produto"));
+        Quantidade = parseFloat(prompt(("Insira a quantidade comprada")));
+
+        if (CODE == 1) {
+            document.write("Você gastou R$", 4 * Quantidade);
+        }
+        else if (CODE == 2) {
+            document.write("Você gastou R$", 4.5 * Quantidade);
+        }
+        else if (CODE == 3) {
+            document.write("Você gastou R$", 5 * Quantidade);
+        }
+        else if (CODE == 4) {
+            document.write("Você gastou R$", 2 * Quantidade);
+        }
+        else if (CODE == 5) {
+            document.write("Você gastou R$", 1.5 * Quantidade);
+        }
+    </script>
+</body>

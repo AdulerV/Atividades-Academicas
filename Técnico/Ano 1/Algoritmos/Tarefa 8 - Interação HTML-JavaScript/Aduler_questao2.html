@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questão2</title>
+    <link rel="stylesheet" href="Aduler_questao2.css">
+
+    <script>
+        function funcaoMudar(classe) {
+            let mudarTag = document.getElementsByClassName(classe);
+
+            for (let i = 0; i < 2; i++) {
+                mudarTag[i].style.cssText = "color: red; font-size: 18px"
+            }
+        }
+
+        function funcaoVoltar(classe) {
+            let mudarTag = document.getElementsByClassName(classe);
+
+            for (let i = 0; i < 2; i++) {
+                mudarTag[i].style.cssText = "color: black; font-size: 14px"
+            }
+        }
+
+    </script>
+</head>
+
+<body>
+    <div>
+        <h1>Notícias de Hoje</h1>
+        <br>
+        <br>
+        <br>
+        <br>
+        <h4 onmouseout="funcaoVoltar('TagHTML')" onmouseover="funcaoMudar('TagHTML')" class="TagHTML">Lorem ipsum dolor
+            sit amet, consectetur adipiscing
+            elit.</h4>
+        <p onmouseout="funcaoVoltar('TagHTML')" onmouseover="funcaoMudar('TagHTML')" class="TagHTML">Vivamus sed mauris
+            eu nibh scelerisque rhoncus. Etiam
+            augue lorem, lobortis eget metus quis, facilisis
+            laoreet
+            arcu.
+            Integer turpis nibh, rutrum non justo ut, varius euismod nisl. Curabitur in auctor arcu. Duis non finibus
+            augue,
+            id
+            elementum lorem. Vestibulum lobortis nisl in lacinia bibendum. Duis sem urna, pulvinar at gravida et,
+            bibendum
+            blandit quam. Nam non volutpat tortor. Duis sed lobortis urna. Nulla sit amet sapien vulputate, bibendum
+            ipsum
+            nec,
+            luctus erat. Mauris finibus nisl et metus tempor, et dignissim tellus cursus. Nam massa eros, pulvinar ut
+            nisl
+            tincidunt,
+            facilisis fermentum urna. Praesent et metus nunc. Pellentesque at ante laoreet, congue odio eget, accumsan
+            turpis.
+            Donec vitae erat tortor. Proin ac lorem vestibulum, cursus ex eget, tempus magna.</p>
+        <br>
+        <br>
+        <br>
+        <br>
+        <h4 onmouseout="funcaoVoltar('TagHTML2')" onmouseover="funcaoMudar('TagHTML2')" class="TagHTML2">Nulla ultrices
+            lobortis velit, at fringilla mauris pharetra sit amet.</h4>
+        <p onmouseout="funcaoVoltar('TagHTML2')" onmouseover="funcaoMudar('TagHTML2')" class="TagHTML2">Nam tincidunt
+            justo elit, sed faucibus massa porta ut. Aliquam ut vulputate odio, in dignissim orci. Quisque
+            tellus
+            ante, pretium vel porta at, aliquet sed erat. Ut eleifend dui dolor, id rutrum velit luctus non. Nulla sit
+            amet
+            sem
+            consectetur, vehicula augue sed, scelerisque turpis. Fusce ullamcorper ligula at elit convallis fermentum
+            vulputate ac
+            eros. Ut sit amet enim orci. Vivamus quis nisl non dolor venenatis dignissim sit amet a diam. Fusce sit amet
+            ultricies
+            leo, ac posuere velit. Cras eros dolor, tincidunt ac tincidunt eget, feugiat a nisl. Pellentesque molestie
+            tristique
+            tristique. Morbi pretium ullamcorper augue id lacinia. Pellentesque aliquam dignissim justo, et pretium odio
+            consequat quis. Integer eu leo eget lacus pulvinar lobortis ut eget mauris.</p>
+    </div>
+</body>
+
+</html>

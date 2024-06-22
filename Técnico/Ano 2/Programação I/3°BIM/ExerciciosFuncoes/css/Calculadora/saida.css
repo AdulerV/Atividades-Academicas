@@ -1,0 +1,14 @@
+body {
+    background-color: rgb(0, 0, 0);
+    color: whitesmoke;
+}
+
+p {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    background-color: rgb(72, 13, 43);
+    box-shadow: 0px 10px 10px 15px rgb(72, 13, 43);
+}

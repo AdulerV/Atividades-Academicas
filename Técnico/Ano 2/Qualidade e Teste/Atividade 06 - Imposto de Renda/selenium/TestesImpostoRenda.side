@@ -1,0 +1,2208 @@
+{
+  "id": "9f3e6ab7-ee7e-4ce3-bcf1-78f1f2b02ed6",
+  "version": "2.0",
+  "name": "Testes Imposto Renda",
+  "url": "http://127.0.0.1:5501/web/",
+  "tests": [{
+    "id": "ff214234-2432-4ad7-87dc-44054f5b340f",
+    "name": "1. todos os campos vazios",
+    "commands": [{
+      "id": "6b0bfd0f-aafd-4195-9f1d-0c36e294b0d3",
+      "comment": "",
+      "command": "open",
+      "target": "/web/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f14faebb-918a-4567-86ff-dbb5b7b77be6",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1936x1048",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e2f48eec-fabf-403d-b724-f1d78c051e4b",
+      "comment": "",
+      "command": "click",
+      "target": "css=button",
+      "targets": [
+        ["css=button", "css:finder"],
+        ["xpath=//button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "338b8618-80a4-4f15-b289-20ac849b670c",
+      "comment": "",
+      "command": "click",
+      "target": "css=span",
+      "targets": [
+        ["css=span", "css:finder"],
+        ["xpath=//span", "xpath:position"],
+        ["xpath=//span[contains(.,'Insira valores válidos')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "aebf1862-abef-473e-811d-4fcfe3761cfa",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=span",
+      "targets": [
+        ["css=span", "css:finder"],
+        ["xpath=//span", "xpath:position"],
+        ["xpath=//span[contains(.,'Insira valores válidos')]", "xpath:innerText"]
+      ],
+      "value": "Insira valores válidos"
+    }]
+  }, {
+    "id": "8fde9061-5a40-458e-86fb-98006364dc80",
+    "name": "1. campo \"salario\" vazio",
+    "commands": [{
+      "id": "8f17f75c-ddfb-4178-a1f4-10497ae3942a",
+      "comment": "",
+      "command": "open",
+      "target": "http://127.0.0.1:5501/web/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e2ac4352-4557-4e7a-9e07-736dba744e52",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "974x1032",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "988f0783-1fc3-408a-a0bb-c64d6eff1cb3",
+      "comment": "",
+      "command": "click",
+      "target": "id=numFilhos",
+      "targets": [
+        ["id=numFilhos", "id"],
+        ["name=numFilhos", "name"],
+        ["css=#numFilhos", "css:finder"],
+        ["xpath=//input[@id='numFilhos']", "xpath:attributes"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "df853d3a-7c05-48b1-8564-ebb8a10865e4",
+      "comment": "",
+      "command": "type",
+      "target": "id=numFilhos",
+      "targets": [
+        ["id=numFilhos", "id"],
+        ["name=numFilhos", "name"],
+        ["css=#numFilhos", "css:finder"],
+        ["xpath=//input[@id='numFilhos']", "xpath:attributes"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "2"
+    }, {
+      "id": "8c0a92a5-ab87-4c3c-b040-bfd1c1c059f2",
+      "comment": "",
+      "command": "click",
+      "target": "name=valeT",
+      "targets": [
+        ["name=valeT", "name"],
+        ["css=.labRadio:nth-child(13) > .radio:nth-child(1) > .radio", "css:finder"],
+        ["xpath=//input[@name='valeT']", "xpath:attributes"],
+        ["xpath=//label/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c441cb3d-e973-4b0b-a306-c29b3dfbcba2",
+      "comment": "",
+      "command": "click",
+      "target": "css=.labRadio:nth-child(16) > .radio:nth-child(1)",
+      "targets": [
+        ["css=.labRadio:nth-child(16) > .radio:nth-child(1)", "css:finder"],
+        ["xpath=//label[4]/label", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "07669f1b-75b4-4203-9be4-1be0f7b2ea7c",
+      "comment": "",
+      "command": "click",
+      "target": "css=button",
+      "targets": [
+        ["css=button", "css:finder"],
+        ["xpath=//button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9ff9a99a-5c89-4035-b6d5-0c7bc3112cf2",
+      "comment": "",
+      "command": "click",
+      "target": "css=span",
+      "targets": [
+        ["css=span", "css:finder"],
+        ["xpath=//span", "xpath:position"],
+        ["xpath=//span[contains(.,'Insira valores válidos')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "ce6d3484-71a0-4f44-b994-bbd6cfc8dfff",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=span",
+      "targets": [
+        ["css=span", "css:finder"],
+        ["xpath=//span", "xpath:position"],
+        ["xpath=//span[contains(.,'Insira valores válidos')]", "xpath:innerText"]
+      ],
+      "value": "Insira valores válidos"
+    }]
+  }, {
+    "id": "512371c7-fafd-4ab8-a457-e1f76a4d9cb9",
+    "name": "1. campo \"filho\" vazio",
+    "commands": [{
+      "id": "c037dd48-6f4c-474e-92e9-e5e02c243380",
+      "comment": "",
+      "command": "open",
+      "target": "http://127.0.0.1:5501/web/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "766831c7-8b2b-4229-bf2e-90e33edbd722",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "974x1032",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "233cabfa-5f17-4adc-94c2-97a53f6639ee",
+      "comment": "",
+      "command": "click",
+      "target": "id=SalarioBase",
+      "targets": [
+        ["id=SalarioBase", "id"],
+        ["name=SalarioBase", "name"],
+        ["css=#SalarioBase", "css:finder"],
+        ["xpath=//input[@id='SalarioBase']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ffec0f75-a25c-4e25-8cfe-53307ddb0597",
+      "comment": "",
+      "command": "type",
+      "target": "id=SalarioBase",
+      "targets": [
+        ["id=SalarioBase", "id"],
+        ["name=SalarioBase", "name"],
+        ["css=#SalarioBase", "css:finder"],
+        ["xpath=//input[@id='SalarioBase']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "1200"
+    }, {
+      "id": "8c681188-0187-4e49-8501-b118dc5f729f",
+      "comment": "",
+      "command": "click",
+      "target": "css=.labRadio:nth-child(13) > .radio:nth-child(1)",
+      "targets": [
+        ["css=.labRadio:nth-child(13) > .radio:nth-child(1)", "css:finder"],
+        ["xpath=//label[3]/label", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a7e5d8c1-86d4-4437-a95c-fa5172e635c4",
+      "comment": "",
+      "command": "click",
+      "target": "name=tNoite",
+      "targets": [
+        ["name=tNoite", "name"],
+        ["css=.labRadio:nth-child(16) > .radio:nth-child(1) > .radio", "css:finder"],
+        ["xpath=//input[@name='tNoite']", "xpath:attributes"],
+        ["xpath=//label[4]/label/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7bbc2c6e-412a-4223-9501-fd718bc1b16c",
+      "comment": "",
+      "command": "click",
+      "target": "css=button",
+      "targets": [
+        ["css=button", "css:finder"],
+        ["xpath=//button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7760c303-3d16-417c-bf5d-99219c3c78ce",
+      "comment": "",
+      "command": "click",
+      "target": "css=span",
+      "targets": [
+        ["css=span", "css:finder"],
+        ["xpath=//span", "xpath:position"],
+        ["xpath=//span[contains(.,'Insira valores válidos')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "85d57e51-d3de-425d-9eeb-a5d6b907ef02",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=span",
+      "targets": [
+        ["css=span", "css:finder"],
+        ["xpath=//span", "xpath:position"],
+        ["xpath=//span[contains(.,'Insira valores válidos')]", "xpath:innerText"]
+      ],
+      "value": "Insira valores válidos"
+    }]
+  }, {
+    "id": "44da0f47-375f-44d0-bb21-900df1080d0f",
+    "name": "1. nenhuma radio selecionada",
+    "commands": [{
+      "id": "aa157208-3ed2-471c-8be7-233ab6116458",
+      "comment": "",
+      "command": "open",
+      "target": "http://127.0.0.1:5501/web/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "fe628ad8-3592-43c6-a59e-3cd57d49afad",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "974x1032",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "118e5cf2-fc94-4d06-837b-d21178c763c4",
+      "comment": "",
+      "command": "click",
+      "target": "id=SalarioBase",
+      "targets": [
+        ["id=SalarioBase", "id"],
+        ["name=SalarioBase", "name"],
+        ["css=#SalarioBase", "css:finder"],
+        ["xpath=//input[@id='SalarioBase']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1917a7df-76fd-4866-a4bc-bc5fa9994ff6",
+      "comment": "",
+      "command": "type",
+      "target": "id=SalarioBase",
+      "targets": [
+        ["id=SalarioBase", "id"],
+        ["name=SalarioBase", "name"],
+        ["css=#SalarioBase", "css:finder"],
+        ["xpath=//input[@id='SalarioBase']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "1200"
+    }, {
+      "id": "cd3961f4-f76c-467c-a1c6-a655222a5b95",
+      "comment": "",
+      "command": "type",
+      "target": "id=numFilhos",
+      "targets": [
+        ["id=numFilhos", "id"],
+        ["name=numFilhos", "name"],
+        ["css=#numFilhos", "css:finder"],
+        ["xpath=//input[@id='numFilhos']", "xpath:attributes"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "2"
+    }, {
+      "id": "2f569a6f-ac16-4bfe-b73e-8b705a4495d4",
+      "comment": "",
+      "command": "click",
+      "target": "css=button",
+      "targets": [
+        ["css=button", "css:finder"],
+        ["xpath=//button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ca9d95c7-2fa0-4301-98d4-1d286d612445",
+      "comment": "",
+      "command": "click",
+      "target": "css=span",
+      "targets": [
+        ["css=span", "css:finder"],
+        ["xpath=//span", "xpath:position"],
+        ["xpath=//span[contains(.,'Selecione as opções')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "f92565d1-a885-42d0-86c0-2b01baa6ff62",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=span",
+      "targets": [
+        ["css=span", "css:finder"],
+        ["xpath=//span", "xpath:position"],
+        ["xpath=//span[contains(.,'Selecione as opções')]", "xpath:innerText"]
+      ],
+      "value": "Selecione as opções"
+    }]
+  }, {
+    "id": "5c06a4e1-b2d4-4ebd-9809-9d919cab3622",
+    "name": "1. radio \"vale transporte\" não selecionada",
+    "commands": [{
+      "id": "4ce29640-fc0f-440e-9151-53351feec942",
+      "comment": "",
+      "command": "open",
+      "target": "http://127.0.0.1:5501/web/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "14b2fdc4-bf94-4cc6-bd6e-0ccbd3f08bdc",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "974x1032",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7e958cde-b181-4673-8dd5-1223ea8e3be5",
+      "comment": "",
+      "command": "click",
+      "target": "id=SalarioBase",
+      "targets": [
+        ["id=SalarioBase", "id"],
+        ["name=SalarioBase", "name"],
+        ["css=#SalarioBase", "css:finder"],
+        ["xpath=//input[@id='SalarioBase']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b429e60f-c9a5-41f1-98c6-10b8d8c930df",
+      "comment": "",
+      "command": "type",
+      "target": "id=SalarioBase",
+      "targets": [
+        ["id=SalarioBase", "id"],
+        ["name=SalarioBase", "name"],
+        ["css=#SalarioBase", "css:finder"],
+        ["xpath=//input[@id='SalarioBase']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "1200"
+    }, {
+      "id": "9c4ad58b-0ec4-4b18-9329-e73993d617a3",
+      "comment": "",
+      "command": "type",
+      "target": "id=numFilhos",
+      "targets": [
+        ["id=numFilhos", "id"],
+        ["name=numFilhos", "name"],
+        ["css=#numFilhos", "css:finder"],
+        ["xpath=//input[@id='numFilhos']", "xpath:attributes"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "0"
+    }, {
+      "id": "c38f668f-4f8f-4dc7-a3fb-10715a02badb",
+      "comment": "",
+      "command": "click",
+      "target": "name=tNoite",
+      "targets": [
+        ["name=tNoite", "name"],
+        ["css=.labRadio:nth-child(16) > .radio:nth-child(1) > .radio", "css:finder"],
+        ["xpath=//input[@name='tNoite']", "xpath:attributes"],
+        ["xpath=//label[4]/label/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9382ac11-59e5-449e-b581-980f9206e00a",
+      "comment": "",
+      "command": "click",
+      "target": "css=button",
+      "targets": [
+        ["css=button", "css:finder"],
+        ["xpath=//button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b4f8903b-cfb9-46bb-a3b2-eab72d0f84b7",
+      "comment": "",
+      "command": "click",
+      "target": "css=span",
+      "targets": [
+        ["css=span", "css:finder"],
+        ["xpath=//span", "xpath:position"],
+        ["xpath=//span[contains(.,'Selecione as opções')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "a2ca6336-970f-48a9-b663-9c7b2edef1d1",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=span",
+      "targets": [
+        ["css=span", "css:finder"],
+        ["xpath=//span", "xpath:position"],
+        ["xpath=//span[contains(.,'Selecione as opções')]", "xpath:innerText"]
+      ],
+      "value": "Selecione as opções"
+    }]
+  }, {
+    "id": "20a72702-beb9-41c1-989f-5765ef196546",
+    "name": "1. radio de \"trabalho noturno\" não selecionada",
+    "commands": [{
+      "id": "85c0b90d-7e1d-4cfb-8654-00716fc094b1",
+      "comment": "",
+      "command": "open",
+      "target": "http://127.0.0.1:5501/web/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5c4f1659-0d93-4e80-86ce-47e11b9313c1",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "974x1032",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "92982ea1-9588-4a41-bd26-90eb0fb1a17c",
+      "comment": "",
+      "command": "click",
+      "target": "id=SalarioBase",
+      "targets": [
+        ["id=SalarioBase", "id"],
+        ["name=SalarioBase", "name"],
+        ["css=#SalarioBase", "css:finder"],
+        ["xpath=//input[@id='SalarioBase']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8085251b-f2f5-4860-a7b5-1506d2f717ed",
+      "comment": "",
+      "command": "type",
+      "target": "id=SalarioBase",
+      "targets": [
+        ["id=SalarioBase", "id"],
+        ["name=SalarioBase", "name"],
+        ["css=#SalarioBase", "css:finder"],
+        ["xpath=//input[@id='SalarioBase']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "1200"
+    }, {
+      "id": "77e781d0-0993-4341-8808-f698e6e5992c",
+      "comment": "",
+      "command": "type",
+      "target": "id=numFilhos",
+      "targets": [
+        ["id=numFilhos", "id"],
+        ["name=numFilhos", "name"],
+        ["css=#numFilhos", "css:finder"],
+        ["xpath=//input[@id='numFilhos']", "xpath:attributes"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "2"
+    }, {
+      "id": "cf52179a-dccf-490e-8d51-9502952df146",
+      "comment": "",
+      "command": "click",
+      "target": "css=.labRadio:nth-child(13) > .radio:nth-child(1)",
+      "targets": [
+        ["css=.labRadio:nth-child(13) > .radio:nth-child(1)", "css:finder"],
+        ["xpath=//label[3]/label", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "74367fc6-e4cc-4415-a093-7f8406c752ab",
+      "comment": "",
+      "command": "click",
+      "target": "css=button",
+      "targets": [
+        ["css=button", "css:finder"],
+        ["xpath=//button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "45cc0eeb-413f-4f09-8002-c88a8e65c684",
+      "comment": "",
+      "command": "click",
+      "target": "css=span",
+      "targets": [
+        ["css=span", "css:finder"],
+        ["xpath=//span", "xpath:position"],
+        ["xpath=//span[contains(.,'Selecione as opções')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "f42b0585-e401-4c32-84af-18fb2a678916",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=span",
+      "targets": [
+        ["css=span", "css:finder"],
+        ["xpath=//span", "xpath:position"],
+        ["xpath=//span[contains(.,'Selecione as opções')]", "xpath:innerText"]
+      ],
+      "value": "Selecione as opções"
+    }]
+  }, {
+    "id": "ec0a3d74-f9a0-42f1-9dcd-e1e97433c2cf",
+    "name": "2. valores negativos",
+    "commands": [{
+      "id": "561ce841-b3da-4ec7-a9a0-1f45682b3da5",
+      "comment": "",
+      "command": "open",
+      "target": "http://127.0.0.1:5501/web/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "89dd5786-647f-4b19-bc28-721bddc0170d",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "974x1032",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a2db9107-af80-44e3-ac6d-2c190f8d51e8",
+      "comment": "",
+      "command": "click",
+      "target": "id=SalarioBase",
+      "targets": [
+        ["id=SalarioBase", "id"],
+        ["name=SalarioBase", "name"],
+        ["css=#SalarioBase", "css:finder"],
+        ["xpath=//input[@id='SalarioBase']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4128b0f4-474a-47c5-ac05-1b713aadf092",
+      "comment": "",
+      "command": "type",
+      "target": "id=SalarioBase",
+      "targets": [
+        ["id=SalarioBase", "id"],
+        ["name=SalarioBase", "name"],
+        ["css=#SalarioBase", "css:finder"],
+        ["xpath=//input[@id='SalarioBase']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "-1200"
+    }, {
+      "id": "332f874d-56ce-4b83-848f-c650fc7f1c90",
+      "comment": "",
+      "command": "type",
+      "target": "id=numFilhos",
+      "targets": [
+        ["id=numFilhos", "id"],
+        ["name=numFilhos", "name"],
+        ["css=#numFilhos", "css:finder"],
+        ["xpath=//input[@id='numFilhos']", "xpath:attributes"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "-2"
+    }, {
+      "id": "b02b40fa-f166-45ee-b84a-9937b9cb646a",
+      "comment": "",
+      "command": "click",
+      "target": "name=valeT",
+      "targets": [
+        ["name=valeT", "name"],
+        ["css=.labRadio:nth-child(13) > .radio:nth-child(1) > .radio", "css:finder"],
+        ["xpath=//input[@name='valeT']", "xpath:attributes"],
+        ["xpath=//label/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c3af3a72-51e9-4469-b38d-cc61f9a173f1",
+      "comment": "",
+      "command": "click",
+      "target": "name=tNoite",
+      "targets": [
+        ["name=tNoite", "name"],
+        ["css=.labRadio:nth-child(16) > .radio:nth-child(1) > .radio", "css:finder"],
+        ["xpath=//input[@name='tNoite']", "xpath:attributes"],
+        ["xpath=//label[4]/label/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "acf90ce8-75ef-401d-92b5-21e1946ea053",
+      "comment": "",
+      "command": "click",
+      "target": "css=button",
+      "targets": [
+        ["css=button", "css:finder"],
+        ["xpath=//button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f6bf7d89-a308-4c13-b5fe-442d1601c694",
+      "comment": "",
+      "command": "click",
+      "target": "css=span",
+      "targets": [
+        ["css=span", "css:finder"],
+        ["xpath=//span", "xpath:position"],
+        ["xpath=//span[contains(.,'Insira valores válidos')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "6dee1fe7-333e-45d7-a162-6ef0cfda0a0b",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=span",
+      "targets": [
+        ["css=span", "css:finder"],
+        ["xpath=//span", "xpath:position"],
+        ["xpath=//span[contains(.,'Insira valores válidos')]", "xpath:innerText"]
+      ],
+      "value": "Insira valores válidos"
+    }]
+  }, {
+    "id": "4c4f2075-307e-4de0-ae35-e6afee8d30b5",
+    "name": "2. valor negativo campo \"salario\"",
+    "commands": [{
+      "id": "608bd0d1-8db4-49d7-af22-53ee016adec7",
+      "comment": "",
+      "command": "open",
+      "target": "http://127.0.0.1:5501/web/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "15bcd2fe-e8c7-40a7-8cc7-24022c2594d0",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "974x1032",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4a9a9f0e-eb02-4c19-a8db-4e4e5457c33c",
+      "comment": "",
+      "command": "click",
+      "target": "id=SalarioBase",
+      "targets": [
+        ["id=SalarioBase", "id"],
+        ["name=SalarioBase", "name"],
+        ["css=#SalarioBase", "css:finder"],
+        ["xpath=//input[@id='SalarioBase']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0d586b17-de23-4ca5-8a6d-9795265514de",
+      "comment": "",
+      "command": "type",
+      "target": "id=SalarioBase",
+      "targets": [
+        ["id=SalarioBase", "id"],
+        ["name=SalarioBase", "name"],
+        ["css=#SalarioBase", "css:finder"],
+        ["xpath=//input[@id='SalarioBase']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "-1200"
+    }, {
+      "id": "4d3d6e83-0d56-4736-8b47-54e14c3d2c8a",
+      "comment": "",
+      "command": "type",
+      "target": "id=numFilhos",
+      "targets": [
+        ["id=numFilhos", "id"],
+        ["name=numFilhos", "name"],
+        ["css=#numFilhos", "css:finder"],
+        ["xpath=//input[@id='numFilhos']", "xpath:attributes"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "2"
+    }, {
+      "id": "a19dc684-ad18-4a92-94f6-9c2b9be74039",
+      "comment": "",
+      "command": "click",
+      "target": "name=valeT",
+      "targets": [
+        ["name=valeT", "name"],
+        ["css=.labRadio:nth-child(13) > .radio:nth-child(1) > .radio", "css:finder"],
+        ["xpath=//input[@name='valeT']", "xpath:attributes"],
+        ["xpath=//label/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2e3f04b4-fc14-4b42-a142-edc4559ec3b6",
+      "comment": "",
+      "command": "click",
+      "target": "css=.labRadio:nth-child(16) > .radio:nth-child(1)",
+      "targets": [
+        ["css=.labRadio:nth-child(16) > .radio:nth-child(1)", "css:finder"],
+        ["xpath=//label[4]/label", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "bd4fc2c5-b08d-47d9-b6b9-7128002d92d8",
+      "comment": "",
+      "command": "click",
+      "target": "css=button",
+      "targets": [
+        ["css=button", "css:finder"],
+        ["xpath=//button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5ccdbcfe-e759-4f6a-be8a-3533da99be7e",
+      "comment": "",
+      "command": "click",
+      "target": "css=span",
+      "targets": [
+        ["css=span", "css:finder"],
+        ["xpath=//span", "xpath:position"],
+        ["xpath=//span[contains(.,'Insira valores válidos')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "498944c8-3826-4e42-9be0-0f181d55d6bc",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=span",
+      "targets": [
+        ["css=span", "css:finder"],
+        ["xpath=//span", "xpath:position"],
+        ["xpath=//span[contains(.,'Insira valores válidos')]", "xpath:innerText"]
+      ],
+      "value": "Insira valores válidos"
+    }]
+  }, {
+    "id": "3b450c58-86dc-4113-991d-2c66af351bb0",
+    "name": "2. valor negativo campo \"filho\"",
+    "commands": [{
+      "id": "835fd0c6-c30a-4f46-a451-d5fc05bc4330",
+      "comment": "",
+      "command": "open",
+      "target": "http://127.0.0.1:5501/web/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b066bdad-cd92-477a-9ebe-59cec54c9e07",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "974x1032",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "593b8d23-f598-43f4-ae01-0e4006e1a4b3",
+      "comment": "",
+      "command": "click",
+      "target": "id=SalarioBase",
+      "targets": [
+        ["id=SalarioBase", "id"],
+        ["name=SalarioBase", "name"],
+        ["css=#SalarioBase", "css:finder"],
+        ["xpath=//input[@id='SalarioBase']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "395b4026-f79c-430c-b5c1-68abbda9ad4b",
+      "comment": "",
+      "command": "type",
+      "target": "id=SalarioBase",
+      "targets": [
+        ["id=SalarioBase", "id"],
+        ["name=SalarioBase", "name"],
+        ["css=#SalarioBase", "css:finder"],
+        ["xpath=//input[@id='SalarioBase']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "1200"
+    }, {
+      "id": "49e3a0fd-bf05-47dc-b823-86c418bb8c0f",
+      "comment": "",
+      "command": "type",
+      "target": "id=numFilhos",
+      "targets": [
+        ["id=numFilhos", "id"],
+        ["name=numFilhos", "name"],
+        ["css=#numFilhos", "css:finder"],
+        ["xpath=//input[@id='numFilhos']", "xpath:attributes"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "-2"
+    }, {
+      "id": "71b2184e-c99c-47a0-815d-b703f8133e60",
+      "comment": "",
+      "command": "click",
+      "target": "name=valeT",
+      "targets": [
+        ["name=valeT", "name"],
+        ["css=.labRadio:nth-child(13) > .radio:nth-child(1) > .radio", "css:finder"],
+        ["xpath=//input[@name='valeT']", "xpath:attributes"],
+        ["xpath=//label/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "042091e6-7932-410f-acbf-85c36dca666c",
+      "comment": "",
+      "command": "click",
+      "target": "name=tNoite",
+      "targets": [
+        ["name=tNoite", "name"],
+        ["css=.labRadio:nth-child(16) > .radio:nth-child(1) > .radio", "css:finder"],
+        ["xpath=//input[@name='tNoite']", "xpath:attributes"],
+        ["xpath=//label[4]/label/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a1825f5c-17c8-4977-9a12-ae91be0efee6",
+      "comment": "",
+      "command": "click",
+      "target": "css=button",
+      "targets": [
+        ["css=button", "css:finder"],
+        ["xpath=//button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "08d2b360-663c-4f5c-91a3-a6f1ead01983",
+      "comment": "",
+      "command": "click",
+      "target": "css=span",
+      "targets": [
+        ["css=span", "css:finder"],
+        ["xpath=//span", "xpath:position"],
+        ["xpath=//span[contains(.,'Insira valores válidos')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "b50e746e-d35b-4254-bfa7-93e1d3936387",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=span",
+      "targets": [
+        ["css=span", "css:finder"],
+        ["xpath=//span", "xpath:position"],
+        ["xpath=//span[contains(.,'Insira valores válidos')]", "xpath:innerText"]
+      ],
+      "value": "Insira valores válidos"
+    }]
+  }, {
+    "id": "94a4718c-4fb7-4767-8383-aaf3026f9006",
+    "name": "2. valores decimais",
+    "commands": [{
+      "id": "8cd844ec-0b14-4094-9bd8-7e43dd9f381c",
+      "comment": "",
+      "command": "open",
+      "target": "http://127.0.0.1:5501/web/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7a7d0bdb-68f5-468c-9808-08ccde24e28d",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "974x1032",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7b492013-f499-4853-88f4-4192f49b0a66",
+      "comment": "",
+      "command": "click",
+      "target": "id=SalarioBase",
+      "targets": [
+        ["id=SalarioBase", "id"],
+        ["name=SalarioBase", "name"],
+        ["css=#SalarioBase", "css:finder"],
+        ["xpath=//input[@id='SalarioBase']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8862c559-a451-4164-bde6-a16b225090e7",
+      "comment": "",
+      "command": "type",
+      "target": "id=SalarioBase",
+      "targets": [
+        ["id=SalarioBase", "id"],
+        ["name=SalarioBase", "name"],
+        ["css=#SalarioBase", "css:finder"],
+        ["xpath=//input[@id='SalarioBase']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "1200.50"
+    }, {
+      "id": "592deb8f-684d-4f23-aa44-d02594e6e211",
+      "comment": "",
+      "command": "type",
+      "target": "id=numFilhos",
+      "targets": [
+        ["id=numFilhos", "id"],
+        ["name=numFilhos", "name"],
+        ["css=#numFilhos", "css:finder"],
+        ["xpath=//input[@id='numFilhos']", "xpath:attributes"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "1.5"
+    }, {
+      "id": "c497a709-3eaa-45f1-ab1f-c0da0ea22823",
+      "comment": "",
+      "command": "click",
+      "target": "name=valeT",
+      "targets": [
+        ["name=valeT", "name"],
+        ["css=.labRadio:nth-child(13) > .radio:nth-child(1) > .radio", "css:finder"],
+        ["xpath=//input[@name='valeT']", "xpath:attributes"],
+        ["xpath=//label/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0f3f780b-b1d8-4136-a6dc-00ac5df46de2",
+      "comment": "",
+      "command": "click",
+      "target": "css=.labRadio:nth-child(16) > .radio:nth-child(1)",
+      "targets": [
+        ["css=.labRadio:nth-child(16) > .radio:nth-child(1)", "css:finder"],
+        ["xpath=//label[4]/label", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4fbdf958-6a7f-4709-80f6-2fd835929759",
+      "comment": "",
+      "command": "click",
+      "target": "css=button",
+      "targets": [
+        ["css=button", "css:finder"],
+        ["xpath=//button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "774b9590-e1a5-42b2-b7fc-8cd1d31af259",
+      "comment": "",
+      "command": "click",
+      "target": "css=span",
+      "targets": [
+        ["css=span", "css:finder"],
+        ["xpath=//span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b045888a-0e2f-4b52-bbc7-8058c0f44083",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=span",
+      "targets": [
+        ["css=span", "css:finder"],
+        ["xpath=//span", "xpath:position"]
+      ],
+      "value": "Seu Salário Completo é de R$1118.45 e Não Paga Imposto"
+    }]
+  }, {
+    "id": "79e316af-7ffd-4833-bf77-56d1af15bd2a",
+    "name": "2. valor decimal campo \"salario\"",
+    "commands": [{
+      "id": "35cd5dba-52ab-458f-a37d-c005ae3de0e2",
+      "comment": "",
+      "command": "open",
+      "target": "http://127.0.0.1:5501/web/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5da79a4e-5572-4469-8307-5d5ca0754d4b",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "974x1032",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "db8832a2-f82c-4b30-bfcf-fff68b8539a3",
+      "comment": "",
+      "command": "click",
+      "target": "id=SalarioBase",
+      "targets": [
+        ["id=SalarioBase", "id"],
+        ["name=SalarioBase", "name"],
+        ["css=#SalarioBase", "css:finder"],
+        ["xpath=//input[@id='SalarioBase']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "dc5cd76b-482c-440a-b119-a1222e658015",
+      "comment": "",
+      "command": "type",
+      "target": "id=SalarioBase",
+      "targets": [
+        ["id=SalarioBase", "id"],
+        ["name=SalarioBase", "name"],
+        ["css=#SalarioBase", "css:finder"],
+        ["xpath=//input[@id='SalarioBase']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "1200.50"
+    }, {
+      "id": "97e16395-6b0e-4cd2-a2b4-29f9bcb29eff",
+      "comment": "",
+      "command": "type",
+      "target": "id=numFilhos",
+      "targets": [
+        ["id=numFilhos", "id"],
+        ["name=numFilhos", "name"],
+        ["css=#numFilhos", "css:finder"],
+        ["xpath=//input[@id='numFilhos']", "xpath:attributes"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "2"
+    }, {
+      "id": "8d67a7b8-4990-45bb-ae19-bd43d8d9025f",
+      "comment": "",
+      "command": "click",
+      "target": "name=valeT",
+      "targets": [
+        ["name=valeT", "name"],
+        ["css=.labRadio:nth-child(13) > .radio:nth-child(1) > .radio", "css:finder"],
+        ["xpath=//input[@name='valeT']", "xpath:attributes"],
+        ["xpath=//label/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d516f241-d644-4f71-b610-7f1ce6ecdc9d",
+      "comment": "",
+      "command": "click",
+      "target": "css=.labRadio:nth-child(16) > .radio:nth-child(1)",
+      "targets": [
+        ["css=.labRadio:nth-child(16) > .radio:nth-child(1)", "css:finder"],
+        ["xpath=//label[4]/label", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "962b5f75-fb91-4386-8e88-80c759bb5a7f",
+      "comment": "",
+      "command": "click",
+      "target": "css=button",
+      "targets": [
+        ["css=button", "css:finder"],
+        ["xpath=//button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a2018550-a8fa-48fd-ae8b-5d4c8ac324b9",
+      "comment": "",
+      "command": "click",
+      "target": "css=span",
+      "targets": [
+        ["css=span", "css:finder"],
+        ["xpath=//span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5521005d-25bd-4f2a-a411-7aa4c31bad3f",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=span",
+      "targets": [
+        ["css=span", "css:finder"],
+        ["xpath=//span", "xpath:position"]
+      ],
+      "value": "Seu Salário Completo é de R$1168.45 e Não Paga Imposto"
+    }]
+  }, {
+    "id": "f8d14c55-dd89-47c9-af47-75cd45630229",
+    "name": "2. valor decimal campo \"filho\"",
+    "commands": [{
+      "id": "14827dac-6242-4920-a2fc-2879208c3213",
+      "comment": "",
+      "command": "open",
+      "target": "http://127.0.0.1:5501/web/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1bc3520b-e579-4a90-a632-a6be197113ee",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "974x1032",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "487ed723-cf44-4736-90b9-6b86675ce9b7",
+      "comment": "",
+      "command": "click",
+      "target": "id=SalarioBase",
+      "targets": [
+        ["id=SalarioBase", "id"],
+        ["name=SalarioBase", "name"],
+        ["css=#SalarioBase", "css:finder"],
+        ["xpath=//input[@id='SalarioBase']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8213ebd1-059b-4626-a8cf-b4fae803258d",
+      "comment": "",
+      "command": "type",
+      "target": "id=SalarioBase",
+      "targets": [
+        ["id=SalarioBase", "id"],
+        ["name=SalarioBase", "name"],
+        ["css=#SalarioBase", "css:finder"],
+        ["xpath=//input[@id='SalarioBase']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "1200"
+    }, {
+      "id": "f9a0e708-1450-41f8-a591-0fb355dba6a8",
+      "comment": "",
+      "command": "type",
+      "target": "id=numFilhos",
+      "targets": [
+        ["id=numFilhos", "id"],
+        ["name=numFilhos", "name"],
+        ["css=#numFilhos", "css:finder"],
+        ["xpath=//input[@id='numFilhos']", "xpath:attributes"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "2.5"
+    }, {
+      "id": "3a0b89df-e974-4b3d-a445-64aa9ecc6626",
+      "comment": "",
+      "command": "click",
+      "target": "name=valeT",
+      "targets": [
+        ["name=valeT", "name"],
+        ["css=.labRadio:nth-child(13) > .radio:nth-child(1) > .radio", "css:finder"],
+        ["xpath=//input[@name='valeT']", "xpath:attributes"],
+        ["xpath=//label/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "66aa7b10-0779-49fe-8166-c91ae1f90cee",
+      "comment": "",
+      "command": "click",
+      "target": "name=tNoite",
+      "targets": [
+        ["name=tNoite", "name"],
+        ["css=.labRadio:nth-child(16) > .radio:nth-child(1) > .radio", "css:finder"],
+        ["xpath=//input[@name='tNoite']", "xpath:attributes"],
+        ["xpath=//label[4]/label/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e500f9e8-da3c-43f0-aab7-16071d3d9c8f",
+      "comment": "",
+      "command": "click",
+      "target": "css=button",
+      "targets": [
+        ["css=button", "css:finder"],
+        ["xpath=//button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6be4787c-53d8-4412-8bc7-02bce46fbf0c",
+      "comment": "",
+      "command": "click",
+      "target": "css=span",
+      "targets": [
+        ["css=span", "css:finder"],
+        ["xpath=//span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e7a74c59-c23a-48b5-a9cf-90fe7c9b9f1c",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=span",
+      "targets": [
+        ["css=span", "css:finder"],
+        ["xpath=//span", "xpath:position"]
+      ],
+      "value": "Seu Salário Completo é de R$1168 e Não Paga Imposto"
+    }]
+  }, {
+    "id": "528b84fb-fae8-4e6e-b93f-dd25370313e1",
+    "name": "3. salario com benefícios",
+    "commands": [{
+      "id": "dc5729ea-9d75-4df2-93b3-50627a83e6ab",
+      "comment": "",
+      "command": "open",
+      "target": "http://127.0.0.1:5501/web/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "8d1a85da-ceb3-4459-ae1f-149edeed21f5",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "974x1032",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "35df71a2-7443-417d-b4d1-b5b8fa3362fc",
+      "comment": "",
+      "command": "click",
+      "target": "id=SalarioBase",
+      "targets": [
+        ["id=SalarioBase", "id"],
+        ["name=SalarioBase", "name"],
+        ["css=#SalarioBase", "css:finder"],
+        ["xpath=//input[@id='SalarioBase']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b86fa2f3-f4c6-4c67-b345-f7a10b598caf",
+      "comment": "",
+      "command": "type",
+      "target": "id=SalarioBase",
+      "targets": [
+        ["id=SalarioBase", "id"],
+        ["name=SalarioBase", "name"],
+        ["css=#SalarioBase", "css:finder"],
+        ["xpath=//input[@id='SalarioBase']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "1200"
+    }, {
+      "id": "a0a48ba7-690e-4785-9900-9fa3d2044666",
+      "comment": "",
+      "command": "type",
+      "target": "id=numFilhos",
+      "targets": [
+        ["id=numFilhos", "id"],
+        ["name=numFilhos", "name"],
+        ["css=#numFilhos", "css:finder"],
+        ["xpath=//input[@id='numFilhos']", "xpath:attributes"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "2"
+    }, {
+      "id": "2e731d25-5d70-40bc-aecc-dafe48453f24",
+      "comment": "",
+      "command": "click",
+      "target": "name=valeT",
+      "targets": [
+        ["name=valeT", "name"],
+        ["css=.labRadio:nth-child(13) > .radio:nth-child(1) > .radio", "css:finder"],
+        ["xpath=//input[@name='valeT']", "xpath:attributes"],
+        ["xpath=//label/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "271023cb-1f7e-4637-88c1-98e591649923",
+      "comment": "",
+      "command": "click",
+      "target": "name=tNoite",
+      "targets": [
+        ["name=tNoite", "name"],
+        ["css=.labRadio:nth-child(16) > .radio:nth-child(1) > .radio", "css:finder"],
+        ["xpath=//input[@name='tNoite']", "xpath:attributes"],
+        ["xpath=//label[4]/label/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "95f101ec-9570-4c3d-8566-83a2604e0212",
+      "comment": "",
+      "command": "click",
+      "target": "css=button",
+      "targets": [
+        ["css=button", "css:finder"],
+        ["xpath=//button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c486d919-14ee-4b2d-83ed-0caf92cf6525",
+      "comment": "",
+      "command": "click",
+      "target": "css=span",
+      "targets": [
+        ["css=span", "css:finder"],
+        ["xpath=//span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b6c55196-5a29-456c-b69b-f74c01d3b397",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=span",
+      "targets": [
+        ["css=span", "css:finder"],
+        ["xpath=//span", "xpath:position"]
+      ],
+      "value": "Seu Salário Completo é de R$1168 e Não Paga Imposto"
+    }]
+  }, {
+    "id": "52edb45f-1835-429c-8efb-7cd51e70378b",
+    "name": "3. salario sem benefícios",
+    "commands": [{
+      "id": "8a30736c-9ebf-40e2-9613-0d4ee33865e4",
+      "comment": "",
+      "command": "open",
+      "target": "http://127.0.0.1:5501/web/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "bec5c470-f47a-4692-b0ed-940200461f4e",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "974x1032",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "50e2545f-ba86-4424-9ad7-b12265e62700",
+      "comment": "",
+      "command": "click",
+      "target": "id=SalarioBase",
+      "targets": [
+        ["id=SalarioBase", "id"],
+        ["name=SalarioBase", "name"],
+        ["css=#SalarioBase", "css:finder"],
+        ["xpath=//input[@id='SalarioBase']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "73a8da04-8aef-4b46-af16-4e9b7f1bd97e",
+      "comment": "",
+      "command": "type",
+      "target": "id=SalarioBase",
+      "targets": [
+        ["id=SalarioBase", "id"],
+        ["name=SalarioBase", "name"],
+        ["css=#SalarioBase", "css:finder"],
+        ["xpath=//input[@id='SalarioBase']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "1200"
+    }, {
+      "id": "16f4ac75-2e8b-40ea-be85-bcefe3ec1cd2",
+      "comment": "",
+      "command": "type",
+      "target": "id=numFilhos",
+      "targets": [
+        ["id=numFilhos", "id"],
+        ["name=numFilhos", "name"],
+        ["css=#numFilhos", "css:finder"],
+        ["xpath=//input[@id='numFilhos']", "xpath:attributes"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "0"
+    }, {
+      "id": "3f732547-3ac4-4913-a4b4-280b3923b204",
+      "comment": "",
+      "command": "click",
+      "target": "css=.labRadio:nth-child(13) > .radio:nth-child(2) > .radio",
+      "targets": [
+        ["css=.labRadio:nth-child(13) > .radio:nth-child(2) > .radio", "css:finder"],
+        ["xpath=(//input[@name='valeT'])[2]", "xpath:attributes"],
+        ["xpath=//label[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9beb7ec5-c629-4460-8734-e63972a90b59",
+      "comment": "",
+      "command": "click",
+      "target": "css=.labRadio:nth-child(16) > .radio:nth-child(2) > .radio",
+      "targets": [
+        ["css=.labRadio:nth-child(16) > .radio:nth-child(2) > .radio", "css:finder"],
+        ["xpath=(//input[@name='tNoite'])[2]", "xpath:attributes"],
+        ["xpath=//label[4]/label[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4de47e82-a58e-4300-ad7a-668098a3db17",
+      "comment": "",
+      "command": "click",
+      "target": "css=button",
+      "targets": [
+        ["css=button", "css:finder"],
+        ["xpath=//button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3c26df39-a994-4ad0-b4cc-aa327652c5e2",
+      "comment": "",
+      "command": "click",
+      "target": "css=span",
+      "targets": [
+        ["css=span", "css:finder"],
+        ["xpath=//span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2db55483-aa86-4b33-8b6c-e011ed07b3ce",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=span",
+      "targets": [
+        ["css=span", "css:finder"],
+        ["xpath=//span", "xpath:position"]
+      ],
+      "value": "Seu Salário Completo é de R$1044 e Não Paga Imposto"
+    }]
+  }, {
+    "id": "dd7ee955-2dcb-4be4-b21b-bd047d617808",
+    "name": "3. salario sem filhos",
+    "commands": [{
+      "id": "daf1cf87-b7c3-4d06-b4b5-e94970166385",
+      "comment": "",
+      "command": "open",
+      "target": "http://127.0.0.1:5501/web/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "585c592c-98a2-491c-a0c9-b9700c1a6e6b",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "974x1032",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1c8cd36c-8fdd-4657-9394-668dd85605af",
+      "comment": "",
+      "command": "click",
+      "target": "id=SalarioBase",
+      "targets": [
+        ["id=SalarioBase", "id"],
+        ["name=SalarioBase", "name"],
+        ["css=#SalarioBase", "css:finder"],
+        ["xpath=//input[@id='SalarioBase']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6cf4dec5-bd65-409c-a6b0-56f095da4171",
+      "comment": "",
+      "command": "type",
+      "target": "id=SalarioBase",
+      "targets": [
+        ["id=SalarioBase", "id"],
+        ["name=SalarioBase", "name"],
+        ["css=#SalarioBase", "css:finder"],
+        ["xpath=//input[@id='SalarioBase']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "1200"
+    }, {
+      "id": "b95a6251-2008-496b-940a-c722574e728f",
+      "comment": "",
+      "command": "type",
+      "target": "id=numFilhos",
+      "targets": [
+        ["id=numFilhos", "id"],
+        ["name=numFilhos", "name"],
+        ["css=#numFilhos", "css:finder"],
+        ["xpath=//input[@id='numFilhos']", "xpath:attributes"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "0"
+    }, {
+      "id": "60f937fa-114f-458f-bdfb-21461272ed65",
+      "comment": "",
+      "command": "click",
+      "target": "css=.labRadio:nth-child(13) > .radio:nth-child(1)",
+      "targets": [
+        ["css=.labRadio:nth-child(13) > .radio:nth-child(1)", "css:finder"],
+        ["xpath=//label[3]/label", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "dfbb7959-1768-42bc-ab2f-59bcab223376",
+      "comment": "",
+      "command": "click",
+      "target": "name=tNoite",
+      "targets": [
+        ["name=tNoite", "name"],
+        ["css=.labRadio:nth-child(16) > .radio:nth-child(1) > .radio", "css:finder"],
+        ["xpath=//input[@name='tNoite']", "xpath:attributes"],
+        ["xpath=//label[4]/label/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f4a70cd4-95f4-4f52-9530-4defbad26d9f",
+      "comment": "",
+      "command": "click",
+      "target": "css=button",
+      "targets": [
+        ["css=button", "css:finder"],
+        ["xpath=//button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7ed00941-33eb-43b4-b3f8-e4d6e6232b3c",
+      "comment": "",
+      "command": "click",
+      "target": "css=span",
+      "targets": [
+        ["css=span", "css:finder"],
+        ["xpath=//span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "42506f4e-aee7-41c6-9edf-2b214afaa6bd",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=span",
+      "targets": [
+        ["css=span", "css:finder"],
+        ["xpath=//span", "xpath:position"]
+      ],
+      "value": "Seu Salário Completo é de R$1068 e Não Paga Imposto"
+    }]
+  }, {
+    "id": "7f6d4bfa-1ca7-4bc7-8026-5285bdca25b9",
+    "name": "3. salario sem vale transporte",
+    "commands": [{
+      "id": "f03bc33b-cbd5-4089-b0fc-9b11d894deb8",
+      "comment": "",
+      "command": "open",
+      "target": "http://127.0.0.1:5501/web/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "0d32b086-3b88-4605-a86d-43058ad75b0c",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "974x1032",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c0787b68-d75d-4ab7-ad47-61891eeb0f23",
+      "comment": "",
+      "command": "click",
+      "target": "id=SalarioBase",
+      "targets": [
+        ["id=SalarioBase", "id"],
+        ["name=SalarioBase", "name"],
+        ["css=#SalarioBase", "css:finder"],
+        ["xpath=//input[@id='SalarioBase']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "007794e5-00b0-442f-9cc6-46fa8225872d",
+      "comment": "",
+      "command": "type",
+      "target": "id=SalarioBase",
+      "targets": [
+        ["id=SalarioBase", "id"],
+        ["name=SalarioBase", "name"],
+        ["css=#SalarioBase", "css:finder"],
+        ["xpath=//input[@id='SalarioBase']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "1200"
+    }, {
+      "id": "52c9e751-4d54-436f-b7b6-1ab2c48352d7",
+      "comment": "",
+      "command": "type",
+      "target": "id=numFilhos",
+      "targets": [
+        ["id=numFilhos", "id"],
+        ["name=numFilhos", "name"],
+        ["css=#numFilhos", "css:finder"],
+        ["xpath=//input[@id='numFilhos']", "xpath:attributes"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "2"
+    }, {
+      "id": "9fa48830-a79c-43fc-b046-aeba28727ab1",
+      "comment": "",
+      "command": "click",
+      "target": "css=.labRadio:nth-child(13) > .radio:nth-child(2) > .radio",
+      "targets": [
+        ["css=.labRadio:nth-child(13) > .radio:nth-child(2) > .radio", "css:finder"],
+        ["xpath=(//input[@name='valeT'])[2]", "xpath:attributes"],
+        ["xpath=//label[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "092fbe3f-4b26-48bd-9d59-9dfaadb02dc4",
+      "comment": "",
+      "command": "click",
+      "target": "css=.labRadio:nth-child(16) > .radio:nth-child(1)",
+      "targets": [
+        ["css=.labRadio:nth-child(16) > .radio:nth-child(1)", "css:finder"],
+        ["xpath=//label[4]/label", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d39c2009-8a38-41c3-a9c6-70e808735c84",
+      "comment": "",
+      "command": "click",
+      "target": "css=button",
+      "targets": [
+        ["css=button", "css:finder"],
+        ["xpath=//button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "81af447f-f5b5-40c3-99cc-a9d7b299197c",
+      "comment": "",
+      "command": "click",
+      "target": "css=span",
+      "targets": [
+        ["css=span", "css:finder"],
+        ["xpath=//span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7b5176c3-56fb-4d2c-92a5-b06ae22106af",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=span",
+      "targets": [
+        ["css=span", "css:finder"],
+        ["xpath=//span", "xpath:position"]
+      ],
+      "value": "Seu Salário Completo é de R$1204 e Não Paga Imposto"
+    }]
+  }, {
+    "id": "5087e0a3-8c2b-4c46-9e95-ca3a6a0b5dbf",
+    "name": "3. salario sem trabalho à noite",
+    "commands": [{
+      "id": "55156c0f-dc94-4cc5-8e4f-18ea0b1a9519",
+      "comment": "",
+      "command": "open",
+      "target": "http://127.0.0.1:5501/web/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f5aca6d3-9373-4647-bf38-3696e73a56b3",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "974x1032",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5c2064a7-841a-45b4-869d-aec588f8a7d1",
+      "comment": "",
+      "command": "click",
+      "target": "id=SalarioBase",
+      "targets": [
+        ["id=SalarioBase", "id"],
+        ["name=SalarioBase", "name"],
+        ["css=#SalarioBase", "css:finder"],
+        ["xpath=//input[@id='SalarioBase']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c638987c-7360-4bf1-ad8d-e4894aa61993",
+      "comment": "",
+      "command": "type",
+      "target": "id=SalarioBase",
+      "targets": [
+        ["id=SalarioBase", "id"],
+        ["name=SalarioBase", "name"],
+        ["css=#SalarioBase", "css:finder"],
+        ["xpath=//input[@id='SalarioBase']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "1200"
+    }, {
+      "id": "2579edbf-7877-4834-9755-bfad515d5d3b",
+      "comment": "",
+      "command": "type",
+      "target": "id=numFilhos",
+      "targets": [
+        ["id=numFilhos", "id"],
+        ["name=numFilhos", "name"],
+        ["css=#numFilhos", "css:finder"],
+        ["xpath=//input[@id='numFilhos']", "xpath:attributes"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "2"
+    }, {
+      "id": "b93b2ad5-705d-489d-bc0d-05335d51d60a",
+      "comment": "",
+      "command": "click",
+      "target": "name=valeT",
+      "targets": [
+        ["name=valeT", "name"],
+        ["css=.labRadio:nth-child(13) > .radio:nth-child(1) > .radio", "css:finder"],
+        ["xpath=//input[@name='valeT']", "xpath:attributes"],
+        ["xpath=//label/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "13132b2f-781d-48bd-9842-812f885d18ce",
+      "comment": "",
+      "command": "click",
+      "target": "css=.labRadio:nth-child(16) > .radio:nth-child(2)",
+      "targets": [
+        ["css=.labRadio:nth-child(16) > .radio:nth-child(2)", "css:finder"],
+        ["xpath=//label[4]/label[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1810fa88-d431-462f-bf22-929c5a4221de",
+      "comment": "",
+      "command": "click",
+      "target": "css=button",
+      "targets": [
+        ["css=button", "css:finder"],
+        ["xpath=//button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ad090df5-5b96-4ed5-a2f5-d66221d4eb80",
+      "comment": "",
+      "command": "click",
+      "target": "css=span",
+      "targets": [
+        ["css=span", "css:finder"],
+        ["xpath=//span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "68202806-ac29-429f-86ca-66390624dc52",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=span",
+      "targets": [
+        ["css=span", "css:finder"],
+        ["xpath=//span", "xpath:position"]
+      ],
+      "value": "Seu Salário Completo é de R$1108 e Não Paga Imposto"
+    }]
+  }, {
+    "id": "ff1af961-ac1b-4920-83e3-03d41b0f5a04",
+    "name": "4. salario até 1500",
+    "commands": [{
+      "id": "170b8c30-6737-40ae-8593-cca47b06749e",
+      "comment": "",
+      "command": "open",
+      "target": "http://127.0.0.1:5501/web/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d887148e-f558-4f72-ab2e-9efc43406fca",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "974x1032",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c3b1ed87-31b4-411a-98c2-488d473cec28",
+      "comment": "",
+      "command": "click",
+      "target": "id=SalarioBase",
+      "targets": [
+        ["id=SalarioBase", "id"],
+        ["name=SalarioBase", "name"],
+        ["css=#SalarioBase", "css:finder"],
+        ["xpath=//input[@id='SalarioBase']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1667bcce-a5b9-455e-a6ee-f751c07aa6da",
+      "comment": "",
+      "command": "type",
+      "target": "id=SalarioBase",
+      "targets": [
+        ["id=SalarioBase", "id"],
+        ["name=SalarioBase", "name"],
+        ["css=#SalarioBase", "css:finder"],
+        ["xpath=//input[@id='SalarioBase']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "1500"
+    }, {
+      "id": "24ddc87f-8e34-457e-ba2d-394db2de6a72",
+      "comment": "",
+      "command": "type",
+      "target": "id=numFilhos",
+      "targets": [
+        ["id=numFilhos", "id"],
+        ["name=numFilhos", "name"],
+        ["css=#numFilhos", "css:finder"],
+        ["xpath=//input[@id='numFilhos']", "xpath:attributes"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "2"
+    }, {
+      "id": "a1cf51b7-8889-4233-b5cc-7d9d8e8459df",
+      "comment": "",
+      "command": "click",
+      "target": "name=valeT",
+      "targets": [
+        ["name=valeT", "name"],
+        ["css=.labRadio:nth-child(13) > .radio:nth-child(1) > .radio", "css:finder"],
+        ["xpath=//input[@name='valeT']", "xpath:attributes"],
+        ["xpath=//label/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ea02f798-139c-40ae-acdc-2b55fa8fb2b6",
+      "comment": "",
+      "command": "click",
+      "target": "name=tNoite",
+      "targets": [
+        ["name=tNoite", "name"],
+        ["css=.labRadio:nth-child(16) > .radio:nth-child(1) > .radio", "css:finder"],
+        ["xpath=//input[@name='tNoite']", "xpath:attributes"],
+        ["xpath=//label[4]/label/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "da5b8b72-84dc-4029-a64b-dab15a866035",
+      "comment": "",
+      "command": "click",
+      "target": "css=button",
+      "targets": [
+        ["css=button", "css:finder"],
+        ["xpath=//button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "85374c4e-1053-4a86-9878-c20fdee66f40",
+      "comment": "",
+      "command": "click",
+      "target": "css=span",
+      "targets": [
+        ["css=span", "css:finder"],
+        ["xpath=//span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b8bcc5b5-3acf-4e79-8875-b68d89c5e9d7",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=span",
+      "targets": [
+        ["css=span", "css:finder"],
+        ["xpath=//span", "xpath:position"]
+      ],
+      "value": "Seu Salário Completo é de R$1435 e Não Paga Imposto"
+    }]
+  }, {
+    "id": "bd8047da-68a7-4e19-9977-b758f8d645a4",
+    "name": "4. salario maior que 1500 e até 2500",
+    "commands": [{
+      "id": "4f0973f1-b425-4172-a41d-3d880c25e474",
+      "comment": "",
+      "command": "open",
+      "target": "http://127.0.0.1:5501/web/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "de6ef42c-6d12-4792-bcde-cbbcee9bae57",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "974x1032",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "fd68e523-fb6f-43a2-84ba-906e2e361b73",
+      "comment": "",
+      "command": "click",
+      "target": "id=SalarioBase",
+      "targets": [
+        ["id=SalarioBase", "id"],
+        ["name=SalarioBase", "name"],
+        ["css=#SalarioBase", "css:finder"],
+        ["xpath=//input[@id='SalarioBase']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "923f98f0-e631-43e5-a9ef-1abaaab2fc16",
+      "comment": "",
+      "command": "type",
+      "target": "id=SalarioBase",
+      "targets": [
+        ["id=SalarioBase", "id"],
+        ["name=SalarioBase", "name"],
+        ["css=#SalarioBase", "css:finder"],
+        ["xpath=//input[@id='SalarioBase']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "2500"
+    }, {
+      "id": "1922978a-00de-458d-9f46-8ca346c3ecf7",
+      "comment": "",
+      "command": "type",
+      "target": "id=numFilhos",
+      "targets": [
+        ["id=numFilhos", "id"],
+        ["name=numFilhos", "name"],
+        ["css=#numFilhos", "css:finder"],
+        ["xpath=//input[@id='numFilhos']", "xpath:attributes"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "2"
+    }, {
+      "id": "6003ce2b-becc-487f-8611-0d08c570df86",
+      "comment": "",
+      "command": "click",
+      "target": "name=valeT",
+      "targets": [
+        ["name=valeT", "name"],
+        ["css=.labRadio:nth-child(13) > .radio:nth-child(1) > .radio", "css:finder"],
+        ["xpath=//input[@name='valeT']", "xpath:attributes"],
+        ["xpath=//label/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c9647d79-cd92-49ce-a888-57dbc7b8a5b2",
+      "comment": "",
+      "command": "click",
+      "target": "name=tNoite",
+      "targets": [
+        ["name=tNoite", "name"],
+        ["css=.labRadio:nth-child(16) > .radio:nth-child(1) > .radio", "css:finder"],
+        ["xpath=//input[@name='tNoite']", "xpath:attributes"],
+        ["xpath=//label[4]/label/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b6471800-bbb8-465c-b1e0-1a01f6127a0d",
+      "comment": "",
+      "command": "click",
+      "target": "css=button",
+      "targets": [
+        ["css=button", "css:finder"],
+        ["xpath=//button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0573460f-69bc-4939-bfd3-f1b76876b531",
+      "comment": "",
+      "command": "click",
+      "target": "css=span",
+      "targets": [
+        ["css=span", "css:finder"],
+        ["xpath=//span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1c01779b-0692-4046-b56c-2245d75ba519",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=span",
+      "targets": [
+        ["css=span", "css:finder"],
+        ["xpath=//span", "xpath:position"]
+      ],
+      "value": "Seu Salário Completo é de R$2325 e Seu imposto de renda é de 8%, logo, Você pagará 186 do seu salário."
+    }]
+  }, {
+    "id": "87e6c16e-8c52-4436-8620-e2b0304f61ed",
+    "name": "4. salario maior que 2500 e até 4200",
+    "commands": [{
+      "id": "45fc38a4-bfa7-4522-aa1d-442371e8c07e",
+      "comment": "",
+      "command": "open",
+      "target": "http://127.0.0.1:5501/web/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ba70bb65-fc8c-4988-87ab-97060f122e97",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "974x1032",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e2723f54-7867-4c1e-8634-7a8bc589cb83",
+      "comment": "",
+      "command": "click",
+      "target": "id=SalarioBase",
+      "targets": [
+        ["id=SalarioBase", "id"],
+        ["name=SalarioBase", "name"],
+        ["css=#SalarioBase", "css:finder"],
+        ["xpath=//input[@id='SalarioBase']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "34c04c34-3f0a-44d4-952d-1e5d1ef9d39c",
+      "comment": "",
+      "command": "type",
+      "target": "id=SalarioBase",
+      "targets": [
+        ["id=SalarioBase", "id"],
+        ["name=SalarioBase", "name"],
+        ["css=#SalarioBase", "css:finder"],
+        ["xpath=//input[@id='SalarioBase']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "4200"
+    }, {
+      "id": "c98a5fca-a9dc-44ec-83d7-ca567d21f859",
+      "comment": "",
+      "command": "type",
+      "target": "id=numFilhos",
+      "targets": [
+        ["id=numFilhos", "id"],
+        ["name=numFilhos", "name"],
+        ["css=#numFilhos", "css:finder"],
+        ["xpath=//input[@id='numFilhos']", "xpath:attributes"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "2"
+    }, {
+      "id": "5fafa539-7f5d-4007-8858-90130383a22b",
+      "comment": "",
+      "command": "click",
+      "target": "name=valeT",
+      "targets": [
+        ["name=valeT", "name"],
+        ["css=.labRadio:nth-child(13) > .radio:nth-child(1) > .radio", "css:finder"],
+        ["xpath=//input[@name='valeT']", "xpath:attributes"],
+        ["xpath=//label/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c47f2598-3c30-412b-8541-5f168f1ae53a",
+      "comment": "",
+      "command": "click",
+      "target": "name=tNoite",
+      "targets": [
+        ["name=tNoite", "name"],
+        ["css=.labRadio:nth-child(16) > .radio:nth-child(1) > .radio", "css:finder"],
+        ["xpath=//input[@name='tNoite']", "xpath:attributes"],
+        ["xpath=//label[4]/label/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6a730b06-2693-4e80-907c-f704cab0eb0a",
+      "comment": "",
+      "command": "click",
+      "target": "css=button",
+      "targets": [
+        ["css=button", "css:finder"],
+        ["xpath=//button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d2f245b5-7378-4d92-9e83-486005b1819c",
+      "comment": "",
+      "command": "click",
+      "target": "css=span",
+      "targets": [
+        ["css=span", "css:finder"],
+        ["xpath=//span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4f5bbae8-ce07-4714-8bff-d0ed61c9c75b",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=span",
+      "targets": [
+        ["css=span", "css:finder"],
+        ["xpath=//span", "xpath:position"]
+      ],
+      "value": "Seu Salário Completo é de R$3838 e Seu imposto de renda é de 15%, logo, Você pagará 575.7 do seu salário."
+    }]
+  }, {
+    "id": "49b65b31-18ea-48fa-aba3-7db9711580c3",
+    "name": "4. salario maior que 4200",
+    "commands": [{
+      "id": "f1862274-b8a1-4a29-8dee-6de04c189cb8",
+      "comment": "",
+      "command": "open",
+      "target": "http://127.0.0.1:5501/web/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3219c835-e3e4-45fa-89e1-336b5ea12bf3",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "974x1032",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ab6830ac-46ae-4351-827c-ef63976243b9",
+      "comment": "",
+      "command": "click",
+      "target": "id=SalarioBase",
+      "targets": [
+        ["id=SalarioBase", "id"],
+        ["name=SalarioBase", "name"],
+        ["css=#SalarioBase", "css:finder"],
+        ["xpath=//input[@id='SalarioBase']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e1d4474c-7434-4d25-9e98-db558655145a",
+      "comment": "",
+      "command": "type",
+      "target": "id=SalarioBase",
+      "targets": [
+        ["id=SalarioBase", "id"],
+        ["name=SalarioBase", "name"],
+        ["css=#SalarioBase", "css:finder"],
+        ["xpath=//input[@id='SalarioBase']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "6000"
+    }, {
+      "id": "7808b1a2-9adb-4cf9-9e40-5e474e8f8dd4",
+      "comment": "",
+      "command": "type",
+      "target": "id=numFilhos",
+      "targets": [
+        ["id=numFilhos", "id"],
+        ["name=numFilhos", "name"],
+        ["css=#numFilhos", "css:finder"],
+        ["xpath=//input[@id='numFilhos']", "xpath:attributes"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "2"
+    }, {
+      "id": "da080bd8-e7ca-4567-94c9-c0001b4610b9",
+      "comment": "",
+      "command": "click",
+      "target": "name=valeT",
+      "targets": [
+        ["name=valeT", "name"],
+        ["css=.labRadio:nth-child(13) > .radio:nth-child(1) > .radio", "css:finder"],
+        ["xpath=//input[@name='valeT']", "xpath:attributes"],
+        ["xpath=//label/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6eb056a5-af1a-42c1-a0bf-e7a7611bb5d6",
+      "comment": "",
+      "command": "click",
+      "target": "name=tNoite",
+      "targets": [
+        ["name=tNoite", "name"],
+        ["css=.labRadio:nth-child(16) > .radio:nth-child(1) > .radio", "css:finder"],
+        ["xpath=//input[@name='tNoite']", "xpath:attributes"],
+        ["xpath=//label[4]/label/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "10c545c8-be18-47c9-b6ee-34a1ceed12b8",
+      "comment": "",
+      "command": "click",
+      "target": "css=button",
+      "targets": [
+        ["css=button", "css:finder"],
+        ["xpath=//button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b6973a1f-998a-4b1d-bd6f-62be9922dadd",
+      "comment": "",
+      "command": "click",
+      "target": "css=span",
+      "targets": [
+        ["css=span", "css:finder"],
+        ["xpath=//span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e5ac714a-b238-4137-a91c-845ed82e767d",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=span",
+      "targets": [
+        ["css=span", "css:finder"],
+        ["xpath=//span", "xpath:position"]
+      ],
+      "value": "Seu Salário Completo é de R$5440 e Seu imposto de renda é de 27%, logo, Você pagará 1468.8 do seu salário."
+    }]
+  }],
+  "suites": [{
+    "id": "0d97f6dd-5443-4d97-8cfb-3a2491bec604",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": []
+  }],
+  "urls": ["http://127.0.0.1:5501/", "http://127.0.0.1:5501/web/"],
+  "plugins": []
+}

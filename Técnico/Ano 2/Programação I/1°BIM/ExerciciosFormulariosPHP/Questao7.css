@@ -1,0 +1,26 @@
+
+form {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    background-image: linear-gradient(rgb(106, 149, 77),rgb(0, 119, 75));
+    color: rgb(255, 255, 255);
+    border-width: 10px;
+    border-style: ridge;
+    border-radius: 1cm 2cm;
+    border-color: rgb(11, 11, 44);
+
+    height: 170px;
+    width: 280px;
+
+    
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+

@@ -1,0 +1,132 @@
+* {
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#formulario {
+    margin-top: 1%;
+}
+
+#menuH ul {
+    list-style-type: none;
+    padding: 0;
+    background-color: #B31212;
+    user-select: none;
+    width: 100%;
+    text-align: center;
+    margin-top: 0%;
+    border-bottom: solid 1px white;
+}
+
+#menuH ul li {
+    display: inline;
+}
+
+#menuH ul li a {
+    color: rgb(255, 255, 255);
+    display: inline-block;
+    padding: 17px;
+    text-decoration: none;
+    transition: background .6s;
+    font-size: 100%;
+}
+
+#menuH ul li a:hover {
+    background-color: #FF0000;
+}
+
+.textoMenu {
+    margin-left: 4%;
+    margin-right: 4%;
+}
+
+body {
+    background-image: linear-gradient(90deg, #B31212, #19A6FF);
+    font-family: 'Times New Roman', Times, serif;
+}
+
+h2 {
+    text-decoration: underline;
+    text-align: center;
+    color: #0971B3;
+    margin-bottom: 20px;
+}
+
+form {
+    box-shadow: 3px 2px 50px;
+    border-color: #0971B3;
+    border-style: inset;
+    border-width: 4px;
+
+    width: 400px;
+    height: 460px;
+
+    position: fixed;
+    top: 48%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    border-radius: 2%;
+    background-color: white;
+
+    text-align: left;
+}
+
+input {
+    display: flex;
+    justify-content: center;
+
+    position: relative;
+    margin: 10px;
+    left: 19%;
+
+    position: relative;
+    border-radius: 0.1cm;
+    border-style: inset;
+    border-width: 1px;
+    border-color: white;
+
+    height: 28px;
+    width: 200px;
+}
+
+.labelText {
+    position: relative;
+    left: 23%;
+}
+
+#inputSubmit, #inputReset {
+    transition: background 500ms linear;
+}
+
+#inputSubmit:hover, #inputReset:hover {
+    background-color: #FFFC19;
+    transition: background 500ms linear;
+}
+
+#rodape ul {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    list-style-type: none;
+    padding: 5px;
+    background-color: #B31212;
+    user-select: none;
+    text-align: center;
+    border-top: solid 1px white;
+}
+
+#rodape ul li {
+    display: inline;
+    color: white;
+}
+
+#texto3 {
+    font-size: 11px;
+}
+
+.rodapeTexto {
+    font-size: 14px;
+    margin-bottom: 10px;
+}

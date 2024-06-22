@@ -1,0 +1,15 @@
+#menu
+{
+background-color: teal;
+margin: 2px;
+padding: 5px;
+}
+
+.item
+{
+margin: 5px;
+padding: 15px;
+background-color: wheat;
+display: inline-block;
+border-radius: 5px;
+}

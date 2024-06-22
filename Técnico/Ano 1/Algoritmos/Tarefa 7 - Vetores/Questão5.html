@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questão5</title>
+    <script>
+        /*5. Faça um algoritmo que leia um vetor K[10] e um vetor N[10]. 
+        A seguir, crie um vetor M que seja a diferença entre o vetor K e N (M[i] = K[i] – N[i]). 
+        Mostre a seguir o vetor M.*/
+
+        var K = [];
+        M = [];
+        N = [];
+
+        for (let I = 0; I < 10; I++) {
+            N[I] = Number(prompt("Insira algum numero"));
+            K[I] = Number(prompt("Insira algum numero"));
+        }
+
+        for (let I = 0; I < 10; I++) {
+            (M[I] = K[I] - N[I]);
+        }
+        document.write("<b>Resultado: </b>", M);
+    </script>
+</head>
+
+<body>
+</body>
+
+</html>

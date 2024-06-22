@@ -1,0 +1,100 @@
+body {
+    background-image: linear-gradient(45deg, #1F8794, #ADF3FF);
+}
+
+@font-face {
+    font-family: merriweatherlight;
+    src: url(fonts/merriweatherlight.ttf);
+}
+
+@font-face {
+    font-family: merriweatheritalic;
+    src: url(fonts/merriweatheritalic.ttf);
+}
+
+.container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+
+    min-width: 320px;
+    max-width: 800px;
+    padding: 40px;
+    border-radius: 10px;
+    border: 5px none;
+    border-color: #632A50;
+    border-color: #2a0b20;
+
+    background-color: #FFFFFF;
+    color: #000000;
+
+    font-family: merriweatherlight;
+    font-weight: bold;
+    box-shadow: 5px 5px 5px 5px;
+}
+
+h2 {
+    color: #250539;
+    font-family: merriweatheritalic;
+}
+
+
+span{
+    text-align: center;
+    font-family: merriweatheritalic;
+    background-image: linear-gradient(45deg, #D70044, #250539);
+    color: aliceblue;
+    padding: 40px;
+    max-height: 70px;
+    max-width: 338px;
+}
+
+.radio,
+.labRadio {
+    display: flex;
+    justify-content: space-around;
+}
+
+.campo {
+    height: 30px;
+    font-weight: bold;
+    font-family: sans-serif;
+    border-color: #bf64a1;
+    background-color: #FFFFFF;
+    color: #250539;
+}
+
+.campo:focus {
+    background-color: #A00241;
+    transition: 0.2s;
+}
+
+.campo,
+button {
+    border-radius: 0.2cm;
+}
+
+button,
+.campo:focus {
+    color: aliceblue;
+}
+
+button {
+    height: 35px;
+    border: none;
+    font-family: merriweatheritalic;
+    text-transform: uppercase;
+    background-image: linear-gradient(45deg, #D70044, #250539);
+}
+
+button,
+button:hover {
+    transition: 1s;
+}
+
+button:hover {
+    border-radius: 0.75cm;
+}

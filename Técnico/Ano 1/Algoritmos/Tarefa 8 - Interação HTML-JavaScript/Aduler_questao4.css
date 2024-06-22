@@ -1,0 +1,46 @@
+#conteiner {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    border-width: 2px;
+    border-color: gray;
+    border-style: inset;
+    width: 500px;
+    height: 200px;
+}
+
+#divButton,
+#divReset {
+
+    width: 140px;
+    border-radius: 10px;
+
+    border-width: 2px;
+    border-color: gray;
+    border-style: solid;
+    text-align: center;
+
+    background-color: rgb(195, 192, 192);
+
+}
+
+#button {
+    position: relative;
+    top: 22%;
+    height: 60px;
+    font-size: x-large;
+}
+
+#reset {
+    position: relative;
+    top: 22%;
+    height: 30px;
+    font-size: 15px;
+
+}

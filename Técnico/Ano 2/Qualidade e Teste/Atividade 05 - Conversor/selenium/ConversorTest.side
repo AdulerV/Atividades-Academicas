@@ -1,0 +1,2853 @@
+{
+  "id": "f91cf6ac-6a28-4a6c-a884-dd2e2dca6057",
+  "version": "2.0",
+  "name": "ConversorTest",
+  "url": "http://127.0.0.1:5500/web/",
+  "tests": [{
+    "id": "37902bf6-2786-411d-a48e-bc6cfd283360",
+    "name": "campos em branco",
+    "commands": [{
+      "id": "def1a4ce-46ee-4795-aff0-27429fdb1afe",
+      "comment": "",
+      "command": "open",
+      "target": "http://127.0.0.1:5500/web/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f7fe0063-df3b-4839-b17b-16cbda142f39",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "974x1032",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "05d79627-8276-4d2b-95cf-ddb654c0f324",
+      "comment": "",
+      "command": "click",
+      "target": "css=button",
+      "targets": [
+        ["css=button", "css:finder"],
+        ["xpath=//button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9038646e-c5cc-42f0-8946-d9e59686c50d",
+      "comment": "",
+      "command": "click",
+      "target": "css=span",
+      "targets": [
+        ["css=span", "css:finder"],
+        ["xpath=//span", "xpath:position"],
+        ["xpath=//span[contains(.,'Informe Valores Corretos')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "a9a1b59c-9c34-411f-b472-bf162cdbb599",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=span",
+      "targets": [
+        ["css=span", "css:finder"],
+        ["xpath=//span", "xpath:position"],
+        ["xpath=//span[contains(.,'Informe Valores Corretos')]", "xpath:innerText"]
+      ],
+      "value": "Informe Valores Corretos"
+    }]
+  }, {
+    "id": "b7a530f6-1cef-4e75-9c12-7ca6d8c281b0",
+    "name": "celsius em kelvin (valor natural)",
+    "commands": [{
+      "id": "5441bcdc-36b2-46cc-87ec-a7fbe02192cf",
+      "comment": "",
+      "command": "open",
+      "target": "http://127.0.0.1:5500/web/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d0b304a3-59e4-4055-bebc-0c606d7d8ada",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "974x1032",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "614639a8-4906-4025-9c47-095e8cdaf916",
+      "comment": "",
+      "command": "click",
+      "target": "id=celcius",
+      "targets": [
+        ["id=celcius", "id"],
+        ["css=#celcius", "css:finder"],
+        ["xpath=//input[@id='celcius']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4e566215-90d6-4c0e-b32f-4551102c19d9",
+      "comment": "",
+      "command": "type",
+      "target": "id=celcius",
+      "targets": [
+        ["id=celcius", "id"],
+        ["css=#celcius", "css:finder"],
+        ["xpath=//input[@id='celcius']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "25"
+    }, {
+      "id": "c5537b10-544c-4692-a846-a05bece48efb",
+      "comment": "",
+      "command": "type",
+      "target": "id=kelvin",
+      "targets": [
+        ["id=kelvin", "id"],
+        ["css=#kelvin", "css:finder"],
+        ["xpath=//input[@id='kelvin']", "xpath:attributes"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "0"
+    }, {
+      "id": "a0ce886e-76df-4610-be97-2c14622fd3d9",
+      "comment": "",
+      "command": "type",
+      "target": "id=fahrenheit",
+      "targets": [
+        ["id=fahrenheit", "id"],
+        ["css=#fahrenheit", "css:finder"],
+        ["xpath=//input[@id='fahrenheit']", "xpath:attributes"],
+        ["xpath=//input[3]", "xpath:position"]
+      ],
+      "value": "0"
+    }, {
+      "id": "6ba19de1-d3e3-4b69-a2b5-46b44d64a4ad",
+      "comment": "",
+      "command": "click",
+      "target": "css=button",
+      "targets": [
+        ["css=button", "css:finder"],
+        ["xpath=//button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a39d8f7f-4328-4ffb-a718-12e015e50096",
+      "comment": "",
+      "command": "click",
+      "target": "css=li:nth-child(2)",
+      "targets": [
+        ["css=li:nth-child(2)", "css:finder"],
+        ["xpath=//li[2]", "xpath:position"],
+        ["xpath=//li[contains(.,'Celsius para Kelvin: 298.15')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "4ca03e53-e939-4d02-88de-0c32219479a6",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=li:nth-child(2)",
+      "targets": [
+        ["css=li:nth-child(2)", "css:finder"],
+        ["xpath=//li[2]", "xpath:position"],
+        ["xpath=//li[contains(.,'Celsius para Kelvin: 298.15')]", "xpath:innerText"]
+      ],
+      "value": "Celsius para Kelvin: 298.15"
+    }]
+  }, {
+    "id": "8233df5a-0f59-4857-a142-cc46e0d6da4d",
+    "name": "celsius em kelvin (valor negativo)",
+    "commands": [{
+      "id": "483c63ee-adb0-4e75-bf12-7251cb589983",
+      "comment": "",
+      "command": "open",
+      "target": "http://127.0.0.1:5500/web/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6c25daf7-8710-49cd-96fc-d82029a6c6ad",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "974x1032",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "158ea492-0470-4c64-83d7-26862b9fdeb7",
+      "comment": "",
+      "command": "click",
+      "target": "id=celcius",
+      "targets": [
+        ["id=celcius", "id"],
+        ["css=#celcius", "css:finder"],
+        ["xpath=//input[@id='celcius']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f78bc52e-f278-4c24-aa9c-48b67c7ef0d2",
+      "comment": "",
+      "command": "type",
+      "target": "id=celcius",
+      "targets": [
+        ["id=celcius", "id"],
+        ["css=#celcius", "css:finder"],
+        ["xpath=//input[@id='celcius']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "-40"
+    }, {
+      "id": "b5c577ee-6f05-4345-8dac-e5258e036f9d",
+      "comment": "",
+      "command": "type",
+      "target": "id=kelvin",
+      "targets": [
+        ["id=kelvin", "id"],
+        ["css=#kelvin", "css:finder"],
+        ["xpath=//input[@id='kelvin']", "xpath:attributes"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "0"
+    }, {
+      "id": "868ae884-4f6d-4fc7-b908-290073267b1b",
+      "comment": "",
+      "command": "type",
+      "target": "id=fahrenheit",
+      "targets": [
+        ["id=fahrenheit", "id"],
+        ["css=#fahrenheit", "css:finder"],
+        ["xpath=//input[@id='fahrenheit']", "xpath:attributes"],
+        ["xpath=//input[3]", "xpath:position"]
+      ],
+      "value": "0"
+    }, {
+      "id": "fe28342f-307f-4241-96c1-57024f0762fc",
+      "comment": "",
+      "command": "click",
+      "target": "css=button",
+      "targets": [
+        ["css=button", "css:finder"],
+        ["xpath=//button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "975f5a33-85c2-4661-8e83-57cde10ebae3",
+      "comment": "",
+      "command": "click",
+      "target": "css=li:nth-child(2)",
+      "targets": [
+        ["css=li:nth-child(2)", "css:finder"],
+        ["xpath=//li[2]", "xpath:position"],
+        ["xpath=//li[contains(.,'Celsius para Kelvin: 233.15')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "8f6a8976-52fc-4447-96e0-7f04607e6d08",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=li:nth-child(2)",
+      "targets": [
+        ["css=li:nth-child(2)", "css:finder"],
+        ["xpath=//li[2]", "xpath:position"],
+        ["xpath=//li[contains(.,'Celsius para Kelvin: 233.15')]", "xpath:innerText"]
+      ],
+      "value": "Celsius para Kelvin: 233.15"
+    }]
+  }, {
+    "id": "46232dd2-bb02-4b57-8a75-a121bc06c9ff",
+    "name": "celsius (valor string)",
+    "commands": [{
+      "id": "f80b8523-0f49-42cd-98fa-4f37be910aa9",
+      "comment": "",
+      "command": "open",
+      "target": "http://127.0.0.1:5500/web/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "33594e15-8d84-4c29-91bd-26cb3c37f8fa",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "974x1032",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f4bf49f2-8133-49cf-84bc-74df278d9b53",
+      "comment": "",
+      "command": "click",
+      "target": "id=celcius",
+      "targets": [
+        ["id=celcius", "id"],
+        ["css=#celcius", "css:finder"],
+        ["xpath=//input[@id='celcius']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "23db9290-90cb-4f03-824e-7f08c368b4fe",
+      "comment": "",
+      "command": "type",
+      "target": "id=celcius",
+      "targets": [
+        ["id=celcius", "id"],
+        ["css=#celcius", "css:finder"],
+        ["xpath=//input[@id='celcius']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "a"
+    }, {
+      "id": "a3972b39-d17c-4a35-9a53-e780c81eb6da",
+      "comment": "",
+      "command": "type",
+      "target": "id=kelvin",
+      "targets": [
+        ["id=kelvin", "id"],
+        ["css=#kelvin", "css:finder"],
+        ["xpath=//input[@id='kelvin']", "xpath:attributes"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "0"
+    }, {
+      "id": "5b39c13e-f633-4323-853d-57f0573497ce",
+      "comment": "",
+      "command": "type",
+      "target": "id=fahrenheit",
+      "targets": [
+        ["id=fahrenheit", "id"],
+        ["css=#fahrenheit", "css:finder"],
+        ["xpath=//input[@id='fahrenheit']", "xpath:attributes"],
+        ["xpath=//input[3]", "xpath:position"]
+      ],
+      "value": "0"
+    }, {
+      "id": "c6a764e0-5460-4757-a3df-7cff13224787",
+      "comment": "",
+      "command": "click",
+      "target": "css=button",
+      "targets": [
+        ["css=button", "css:finder"],
+        ["xpath=//button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5aec5344-117d-4b1e-892a-73005a499781",
+      "comment": "",
+      "command": "click",
+      "target": "css=span",
+      "targets": [
+        ["css=span", "css:finder"],
+        ["xpath=//span", "xpath:position"],
+        ["xpath=//span[contains(.,'Informe Valores Corretos')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "42916214-da18-4ee7-b76b-09a9cdc78d68",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=span",
+      "targets": [
+        ["css=span", "css:finder"],
+        ["xpath=//span", "xpath:position"],
+        ["xpath=//span[contains(.,'Informe Valores Corretos')]", "xpath:innerText"]
+      ],
+      "value": "Informe Valores Corretos"
+    }]
+  }, {
+    "id": "f043d95b-cad7-402c-92b0-7bf4c3843098",
+    "name": "celsius em kelvin (valor decimal)",
+    "commands": [{
+      "id": "33c8ff39-987b-4208-976c-0c9610556a79",
+      "comment": "",
+      "command": "open",
+      "target": "http://127.0.0.1:5500/web/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "abf6f842-b86a-4b87-b919-0ec0774fb799",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "974x1032",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7d0a360e-1a25-4662-921f-b734934d21ff",
+      "comment": "",
+      "command": "click",
+      "target": "id=celcius",
+      "targets": [
+        ["id=celcius", "id"],
+        ["css=#celcius", "css:finder"],
+        ["xpath=//input[@id='celcius']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f37d4f53-2794-457e-9430-c4fbe4cfc8a8",
+      "comment": "",
+      "command": "type",
+      "target": "id=celcius",
+      "targets": [
+        ["id=celcius", "id"],
+        ["css=#celcius", "css:finder"],
+        ["xpath=//input[@id='celcius']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "25.5"
+    }, {
+      "id": "f80a35b3-70ea-4a01-84d3-8b2904aff722",
+      "comment": "",
+      "command": "click",
+      "target": "id=kelvin",
+      "targets": [
+        ["id=kelvin", "id"],
+        ["css=#kelvin", "css:finder"],
+        ["xpath=//input[@id='kelvin']", "xpath:attributes"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "eed61ea7-cd60-498f-b2cc-2357dd075777",
+      "comment": "",
+      "command": "type",
+      "target": "id=kelvin",
+      "targets": [
+        ["id=kelvin", "id"],
+        ["css=#kelvin", "css:finder"],
+        ["xpath=//input[@id='kelvin']", "xpath:attributes"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "0"
+    }, {
+      "id": "a0b996ff-1ad7-453c-87aa-37ae2833a064",
+      "comment": "",
+      "command": "type",
+      "target": "id=fahrenheit",
+      "targets": [
+        ["id=fahrenheit", "id"],
+        ["css=#fahrenheit", "css:finder"],
+        ["xpath=//input[@id='fahrenheit']", "xpath:attributes"],
+        ["xpath=//input[3]", "xpath:position"]
+      ],
+      "value": "0"
+    }, {
+      "id": "b9ff1836-53bf-4662-bd1f-1649901b7ba0",
+      "comment": "",
+      "command": "click",
+      "target": "css=button",
+      "targets": [
+        ["css=button", "css:finder"],
+        ["xpath=//button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d66cc566-245b-437f-a724-2d6e2a8b5fbb",
+      "comment": "",
+      "command": "click",
+      "target": "css=li:nth-child(2)",
+      "targets": [
+        ["css=li:nth-child(2)", "css:finder"],
+        ["xpath=//li[2]", "xpath:position"],
+        ["xpath=//li[contains(.,'Celsius para Kelvin: 298.65')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "591f42ae-f690-4516-843f-efd57d9c960f",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=li:nth-child(2)",
+      "targets": [
+        ["css=li:nth-child(2)", "css:finder"],
+        ["xpath=//li[2]", "xpath:position"],
+        ["xpath=//li[contains(.,'Celsius para Kelvin: 298.65')]", "xpath:innerText"]
+      ],
+      "value": "Celsius para Kelvin: 298.65"
+    }]
+  }, {
+    "id": "9cd7b101-fe98-4993-901e-a4c1986df211",
+    "name": "celsius em kelvin (valor = 0)",
+    "commands": [{
+      "id": "051b7195-01b7-4cc2-b3b9-649826d4415b",
+      "comment": "",
+      "command": "open",
+      "target": "http://127.0.0.1:5500/web/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "641f388e-6049-489a-82cc-7e2ab0b107b5",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "974x1032",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e569bcf5-66ff-4e54-bc77-b9c0bb3ef761",
+      "comment": "",
+      "command": "click",
+      "target": "id=celcius",
+      "targets": [
+        ["id=celcius", "id"],
+        ["css=#celcius", "css:finder"],
+        ["xpath=//input[@id='celcius']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "dc7d0ba5-2409-440d-8f8f-0bfe0ba7e5ac",
+      "comment": "",
+      "command": "type",
+      "target": "id=celcius",
+      "targets": [
+        ["id=celcius", "id"],
+        ["css=#celcius", "css:finder"],
+        ["xpath=//input[@id='celcius']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "0"
+    }, {
+      "id": "567c3684-56ff-4c7c-9d41-9f443426314f",
+      "comment": "",
+      "command": "type",
+      "target": "id=kelvin",
+      "targets": [
+        ["id=kelvin", "id"],
+        ["css=#kelvin", "css:finder"],
+        ["xpath=//input[@id='kelvin']", "xpath:attributes"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "0"
+    }, {
+      "id": "eb6048ae-a415-4c3f-ad9e-12c2466ce6ac",
+      "comment": "",
+      "command": "type",
+      "target": "id=fahrenheit",
+      "targets": [
+        ["id=fahrenheit", "id"],
+        ["css=#fahrenheit", "css:finder"],
+        ["xpath=//input[@id='fahrenheit']", "xpath:attributes"],
+        ["xpath=//input[3]", "xpath:position"]
+      ],
+      "value": "0"
+    }, {
+      "id": "14caaa27-0baf-4ceb-a714-b06ed7024cb9",
+      "comment": "",
+      "command": "click",
+      "target": "css=button",
+      "targets": [
+        ["css=button", "css:finder"],
+        ["xpath=//button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0f054af4-ae47-498c-b15e-9add3d17aacb",
+      "comment": "",
+      "command": "click",
+      "target": "css=li:nth-child(2)",
+      "targets": [
+        ["css=li:nth-child(2)", "css:finder"],
+        ["xpath=//li[2]", "xpath:position"],
+        ["xpath=//li[contains(.,'Celsius para Kelvin: 273.15')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "752b290b-bb42-4e7b-95e7-7299aee6d1dc",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=li:nth-child(2)",
+      "targets": [
+        ["css=li:nth-child(2)", "css:finder"],
+        ["xpath=//li[2]", "xpath:position"],
+        ["xpath=//li[contains(.,'Celsius para Kelvin: 273.15')]", "xpath:innerText"]
+      ],
+      "value": "Celsius para Kelvin: 273.15"
+    }]
+  }, {
+    "id": "a04a7d64-6031-4cd3-aabe-4e22992dab09",
+    "name": "celsius em fahrenheit (valor natural)",
+    "commands": [{
+      "id": "b7e39feb-c67f-4025-ab81-6c2dc3440c6b",
+      "comment": "",
+      "command": "open",
+      "target": "http://127.0.0.1:5500/web/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "bfe765f4-8278-48b3-be61-05264dc23951",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "974x1032",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "042154dd-a807-4307-8a67-164c06322914",
+      "comment": "",
+      "command": "click",
+      "target": "id=celcius",
+      "targets": [
+        ["id=celcius", "id"],
+        ["css=#celcius", "css:finder"],
+        ["xpath=//input[@id='celcius']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "723214c4-affe-4745-a864-71132a6da649",
+      "comment": "",
+      "command": "type",
+      "target": "id=celcius",
+      "targets": [
+        ["id=celcius", "id"],
+        ["css=#celcius", "css:finder"],
+        ["xpath=//input[@id='celcius']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "25"
+    }, {
+      "id": "9866b40d-011f-48eb-8427-fffdf40d857d",
+      "comment": "",
+      "command": "type",
+      "target": "id=kelvin",
+      "targets": [
+        ["id=kelvin", "id"],
+        ["css=#kelvin", "css:finder"],
+        ["xpath=//input[@id='kelvin']", "xpath:attributes"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "0"
+    }, {
+      "id": "ffcbd382-8842-4f37-b510-0d30147cb75a",
+      "comment": "",
+      "command": "type",
+      "target": "id=fahrenheit",
+      "targets": [
+        ["id=fahrenheit", "id"],
+        ["css=#fahrenheit", "css:finder"],
+        ["xpath=//input[@id='fahrenheit']", "xpath:attributes"],
+        ["xpath=//input[3]", "xpath:position"]
+      ],
+      "value": "0"
+    }, {
+      "id": "3825a831-1f52-467b-8eb5-4202fd8116f6",
+      "comment": "",
+      "command": "click",
+      "target": "css=button",
+      "targets": [
+        ["css=button", "css:finder"],
+        ["xpath=//button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "063b84c5-15e1-401b-8fa8-53dfb57fec2d",
+      "comment": "",
+      "command": "click",
+      "target": "css=li:nth-child(1)",
+      "targets": [
+        ["css=li:nth-child(1)", "css:finder"],
+        ["xpath=//li", "xpath:position"],
+        ["xpath=//li[contains(.,'Celsius para Fahrenheit: 77')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "d24ed0b7-6546-40e1-bc47-518114279720",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=li:nth-child(1)",
+      "targets": [
+        ["css=li:nth-child(1)", "css:finder"],
+        ["xpath=//li", "xpath:position"],
+        ["xpath=//li[contains(.,'Celsius para Fahrenheit: 77')]", "xpath:innerText"]
+      ],
+      "value": "Celsius para Fahrenheit: 77"
+    }]
+  }, {
+    "id": "f346ff8e-f1b9-41bb-a432-7bae1c461545",
+    "name": "celsius em fahrenheit (valor negativo)",
+    "commands": [{
+      "id": "8d9e60d2-3a23-4187-9ff6-50ff70f2002b",
+      "comment": "",
+      "command": "open",
+      "target": "http://127.0.0.1:5500/web/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "996a68ac-ceaa-47b5-ad93-1d50ba9f7347",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "974x1032",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d9cf7221-9d0d-42cb-8c3d-869b446cf15f",
+      "comment": "",
+      "command": "click",
+      "target": "id=celcius",
+      "targets": [
+        ["id=celcius", "id"],
+        ["css=#celcius", "css:finder"],
+        ["xpath=//input[@id='celcius']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "32e07e02-6f79-42f0-8d92-ad0e4ddb3791",
+      "comment": "",
+      "command": "type",
+      "target": "id=celcius",
+      "targets": [
+        ["id=celcius", "id"],
+        ["css=#celcius", "css:finder"],
+        ["xpath=//input[@id='celcius']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "-40"
+    }, {
+      "id": "fc32a213-d7cf-4669-bce0-262904acd2d4",
+      "comment": "",
+      "command": "type",
+      "target": "id=kelvin",
+      "targets": [
+        ["id=kelvin", "id"],
+        ["css=#kelvin", "css:finder"],
+        ["xpath=//input[@id='kelvin']", "xpath:attributes"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "0"
+    }, {
+      "id": "4addd3b3-d44b-43dd-87a0-e15708f0c465",
+      "comment": "",
+      "command": "type",
+      "target": "id=fahrenheit",
+      "targets": [
+        ["id=fahrenheit", "id"],
+        ["css=#fahrenheit", "css:finder"],
+        ["xpath=//input[@id='fahrenheit']", "xpath:attributes"],
+        ["xpath=//input[3]", "xpath:position"]
+      ],
+      "value": "0"
+    }, {
+      "id": "48ac2b4f-44c2-4d5b-8d2f-ddbb1d31c3e8",
+      "comment": "",
+      "command": "click",
+      "target": "css=button",
+      "targets": [
+        ["css=button", "css:finder"],
+        ["xpath=//button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "fd7f6fe0-6dd7-4a53-9029-b958a0444fba",
+      "comment": "",
+      "command": "click",
+      "target": "css=li:nth-child(1)",
+      "targets": [
+        ["css=li:nth-child(1)", "css:finder"],
+        ["xpath=//li", "xpath:position"],
+        ["xpath=//li[contains(.,'Celsius para Fahrenheit: -40')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "7534cd49-fdca-404a-af46-c4c6943a5d41",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=li:nth-child(1)",
+      "targets": [
+        ["css=li:nth-child(1)", "css:finder"],
+        ["xpath=//li", "xpath:position"],
+        ["xpath=//li[contains(.,'Celsius para Fahrenheit: -40')]", "xpath:innerText"]
+      ],
+      "value": "Celsius para Fahrenheit: -40"
+    }]
+  }, {
+    "id": "ccbc722f-0bee-4f0f-9127-8662ae104a48",
+    "name": "celsius em fahrenheit (valor decimal)",
+    "commands": [{
+      "id": "dd4914ba-30b8-4122-94dc-edb0457183a0",
+      "comment": "",
+      "command": "open",
+      "target": "http://127.0.0.1:5500/web/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "10986dd7-43f4-4f79-b590-dfd30bbff152",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "974x1032",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3572fedc-0be3-48f6-b591-98e4d73da5b0",
+      "comment": "",
+      "command": "click",
+      "target": "id=celcius",
+      "targets": [
+        ["id=celcius", "id"],
+        ["css=#celcius", "css:finder"],
+        ["xpath=//input[@id='celcius']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "63ce5638-3fa0-457e-855e-00196e7ed240",
+      "comment": "",
+      "command": "type",
+      "target": "id=celcius",
+      "targets": [
+        ["id=celcius", "id"],
+        ["css=#celcius", "css:finder"],
+        ["xpath=//input[@id='celcius']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "25.5"
+    }, {
+      "id": "7f63d1a7-04a5-4c2c-9b3c-f470ef699399",
+      "comment": "",
+      "command": "type",
+      "target": "id=kelvin",
+      "targets": [
+        ["id=kelvin", "id"],
+        ["css=#kelvin", "css:finder"],
+        ["xpath=//input[@id='kelvin']", "xpath:attributes"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "0"
+    }, {
+      "id": "41e10418-796f-4521-a496-1ed2126d7271",
+      "comment": "",
+      "command": "type",
+      "target": "id=fahrenheit",
+      "targets": [
+        ["id=fahrenheit", "id"],
+        ["css=#fahrenheit", "css:finder"],
+        ["xpath=//input[@id='fahrenheit']", "xpath:attributes"],
+        ["xpath=//input[3]", "xpath:position"]
+      ],
+      "value": "0"
+    }, {
+      "id": "94ea435a-f495-4ebb-9d8f-aff9cfbad642",
+      "comment": "",
+      "command": "click",
+      "target": "css=button",
+      "targets": [
+        ["css=button", "css:finder"],
+        ["xpath=//button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b9333398-fd56-4eae-8472-bda46e0f1b5e",
+      "comment": "",
+      "command": "click",
+      "target": "css=li:nth-child(1)",
+      "targets": [
+        ["css=li:nth-child(1)", "css:finder"],
+        ["xpath=//li", "xpath:position"],
+        ["xpath=//li[contains(.,'Celsius para Fahrenheit: 77.9')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "075c8559-e81d-42b6-bc06-9e78a0f9551f",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=li:nth-child(1)",
+      "targets": [
+        ["css=li:nth-child(1)", "css:finder"],
+        ["xpath=//li", "xpath:position"],
+        ["xpath=//li[contains(.,'Celsius para Fahrenheit: 77.9')]", "xpath:innerText"]
+      ],
+      "value": "Celsius para Fahrenheit: 77.9"
+    }]
+  }, {
+    "id": "90b00344-6b42-4ff8-9ad1-d86345883f94",
+    "name": "celsius em fahrenheit (valor = 0)",
+    "commands": [{
+      "id": "1f8a9a84-e794-45a5-9e1d-d05d0cfa8ede",
+      "comment": "",
+      "command": "open",
+      "target": "http://127.0.0.1:5500/web/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2e2e7fc0-19fe-465c-a780-fdea73ce93ce",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "974x1032",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c9acad62-2fd5-447f-a1ef-382c02101dca",
+      "comment": "",
+      "command": "click",
+      "target": "id=celcius",
+      "targets": [
+        ["id=celcius", "id"],
+        ["css=#celcius", "css:finder"],
+        ["xpath=//input[@id='celcius']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1ab2f160-b2e5-4a13-bd69-d4eddf9e72a5",
+      "comment": "",
+      "command": "type",
+      "target": "id=celcius",
+      "targets": [
+        ["id=celcius", "id"],
+        ["css=#celcius", "css:finder"],
+        ["xpath=//input[@id='celcius']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "0"
+    }, {
+      "id": "2b584845-3589-46e0-8366-273b3291ef93",
+      "comment": "",
+      "command": "type",
+      "target": "id=kelvin",
+      "targets": [
+        ["id=kelvin", "id"],
+        ["css=#kelvin", "css:finder"],
+        ["xpath=//input[@id='kelvin']", "xpath:attributes"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "0"
+    }, {
+      "id": "96e0b61b-5262-4ca3-8623-1799606767b0",
+      "comment": "",
+      "command": "type",
+      "target": "id=fahrenheit",
+      "targets": [
+        ["id=fahrenheit", "id"],
+        ["css=#fahrenheit", "css:finder"],
+        ["xpath=//input[@id='fahrenheit']", "xpath:attributes"],
+        ["xpath=//input[3]", "xpath:position"]
+      ],
+      "value": "0"
+    }, {
+      "id": "e4bb3454-424d-4964-b13f-297e3b477ac2",
+      "comment": "",
+      "command": "click",
+      "target": "css=button",
+      "targets": [
+        ["css=button", "css:finder"],
+        ["xpath=//button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d0ccdbc4-c26f-45b3-b3a8-6678c87f2634",
+      "comment": "",
+      "command": "click",
+      "target": "css=li:nth-child(1)",
+      "targets": [
+        ["css=li:nth-child(1)", "css:finder"],
+        ["xpath=//li", "xpath:position"],
+        ["xpath=//li[contains(.,'Celsius para Fahrenheit: 32')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "72817f1b-58c0-4831-932a-c099a5582d93",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=li:nth-child(1)",
+      "targets": [
+        ["css=li:nth-child(1)", "css:finder"],
+        ["xpath=//li", "xpath:position"],
+        ["xpath=//li[contains(.,'Celsius para Fahrenheit: 32')]", "xpath:innerText"]
+      ],
+      "value": "Celsius para Fahrenheit: 32"
+    }]
+  }, {
+    "id": "f835b9c1-4d32-4063-b917-9fe1a88d29a9",
+    "name": "kelvin em celsius (valor natural)",
+    "commands": [{
+      "id": "1751f825-2303-4340-98f5-9f3f3801e5ac",
+      "comment": "",
+      "command": "open",
+      "target": "http://127.0.0.1:5500/web/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "0f0a761e-7f55-438e-85c6-4b9d8abaacf6",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "974x1032",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "124a32c0-c4bc-42d9-8fdb-ebe533e5a46f",
+      "comment": "",
+      "command": "click",
+      "target": "id=celcius",
+      "targets": [
+        ["id=celcius", "id"],
+        ["css=#celcius", "css:finder"],
+        ["xpath=//input[@id='celcius']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "09869db6-c719-43b5-acca-c551a84dc4e7",
+      "comment": "",
+      "command": "type",
+      "target": "id=celcius",
+      "targets": [
+        ["id=celcius", "id"],
+        ["css=#celcius", "css:finder"],
+        ["xpath=//input[@id='celcius']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "0"
+    }, {
+      "id": "39c1bb18-35a8-4108-b028-aba140a10311",
+      "comment": "",
+      "command": "type",
+      "target": "id=kelvin",
+      "targets": [
+        ["id=kelvin", "id"],
+        ["css=#kelvin", "css:finder"],
+        ["xpath=//input[@id='kelvin']", "xpath:attributes"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "273"
+    }, {
+      "id": "792a6f4c-ff33-482f-9685-689076173f81",
+      "comment": "",
+      "command": "type",
+      "target": "id=fahrenheit",
+      "targets": [
+        ["id=fahrenheit", "id"],
+        ["css=#fahrenheit", "css:finder"],
+        ["xpath=//input[@id='fahrenheit']", "xpath:attributes"],
+        ["xpath=//input[3]", "xpath:position"]
+      ],
+      "value": "0"
+    }, {
+      "id": "b193ebf3-f530-46a4-8141-d8db80f381ba",
+      "comment": "",
+      "command": "click",
+      "target": "css=button",
+      "targets": [
+        ["css=button", "css:finder"],
+        ["xpath=//button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "05c3f19e-e7a2-489f-a1f0-7a25da5dad0e",
+      "comment": "",
+      "command": "click",
+      "target": "css=li:nth-child(4)",
+      "targets": [
+        ["css=li:nth-child(4)", "css:finder"],
+        ["xpath=//li[3]", "xpath:position"],
+        ["xpath=//li[contains(.,'Kelvin para Celcius: -0.15')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "3cc3d7f4-e948-473f-a3e1-5d6763c2dd0f",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=li:nth-child(4)",
+      "targets": [
+        ["css=li:nth-child(4)", "css:finder"],
+        ["xpath=//li[3]", "xpath:position"],
+        ["xpath=//li[contains(.,'Kelvin para Celcius: -0.15')]", "xpath:innerText"]
+      ],
+      "value": "Kelvin para Celcius: -0.15"
+    }]
+  }, {
+    "id": "e9cafca6-6e06-4190-b11d-a17f8ba3218b",
+    "name": "kelvin em celsius (valor negativo)",
+    "commands": [{
+      "id": "04b21b65-33c5-4297-9e7a-07ed1982fc94",
+      "comment": "",
+      "command": "open",
+      "target": "http://127.0.0.1:5500/web/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "18553c9d-7bab-4898-b34d-6df47709dd79",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "974x1032",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "447f035b-93cb-40d5-89a5-4d43c74cde01",
+      "comment": "",
+      "command": "click",
+      "target": "id=celcius",
+      "targets": [
+        ["id=celcius", "id"],
+        ["css=#celcius", "css:finder"],
+        ["xpath=//input[@id='celcius']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "63a5056e-d6b1-4f5d-b651-bf8b59a23c3a",
+      "comment": "",
+      "command": "type",
+      "target": "id=celcius",
+      "targets": [
+        ["id=celcius", "id"],
+        ["css=#celcius", "css:finder"],
+        ["xpath=//input[@id='celcius']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "0"
+    }, {
+      "id": "96fa7a17-058b-4fc7-bab8-ebd8fe3ccd4a",
+      "comment": "",
+      "command": "type",
+      "target": "id=kelvin",
+      "targets": [
+        ["id=kelvin", "id"],
+        ["css=#kelvin", "css:finder"],
+        ["xpath=//input[@id='kelvin']", "xpath:attributes"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "-15"
+    }, {
+      "id": "06564e87-f7a6-45d6-b4f6-a5aa48e04ec6",
+      "comment": "",
+      "command": "type",
+      "target": "id=fahrenheit",
+      "targets": [
+        ["id=fahrenheit", "id"],
+        ["css=#fahrenheit", "css:finder"],
+        ["xpath=//input[@id='fahrenheit']", "xpath:attributes"],
+        ["xpath=//input[3]", "xpath:position"]
+      ],
+      "value": "0"
+    }, {
+      "id": "2e2f4f65-8787-48f6-b159-76ab4b601569",
+      "comment": "",
+      "command": "click",
+      "target": "css=button",
+      "targets": [
+        ["css=button", "css:finder"],
+        ["xpath=//button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6c40d808-287b-4dba-a5a0-c44d7a760a20",
+      "comment": "",
+      "command": "click",
+      "target": "css=li:nth-child(4)",
+      "targets": [
+        ["css=li:nth-child(4)", "css:finder"],
+        ["xpath=//li[3]", "xpath:position"],
+        ["xpath=//li[contains(.,'Kelvin para Celcius: -288.15')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "60054a2b-55dd-4a8e-89e3-52a8bed858e6",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=li:nth-child(4)",
+      "targets": [
+        ["css=li:nth-child(4)", "css:finder"],
+        ["xpath=//li[3]", "xpath:position"],
+        ["xpath=//li[contains(.,'Kelvin para Celcius: -288.15')]", "xpath:innerText"]
+      ],
+      "value": "Kelvin para Celcius: -288.15"
+    }]
+  }, {
+    "id": "d3db7aa6-1dc4-40c0-8e53-60b4fb19f5af",
+    "name": "kelvin em celsius (valor decimal)",
+    "commands": [{
+      "id": "a91a2582-cb1a-4870-8261-0c8416b8180c",
+      "comment": "",
+      "command": "open",
+      "target": "http://127.0.0.1:5500/web/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b0351595-4e06-4ace-8255-eba446d78306",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "974x1032",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b56df687-592b-4185-bb0b-52c993a22034",
+      "comment": "",
+      "command": "click",
+      "target": "id=celcius",
+      "targets": [
+        ["id=celcius", "id"],
+        ["css=#celcius", "css:finder"],
+        ["xpath=//input[@id='celcius']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7800937c-c914-46c9-830b-e7b3d0413fc6",
+      "comment": "",
+      "command": "type",
+      "target": "id=celcius",
+      "targets": [
+        ["id=celcius", "id"],
+        ["css=#celcius", "css:finder"],
+        ["xpath=//input[@id='celcius']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "0"
+    }, {
+      "id": "02402ac6-f1d8-47cf-be76-a6311cee3145",
+      "comment": "",
+      "command": "type",
+      "target": "id=kelvin",
+      "targets": [
+        ["id=kelvin", "id"],
+        ["css=#kelvin", "css:finder"],
+        ["xpath=//input[@id='kelvin']", "xpath:attributes"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "298.65"
+    }, {
+      "id": "f48c927d-c9ed-4f4f-9122-4d3b1e253c3d",
+      "comment": "",
+      "command": "type",
+      "target": "id=fahrenheit",
+      "targets": [
+        ["id=fahrenheit", "id"],
+        ["css=#fahrenheit", "css:finder"],
+        ["xpath=//input[@id='fahrenheit']", "xpath:attributes"],
+        ["xpath=//input[3]", "xpath:position"]
+      ],
+      "value": "0"
+    }, {
+      "id": "d43b6098-d315-49df-8bdc-559881100d80",
+      "comment": "",
+      "command": "click",
+      "target": "css=button",
+      "targets": [
+        ["css=button", "css:finder"],
+        ["xpath=//button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "390decbb-7c4b-4bfb-9c1b-1089fdd1be2d",
+      "comment": "",
+      "command": "click",
+      "target": "css=li:nth-child(4)",
+      "targets": [
+        ["css=li:nth-child(4)", "css:finder"],
+        ["xpath=//li[3]", "xpath:position"],
+        ["xpath=//li[contains(.,'Kelvin para Celcius: 25.5')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "7648aba0-0175-4683-9358-6d87739a54c8",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=li:nth-child(4)",
+      "targets": [
+        ["css=li:nth-child(4)", "css:finder"],
+        ["xpath=//li[3]", "xpath:position"],
+        ["xpath=//li[contains(.,'Kelvin para Celcius: 25.5')]", "xpath:innerText"]
+      ],
+      "value": "Kelvin para Celcius: 25.5"
+    }]
+  }, {
+    "id": "2ba863ec-f960-48cd-9ac2-02656bbc926d",
+    "name": "kelvin em celsius (valor = 0)",
+    "commands": [{
+      "id": "2bb4e4f6-244e-49a8-aec7-51c09916a155",
+      "comment": "",
+      "command": "open",
+      "target": "http://127.0.0.1:5500/web/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f64f2fa2-ba4d-41c9-9bbe-5c272fccdf81",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "974x1032",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "982e8684-1402-4d6e-aaf4-084802a35cab",
+      "comment": "",
+      "command": "click",
+      "target": "id=celcius",
+      "targets": [
+        ["id=celcius", "id"],
+        ["css=#celcius", "css:finder"],
+        ["xpath=//input[@id='celcius']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "61f58e1a-25be-411e-b85a-e2ba2759c2ee",
+      "comment": "",
+      "command": "type",
+      "target": "id=celcius",
+      "targets": [
+        ["id=celcius", "id"],
+        ["css=#celcius", "css:finder"],
+        ["xpath=//input[@id='celcius']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "0"
+    }, {
+      "id": "94dfb1b0-57b2-496d-8fca-801948d99250",
+      "comment": "",
+      "command": "type",
+      "target": "id=kelvin",
+      "targets": [
+        ["id=kelvin", "id"],
+        ["css=#kelvin", "css:finder"],
+        ["xpath=//input[@id='kelvin']", "xpath:attributes"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "0"
+    }, {
+      "id": "58505da4-d964-4a55-ac7c-e87532f81c8c",
+      "comment": "",
+      "command": "type",
+      "target": "id=fahrenheit",
+      "targets": [
+        ["id=fahrenheit", "id"],
+        ["css=#fahrenheit", "css:finder"],
+        ["xpath=//input[@id='fahrenheit']", "xpath:attributes"],
+        ["xpath=//input[3]", "xpath:position"]
+      ],
+      "value": "0"
+    }, {
+      "id": "9593cc55-0c27-4382-805a-ab5cb60e76d9",
+      "comment": "",
+      "command": "click",
+      "target": "css=button",
+      "targets": [
+        ["css=button", "css:finder"],
+        ["xpath=//button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5ccd9782-63a5-4abb-8eed-2e410e7a9ab6",
+      "comment": "",
+      "command": "click",
+      "target": "css=li:nth-child(4)",
+      "targets": [
+        ["css=li:nth-child(4)", "css:finder"],
+        ["xpath=//li[3]", "xpath:position"],
+        ["xpath=//li[contains(.,'Kelvin para Celcius: -273.15')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "4678c663-9e3f-428f-9301-49be66a139cc",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=li:nth-child(4)",
+      "targets": [
+        ["css=li:nth-child(4)", "css:finder"],
+        ["xpath=//li[3]", "xpath:position"],
+        ["xpath=//li[contains(.,'Kelvin para Celcius: -273.15')]", "xpath:innerText"]
+      ],
+      "value": "Kelvin para Celcius: -273.15"
+    }]
+  }, {
+    "id": "ea4fcd57-b8de-4cb9-a12c-6a90181e806d",
+    "name": "todos os campos em string",
+    "commands": [{
+      "id": "f04ac270-f63d-4cf0-bf58-eaa60f734c97",
+      "comment": "",
+      "command": "open",
+      "target": "http://127.0.0.1:5500/web/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e7bf6a59-902c-4098-a494-815e2cdbbb3e",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "974x1032",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "822ecd3f-4857-46a2-84d8-c1344a10756b",
+      "comment": "",
+      "command": "click",
+      "target": "id=celcius",
+      "targets": [
+        ["id=celcius", "id"],
+        ["css=#celcius", "css:finder"],
+        ["xpath=//input[@id='celcius']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c0f8664b-3641-4c68-8d80-bff32613c504",
+      "comment": "",
+      "command": "type",
+      "target": "id=celcius",
+      "targets": [
+        ["id=celcius", "id"],
+        ["css=#celcius", "css:finder"],
+        ["xpath=//input[@id='celcius']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "a"
+    }, {
+      "id": "8027251b-86f0-4246-95b1-7869330383e3",
+      "comment": "",
+      "command": "type",
+      "target": "id=kelvin",
+      "targets": [
+        ["id=kelvin", "id"],
+        ["css=#kelvin", "css:finder"],
+        ["xpath=//input[@id='kelvin']", "xpath:attributes"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "b"
+    }, {
+      "id": "450aba8c-ba74-4783-a6a6-42decb130ff6",
+      "comment": "",
+      "command": "type",
+      "target": "id=fahrenheit",
+      "targets": [
+        ["id=fahrenheit", "id"],
+        ["css=#fahrenheit", "css:finder"],
+        ["xpath=//input[@id='fahrenheit']", "xpath:attributes"],
+        ["xpath=//input[3]", "xpath:position"]
+      ],
+      "value": "c"
+    }, {
+      "id": "c95a9bb2-f8f5-470e-8813-164e8f59f643",
+      "comment": "",
+      "command": "click",
+      "target": "css=button",
+      "targets": [
+        ["css=button", "css:finder"],
+        ["xpath=//button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f1e9754b-6fb7-4ca1-a36a-0ccda7b7f0d2",
+      "comment": "",
+      "command": "click",
+      "target": "css=span",
+      "targets": [
+        ["css=span", "css:finder"],
+        ["xpath=//span", "xpath:position"],
+        ["xpath=//span[contains(.,'Informe Valores Corretos')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "ae883f1e-7cc0-4818-94e8-5db0c8fb59a9",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=span",
+      "targets": [
+        ["css=span", "css:finder"],
+        ["xpath=//span", "xpath:position"],
+        ["xpath=//span[contains(.,'Informe Valores Corretos')]", "xpath:innerText"]
+      ],
+      "value": "Informe Valores Corretos"
+    }]
+  }, {
+    "id": "f3329efd-2a43-4aa3-b158-ea023b8cf44c",
+    "name": "kelvin (valor string)",
+    "commands": [{
+      "id": "00eee1d4-498c-42fa-bcd4-81b99df1d6bf",
+      "comment": "",
+      "command": "open",
+      "target": "http://127.0.0.1:5500/web/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "cde95a80-c67b-4db2-a7e9-3d9b041410b5",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "974x1032",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f82265f2-ee3b-4f48-9e57-fd632a922b5a",
+      "comment": "",
+      "command": "click",
+      "target": "id=celcius",
+      "targets": [
+        ["id=celcius", "id"],
+        ["css=#celcius", "css:finder"],
+        ["xpath=//input[@id='celcius']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c5f31cad-eb6d-4f8c-ad17-bf2702bac81e",
+      "comment": "",
+      "command": "type",
+      "target": "id=celcius",
+      "targets": [
+        ["id=celcius", "id"],
+        ["css=#celcius", "css:finder"],
+        ["xpath=//input[@id='celcius']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "0"
+    }, {
+      "id": "5a8d2587-cebb-419d-a1e9-98a752d7861c",
+      "comment": "",
+      "command": "type",
+      "target": "id=kelvin",
+      "targets": [
+        ["id=kelvin", "id"],
+        ["css=#kelvin", "css:finder"],
+        ["xpath=//input[@id='kelvin']", "xpath:attributes"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "a"
+    }, {
+      "id": "ea0b19be-5274-4149-b3c7-20c89b93ae12",
+      "comment": "",
+      "command": "type",
+      "target": "id=fahrenheit",
+      "targets": [
+        ["id=fahrenheit", "id"],
+        ["css=#fahrenheit", "css:finder"],
+        ["xpath=//input[@id='fahrenheit']", "xpath:attributes"],
+        ["xpath=//input[3]", "xpath:position"]
+      ],
+      "value": "0"
+    }, {
+      "id": "51cb3723-856e-4feb-b935-94884ec29a41",
+      "comment": "",
+      "command": "click",
+      "target": "css=button",
+      "targets": [
+        ["css=button", "css:finder"],
+        ["xpath=//button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "18b59282-e417-4636-a477-2b34e66bd015",
+      "comment": "",
+      "command": "click",
+      "target": "css=span",
+      "targets": [
+        ["css=span", "css:finder"],
+        ["xpath=//span", "xpath:position"],
+        ["xpath=//span[contains(.,'Informe Valores Corretos')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "da1e6cab-27ea-4eb5-82c8-ec75bbfecbaf",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=span",
+      "targets": [
+        ["css=span", "css:finder"],
+        ["xpath=//span", "xpath:position"],
+        ["xpath=//span[contains(.,'Informe Valores Corretos')]", "xpath:innerText"]
+      ],
+      "value": "Informe Valores Corretos"
+    }]
+  }, {
+    "id": "787f4611-1145-4294-a3a3-9ac219f0f5b9",
+    "name": "fahrenheit (valor string)",
+    "commands": [{
+      "id": "4011a2d9-e677-4539-a660-cadb24c0d73a",
+      "comment": "",
+      "command": "open",
+      "target": "http://127.0.0.1:5500/web/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "38dfa4f8-ff2c-41bf-8d80-8849adad16b9",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "974x1032",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "975f6822-6610-4ba0-88a7-617adea43277",
+      "comment": "",
+      "command": "click",
+      "target": "id=celcius",
+      "targets": [
+        ["id=celcius", "id"],
+        ["css=#celcius", "css:finder"],
+        ["xpath=//input[@id='celcius']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6b38b223-99f7-483e-80cf-a84257863de7",
+      "comment": "",
+      "command": "type",
+      "target": "id=celcius",
+      "targets": [
+        ["id=celcius", "id"],
+        ["css=#celcius", "css:finder"],
+        ["xpath=//input[@id='celcius']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "0"
+    }, {
+      "id": "244142c4-bd42-4f7d-829c-cb8d0d541961",
+      "comment": "",
+      "command": "type",
+      "target": "id=kelvin",
+      "targets": [
+        ["id=kelvin", "id"],
+        ["css=#kelvin", "css:finder"],
+        ["xpath=//input[@id='kelvin']", "xpath:attributes"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "0"
+    }, {
+      "id": "4d74d2be-0f28-401e-a5b1-d02daae3996e",
+      "comment": "",
+      "command": "type",
+      "target": "id=fahrenheit",
+      "targets": [
+        ["id=fahrenheit", "id"],
+        ["css=#fahrenheit", "css:finder"],
+        ["xpath=//input[@id='fahrenheit']", "xpath:attributes"],
+        ["xpath=//input[3]", "xpath:position"]
+      ],
+      "value": "a"
+    }, {
+      "id": "e67d96c2-76cc-4626-8fd1-b5f414bda162",
+      "comment": "",
+      "command": "click",
+      "target": "css=button",
+      "targets": [
+        ["css=button", "css:finder"],
+        ["xpath=//button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f249c849-d81e-4bc4-b6b4-e8c38f8e4a23",
+      "comment": "",
+      "command": "click",
+      "target": "css=span",
+      "targets": [
+        ["css=span", "css:finder"],
+        ["xpath=//span", "xpath:position"],
+        ["xpath=//span[contains(.,'Informe Valores Corretos')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "d1814cb2-ffe1-4696-a17b-086e136d4fee",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=span",
+      "targets": [
+        ["css=span", "css:finder"],
+        ["xpath=//span", "xpath:position"],
+        ["xpath=//span[contains(.,'Informe Valores Corretos')]", "xpath:innerText"]
+      ],
+      "value": "Informe Valores Corretos"
+    }]
+  }, {
+    "id": "00194638-6d45-4b99-b608-40f138aeba57",
+    "name": "kelvin em fahrenheit (valor = 0)",
+    "commands": [{
+      "id": "269e5d51-ba26-449a-9d27-b604c58f6281",
+      "comment": "",
+      "command": "open",
+      "target": "http://127.0.0.1:5500/web/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "cbfbbb7e-7f6c-4540-8686-7741e8676797",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "974x1032",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "80007b0b-5cbc-4d9e-85bb-62a1aed886ea",
+      "comment": "",
+      "command": "click",
+      "target": "id=celcius",
+      "targets": [
+        ["id=celcius", "id"],
+        ["css=#celcius", "css:finder"],
+        ["xpath=//input[@id='celcius']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "081c0b5c-d6ef-434a-83f2-76d28a4cf5c1",
+      "comment": "",
+      "command": "type",
+      "target": "id=celcius",
+      "targets": [
+        ["id=celcius", "id"],
+        ["css=#celcius", "css:finder"],
+        ["xpath=//input[@id='celcius']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "0"
+    }, {
+      "id": "4005842e-926e-45cc-b7a8-15a01a5adbbf",
+      "comment": "",
+      "command": "type",
+      "target": "id=kelvin",
+      "targets": [
+        ["id=kelvin", "id"],
+        ["css=#kelvin", "css:finder"],
+        ["xpath=//input[@id='kelvin']", "xpath:attributes"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "0"
+    }, {
+      "id": "a2ed8ee5-4f2e-4868-86d7-b7c79d8dbc06",
+      "comment": "",
+      "command": "type",
+      "target": "id=fahrenheit",
+      "targets": [
+        ["id=fahrenheit", "id"],
+        ["css=#fahrenheit", "css:finder"],
+        ["xpath=//input[@id='fahrenheit']", "xpath:attributes"],
+        ["xpath=//input[3]", "xpath:position"]
+      ],
+      "value": "0"
+    }, {
+      "id": "fe00b81c-adf3-460f-978b-fec3762d16ef",
+      "comment": "",
+      "command": "click",
+      "target": "css=button",
+      "targets": [
+        ["css=button", "css:finder"],
+        ["xpath=//button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6b013613-d020-41ec-84ef-8a7df90acf85",
+      "comment": "",
+      "command": "click",
+      "target": "css=li:nth-child(5)",
+      "targets": [
+        ["css=li:nth-child(5)", "css:finder"],
+        ["xpath=//li[4]", "xpath:position"],
+        ["xpath=//li[contains(.,'Kelvin para Fahrenheit: -459.67')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "2a214170-285f-4c7b-8f49-c4b2911954cd",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=li:nth-child(5)",
+      "targets": [
+        ["css=li:nth-child(5)", "css:finder"],
+        ["xpath=//li[4]", "xpath:position"],
+        ["xpath=//li[contains(.,'Kelvin para Fahrenheit: -459.67')]", "xpath:innerText"]
+      ],
+      "value": "Kelvin para Fahrenheit: -459.67"
+    }]
+  }, {
+    "id": "a0a104a4-c7a3-4959-8cea-9eae0d461e18",
+    "name": "kelvin em fahrenheit (valor decimal)",
+    "commands": [{
+      "id": "3b52638d-bbbd-4d3b-8a9d-faecd53fcc26",
+      "comment": "",
+      "command": "open",
+      "target": "http://127.0.0.1:5500/web/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "624a1a00-6c49-4d34-97fc-759d9d496db0",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "974x1032",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9b4bea69-b526-46f3-8023-683cd335a27c",
+      "comment": "",
+      "command": "click",
+      "target": "css=.container",
+      "targets": [
+        ["css=.container", "css:finder"],
+        ["xpath=//div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6f2b0dc9-e4c9-41c3-a3b2-801ee24213b7",
+      "comment": "",
+      "command": "click",
+      "target": "id=celcius",
+      "targets": [
+        ["id=celcius", "id"],
+        ["css=#celcius", "css:finder"],
+        ["xpath=//input[@id='celcius']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "10670d16-0f78-4e04-9c4e-71f40a6e4fd8",
+      "comment": "",
+      "command": "type",
+      "target": "id=celcius",
+      "targets": [
+        ["id=celcius", "id"],
+        ["css=#celcius", "css:finder"],
+        ["xpath=//input[@id='celcius']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "0"
+    }, {
+      "id": "7b461dad-d903-4c1f-8b52-0f9adec3d738",
+      "comment": "",
+      "command": "type",
+      "target": "id=kelvin",
+      "targets": [
+        ["id=kelvin", "id"],
+        ["css=#kelvin", "css:finder"],
+        ["xpath=//input[@id='kelvin']", "xpath:attributes"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "298.65"
+    }, {
+      "id": "f718aa9f-746c-4011-9e05-f174a4bacb61",
+      "comment": "",
+      "command": "type",
+      "target": "id=fahrenheit",
+      "targets": [
+        ["id=fahrenheit", "id"],
+        ["css=#fahrenheit", "css:finder"],
+        ["xpath=//input[@id='fahrenheit']", "xpath:attributes"],
+        ["xpath=//input[3]", "xpath:position"]
+      ],
+      "value": "0"
+    }, {
+      "id": "736a6366-f10a-47b9-a3c5-c42beb3dd26f",
+      "comment": "",
+      "command": "click",
+      "target": "css=button",
+      "targets": [
+        ["css=button", "css:finder"],
+        ["xpath=//button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1fedda08-9b0b-4241-b9e8-f666158441b2",
+      "comment": "",
+      "command": "click",
+      "target": "css=li:nth-child(5)",
+      "targets": [
+        ["css=li:nth-child(5)", "css:finder"],
+        ["xpath=//li[4]", "xpath:position"],
+        ["xpath=//li[contains(.,'Kelvin para Fahrenheit: 77.9')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "5b2a3245-a222-4d5f-91f1-d501ee4008a9",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=li:nth-child(5)",
+      "targets": [
+        ["css=li:nth-child(5)", "css:finder"],
+        ["xpath=//li[4]", "xpath:position"],
+        ["xpath=//li[contains(.,'Kelvin para Fahrenheit: 77.9')]", "xpath:innerText"]
+      ],
+      "value": "Kelvin para Fahrenheit: 77.9"
+    }]
+  }, {
+    "id": "d1618bbb-4d19-414b-81e4-44cdb48ed248",
+    "name": "kelvin em fahrenheit (valor natural)",
+    "commands": [{
+      "id": "1d9138ac-d326-4b55-bf36-586b4a9dbc52",
+      "comment": "",
+      "command": "open",
+      "target": "http://127.0.0.1:5500/web/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "60d735d7-65bb-42a1-8d76-b6ce9ae91472",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "974x1032",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f7136b72-af1d-4030-998c-22599c3faca8",
+      "comment": "",
+      "command": "mouseDown",
+      "target": "id=celcius",
+      "targets": [
+        ["id=celcius", "id"],
+        ["css=#celcius", "css:finder"],
+        ["xpath=//input[@id='celcius']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d577c333-4582-4f61-aa8e-349643a7d6e9",
+      "comment": "",
+      "command": "mouseUp",
+      "target": "css=.container",
+      "targets": [
+        ["css=.container", "css:finder"],
+        ["xpath=//div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0888eeb0-084b-4e13-82eb-cc5f9de53d5e",
+      "comment": "",
+      "command": "click",
+      "target": "css=.container",
+      "targets": [
+        ["css=.container", "css:finder"],
+        ["xpath=//div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ca77f860-cc14-469b-aba0-196e41578865",
+      "comment": "",
+      "command": "type",
+      "target": "id=celcius",
+      "targets": [
+        ["id=celcius", "id"],
+        ["css=#celcius", "css:finder"],
+        ["xpath=//input[@id='celcius']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "0"
+    }, {
+      "id": "72d8810a-4731-46fe-a5dc-46783f7d0b24",
+      "comment": "",
+      "command": "type",
+      "target": "id=kelvin",
+      "targets": [
+        ["id=kelvin", "id"],
+        ["css=#kelvin", "css:finder"],
+        ["xpath=//input[@id='kelvin']", "xpath:attributes"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "273"
+    }, {
+      "id": "23cc3493-f6c3-4936-a1a7-41ee736c14aa",
+      "comment": "",
+      "command": "type",
+      "target": "id=fahrenheit",
+      "targets": [
+        ["id=fahrenheit", "id"],
+        ["css=#fahrenheit", "css:finder"],
+        ["xpath=//input[@id='fahrenheit']", "xpath:attributes"],
+        ["xpath=//input[3]", "xpath:position"]
+      ],
+      "value": "0"
+    }, {
+      "id": "5edd0bcc-d2c4-42d4-801b-1bd869a113da",
+      "comment": "",
+      "command": "click",
+      "target": "css=button",
+      "targets": [
+        ["css=button", "css:finder"],
+        ["xpath=//button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "81215ead-88f3-4ef5-8074-95bdcffe0e31",
+      "comment": "",
+      "command": "click",
+      "target": "css=li:nth-child(5)",
+      "targets": [
+        ["css=li:nth-child(5)", "css:finder"],
+        ["xpath=//li[4]", "xpath:position"],
+        ["xpath=//li[contains(.,'Kelvin para Fahrenheit: 31.73')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "355fbe8d-93e6-42e3-9e70-b4ebf3dc30f9",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=li:nth-child(5)",
+      "targets": [
+        ["css=li:nth-child(5)", "css:finder"],
+        ["xpath=//li[4]", "xpath:position"],
+        ["xpath=//li[contains(.,'Kelvin para Fahrenheit: 31.73')]", "xpath:innerText"]
+      ],
+      "value": "Kelvin para Fahrenheit: 31.73"
+    }]
+  }, {
+    "id": "56bb6250-3b63-4aaa-ad27-b0d386fc5bfb",
+    "name": "kelvin em fahrenheit (valor negativo)",
+    "commands": [{
+      "id": "92e78014-3244-458e-9e14-9524550a59ad",
+      "comment": "",
+      "command": "open",
+      "target": "http://127.0.0.1:5500/web/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "339f8d1a-7b99-4346-b3a9-7bf445fb7860",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "974x1032",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7f193fb8-e9e6-4809-8fae-cab867e25d31",
+      "comment": "",
+      "command": "click",
+      "target": "id=celcius",
+      "targets": [
+        ["id=celcius", "id"],
+        ["css=#celcius", "css:finder"],
+        ["xpath=//input[@id='celcius']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "03694c13-3878-448d-a0e2-d3d23fae8cfe",
+      "comment": "",
+      "command": "type",
+      "target": "id=celcius",
+      "targets": [
+        ["id=celcius", "id"],
+        ["css=#celcius", "css:finder"],
+        ["xpath=//input[@id='celcius']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "0"
+    }, {
+      "id": "77781192-28f6-421d-9fe8-c62002e576e7",
+      "comment": "",
+      "command": "type",
+      "target": "id=kelvin",
+      "targets": [
+        ["id=kelvin", "id"],
+        ["css=#kelvin", "css:finder"],
+        ["xpath=//input[@id='kelvin']", "xpath:attributes"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "-15"
+    }, {
+      "id": "6da23c20-bbc1-4063-b438-b425e45d7b6c",
+      "comment": "",
+      "command": "type",
+      "target": "id=fahrenheit",
+      "targets": [
+        ["id=fahrenheit", "id"],
+        ["css=#fahrenheit", "css:finder"],
+        ["xpath=//input[@id='fahrenheit']", "xpath:attributes"],
+        ["xpath=//input[3]", "xpath:position"]
+      ],
+      "value": "0"
+    }, {
+      "id": "937cb6bd-b666-4ec2-8ab0-9a7f5330bdc2",
+      "comment": "",
+      "command": "click",
+      "target": "css=button",
+      "targets": [
+        ["css=button", "css:finder"],
+        ["xpath=//button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a768f8c4-f231-4fc6-b2f4-1e252799eb72",
+      "comment": "",
+      "command": "click",
+      "target": "css=li:nth-child(5)",
+      "targets": [
+        ["css=li:nth-child(5)", "css:finder"],
+        ["xpath=//li[4]", "xpath:position"],
+        ["xpath=//li[contains(.,'Kelvin para Fahrenheit: -486.67')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "59e58d53-c73a-40d9-bb74-5b8d72b7fd5f",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=li:nth-child(5)",
+      "targets": [
+        ["css=li:nth-child(5)", "css:finder"],
+        ["xpath=//li[4]", "xpath:position"],
+        ["xpath=//li[contains(.,'Kelvin para Fahrenheit: -486.67')]", "xpath:innerText"]
+      ],
+      "value": "Kelvin para Fahrenheit: -486.67"
+    }]
+  }, {
+    "id": "dcbf8287-c052-4c8e-b566-f7424e1cacb0",
+    "name": "fahrenheit em celsius (valor natural)",
+    "commands": [{
+      "id": "72d0f0c5-76fc-4fca-93d9-ac9b74f9cc4a",
+      "comment": "",
+      "command": "open",
+      "target": "http://127.0.0.1:5500/web/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "26aedd39-881e-43b7-a5b5-5f82e7491086",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "974x1032",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9776a8f0-dab8-4aa4-a9d6-92946f051988",
+      "comment": "",
+      "command": "click",
+      "target": "id=celcius",
+      "targets": [
+        ["id=celcius", "id"],
+        ["css=#celcius", "css:finder"],
+        ["xpath=//input[@id='celcius']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "78ae6c99-0fad-4968-8497-8c4f3d70b051",
+      "comment": "",
+      "command": "type",
+      "target": "id=celcius",
+      "targets": [
+        ["id=celcius", "id"],
+        ["css=#celcius", "css:finder"],
+        ["xpath=//input[@id='celcius']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "0"
+    }, {
+      "id": "bb3614cb-4c58-4382-81a9-c66ab043837a",
+      "comment": "",
+      "command": "type",
+      "target": "id=kelvin",
+      "targets": [
+        ["id=kelvin", "id"],
+        ["css=#kelvin", "css:finder"],
+        ["xpath=//input[@id='kelvin']", "xpath:attributes"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "0"
+    }, {
+      "id": "b9870699-daf8-4a5c-b91c-f8017fde6168",
+      "comment": "",
+      "command": "type",
+      "target": "id=fahrenheit",
+      "targets": [
+        ["id=fahrenheit", "id"],
+        ["css=#fahrenheit", "css:finder"],
+        ["xpath=//input[@id='fahrenheit']", "xpath:attributes"],
+        ["xpath=//input[3]", "xpath:position"]
+      ],
+      "value": "73"
+    }, {
+      "id": "4e2ea634-0c24-4a8a-98f3-2be16f17279e",
+      "comment": "",
+      "command": "click",
+      "target": "css=button",
+      "targets": [
+        ["css=button", "css:finder"],
+        ["xpath=//button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4b24ac6f-9c6a-4a57-91a9-b773572957e8",
+      "comment": "",
+      "command": "click",
+      "target": "css=li:nth-child(7)",
+      "targets": [
+        ["css=li:nth-child(7)", "css:finder"],
+        ["xpath=//li[5]", "xpath:position"],
+        ["xpath=//li[contains(.,'Fahrenheit para Celcius: 22.78')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "b2a7d442-58fa-4619-b678-18b04e3921f5",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=li:nth-child(7)",
+      "targets": [
+        ["css=li:nth-child(7)", "css:finder"],
+        ["xpath=//li[5]", "xpath:position"],
+        ["xpath=//li[contains(.,'Fahrenheit para Celcius: 22.78')]", "xpath:innerText"]
+      ],
+      "value": "Fahrenheit para Celcius: 22.78"
+    }]
+  }, {
+    "id": "bfbd6c10-d672-447e-bebf-197d9e29471d",
+    "name": "fahrenheit em celsius (valor negativo)",
+    "commands": [{
+      "id": "17c9131e-b46f-4c26-9de2-24a51c46f337",
+      "comment": "",
+      "command": "open",
+      "target": "http://127.0.0.1:5500/web/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c2b77c05-19b7-4fde-9936-a23f58d4140c",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "974x1032",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c32b6cb3-92ed-4769-a6fa-0e077e2501f8",
+      "comment": "",
+      "command": "click",
+      "target": "id=celcius",
+      "targets": [
+        ["id=celcius", "id"],
+        ["css=#celcius", "css:finder"],
+        ["xpath=//input[@id='celcius']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "55e6cf06-1583-4ee0-8286-71cc83e9d0af",
+      "comment": "",
+      "command": "type",
+      "target": "id=celcius",
+      "targets": [
+        ["id=celcius", "id"],
+        ["css=#celcius", "css:finder"],
+        ["xpath=//input[@id='celcius']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "0"
+    }, {
+      "id": "5d5c0a1a-dfeb-4ac4-b40c-baf08eda90e8",
+      "comment": "",
+      "command": "type",
+      "target": "id=kelvin",
+      "targets": [
+        ["id=kelvin", "id"],
+        ["css=#kelvin", "css:finder"],
+        ["xpath=//input[@id='kelvin']", "xpath:attributes"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "0"
+    }, {
+      "id": "b27c4ce3-1525-4d24-abbf-c0aa9a87673d",
+      "comment": "",
+      "command": "type",
+      "target": "id=fahrenheit",
+      "targets": [
+        ["id=fahrenheit", "id"],
+        ["css=#fahrenheit", "css:finder"],
+        ["xpath=//input[@id='fahrenheit']", "xpath:attributes"],
+        ["xpath=//input[3]", "xpath:position"]
+      ],
+      "value": "-40"
+    }, {
+      "id": "f9a9f7d0-e39d-41bf-a9a6-79007a52e5cd",
+      "comment": "",
+      "command": "click",
+      "target": "css=button",
+      "targets": [
+        ["css=button", "css:finder"],
+        ["xpath=//button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0a221281-142b-445c-9a06-bef3898532a2",
+      "comment": "",
+      "command": "click",
+      "target": "css=li:nth-child(7)",
+      "targets": [
+        ["css=li:nth-child(7)", "css:finder"],
+        ["xpath=//li[5]", "xpath:position"],
+        ["xpath=//li[contains(.,'Fahrenheit para Celcius: -40')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "bd51dffc-755d-4b54-9619-76b4247cd7f0",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=li:nth-child(7)",
+      "targets": [
+        ["css=li:nth-child(7)", "css:finder"],
+        ["xpath=//li[5]", "xpath:position"],
+        ["xpath=//li[contains(.,'Fahrenheit para Celcius: -40')]", "xpath:innerText"]
+      ],
+      "value": "Fahrenheit para Celcius: -40"
+    }]
+  }, {
+    "id": "b986ef78-916b-402c-abff-e8236291149a",
+    "name": "fahrenheit em celsius (valor decimal)",
+    "commands": [{
+      "id": "cc1dfc66-1940-47fc-a5cb-034dd584d25c",
+      "comment": "",
+      "command": "open",
+      "target": "http://127.0.0.1:5500/web/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "8f267422-f3ab-49fe-836d-0bbd1500f6b5",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "974x1032",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ceb0d6a0-75bc-49a1-806e-fc01c752f0ef",
+      "comment": "",
+      "command": "click",
+      "target": "id=celcius",
+      "targets": [
+        ["id=celcius", "id"],
+        ["css=#celcius", "css:finder"],
+        ["xpath=//input[@id='celcius']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "02443ef8-1a06-4d9b-9ba8-b9c15ab21b15",
+      "comment": "",
+      "command": "type",
+      "target": "id=celcius",
+      "targets": [
+        ["id=celcius", "id"],
+        ["css=#celcius", "css:finder"],
+        ["xpath=//input[@id='celcius']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "0"
+    }, {
+      "id": "1a40fe7b-d1e0-42bb-9f29-60419b30b65e",
+      "comment": "",
+      "command": "type",
+      "target": "id=kelvin",
+      "targets": [
+        ["id=kelvin", "id"],
+        ["css=#kelvin", "css:finder"],
+        ["xpath=//input[@id='kelvin']", "xpath:attributes"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "0"
+    }, {
+      "id": "f69e88fe-8929-4b18-9071-da3fb59a8fe0",
+      "comment": "",
+      "command": "type",
+      "target": "id=fahrenheit",
+      "targets": [
+        ["id=fahrenheit", "id"],
+        ["css=#fahrenheit", "css:finder"],
+        ["xpath=//input[@id='fahrenheit']", "xpath:attributes"],
+        ["xpath=//input[3]", "xpath:position"]
+      ],
+      "value": "77.9"
+    }, {
+      "id": "e1e890a5-b25a-43ac-a31d-0cd4872c5a70",
+      "comment": "",
+      "command": "click",
+      "target": "css=button",
+      "targets": [
+        ["css=button", "css:finder"],
+        ["xpath=//button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "08934aef-215f-4814-b379-eaa63a5c4db7",
+      "comment": "",
+      "command": "click",
+      "target": "css=li:nth-child(7)",
+      "targets": [
+        ["css=li:nth-child(7)", "css:finder"],
+        ["xpath=//li[5]", "xpath:position"],
+        ["xpath=//li[contains(.,'Fahrenheit para Celcius: 25.5')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "07db0e85-f229-4c17-95f9-df4e187698c8",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=li:nth-child(7)",
+      "targets": [
+        ["css=li:nth-child(7)", "css:finder"],
+        ["xpath=//li[5]", "xpath:position"],
+        ["xpath=//li[contains(.,'Fahrenheit para Celcius: 25.5')]", "xpath:innerText"]
+      ],
+      "value": "Fahrenheit para Celcius: 25.5"
+    }]
+  }, {
+    "id": "c02b10b1-685a-4ef6-8561-8c230c489f3e",
+    "name": "fahrenheit em celsius (valor = 0)",
+    "commands": [{
+      "id": "2c4c7160-2213-45fd-ac4b-751b47d29405",
+      "comment": "",
+      "command": "open",
+      "target": "http://127.0.0.1:5500/web/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "68e3a833-5f07-4dda-8944-94aa37a22030",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "974x1032",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2fcc8fd3-4fcf-499c-9fe3-31dd262cef8b",
+      "comment": "",
+      "command": "click",
+      "target": "id=celcius",
+      "targets": [
+        ["id=celcius", "id"],
+        ["css=#celcius", "css:finder"],
+        ["xpath=//input[@id='celcius']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f39857a1-de1a-48e6-95fb-60c1a023d434",
+      "comment": "",
+      "command": "type",
+      "target": "id=celcius",
+      "targets": [
+        ["id=celcius", "id"],
+        ["css=#celcius", "css:finder"],
+        ["xpath=//input[@id='celcius']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "0"
+    }, {
+      "id": "d4d8bdab-4714-4710-a38b-4c26f37f74f4",
+      "comment": "",
+      "command": "type",
+      "target": "id=kelvin",
+      "targets": [
+        ["id=kelvin", "id"],
+        ["css=#kelvin", "css:finder"],
+        ["xpath=//input[@id='kelvin']", "xpath:attributes"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "0"
+    }, {
+      "id": "e3c2a5d1-8334-4e1e-bdaa-57ec4a162aea",
+      "comment": "",
+      "command": "type",
+      "target": "id=fahrenheit",
+      "targets": [
+        ["id=fahrenheit", "id"],
+        ["css=#fahrenheit", "css:finder"],
+        ["xpath=//input[@id='fahrenheit']", "xpath:attributes"],
+        ["xpath=//input[3]", "xpath:position"]
+      ],
+      "value": "0"
+    }, {
+      "id": "5f9f7de4-114d-4df3-984b-92e6111e3fb9",
+      "comment": "",
+      "command": "click",
+      "target": "css=button",
+      "targets": [
+        ["css=button", "css:finder"],
+        ["xpath=//button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "15a2744f-f70a-4391-a42d-64e157dae643",
+      "comment": "",
+      "command": "click",
+      "target": "css=li:nth-child(7)",
+      "targets": [
+        ["css=li:nth-child(7)", "css:finder"],
+        ["xpath=//li[5]", "xpath:position"],
+        ["xpath=//li[contains(.,'Fahrenheit para Celcius: -17.78')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "c3ad3a92-4561-41bc-b33f-d6138033372d",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=li:nth-child(7)",
+      "targets": [
+        ["css=li:nth-child(7)", "css:finder"],
+        ["xpath=//li[5]", "xpath:position"],
+        ["xpath=//li[contains(.,'Fahrenheit para Celcius: -17.78')]", "xpath:innerText"]
+      ],
+      "value": "Fahrenheit para Celcius: -17.78"
+    }]
+  }, {
+    "id": "7fda66cf-817a-4a05-a266-5749badbf658",
+    "name": "fahrenheit em kelvin (valor = 0)",
+    "commands": [{
+      "id": "ab0b6eee-754c-4b88-9d42-dbdf690b38e7",
+      "comment": "",
+      "command": "open",
+      "target": "http://127.0.0.1:5500/web/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b44dd022-f3a3-44cb-be0a-1f66070cfa54",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "974x1032",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9418c108-a52e-429b-8da8-3908a67c3d1b",
+      "comment": "",
+      "command": "click",
+      "target": "id=celcius",
+      "targets": [
+        ["id=celcius", "id"],
+        ["css=#celcius", "css:finder"],
+        ["xpath=//input[@id='celcius']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "442dd63c-7152-4631-9578-3b673ad6cc31",
+      "comment": "",
+      "command": "type",
+      "target": "id=celcius",
+      "targets": [
+        ["id=celcius", "id"],
+        ["css=#celcius", "css:finder"],
+        ["xpath=//input[@id='celcius']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "0"
+    }, {
+      "id": "20085786-2588-446f-89ed-fc1ac266ca17",
+      "comment": "",
+      "command": "type",
+      "target": "id=kelvin",
+      "targets": [
+        ["id=kelvin", "id"],
+        ["css=#kelvin", "css:finder"],
+        ["xpath=//input[@id='kelvin']", "xpath:attributes"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "0"
+    }, {
+      "id": "1d82d9a3-1ed0-446a-a5eb-22ccb2efa58d",
+      "comment": "",
+      "command": "type",
+      "target": "id=fahrenheit",
+      "targets": [
+        ["id=fahrenheit", "id"],
+        ["css=#fahrenheit", "css:finder"],
+        ["xpath=//input[@id='fahrenheit']", "xpath:attributes"],
+        ["xpath=//input[3]", "xpath:position"]
+      ],
+      "value": "0"
+    }, {
+      "id": "8e0010e8-3c65-490d-99e2-336d0399be70",
+      "comment": "",
+      "command": "click",
+      "target": "css=button",
+      "targets": [
+        ["css=button", "css:finder"],
+        ["xpath=//button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a5ad0c35-5ffe-4152-99ec-3950448da901",
+      "comment": "",
+      "command": "click",
+      "target": "css=li:nth-child(8)",
+      "targets": [
+        ["css=li:nth-child(8)", "css:finder"],
+        ["xpath=//li[6]", "xpath:position"],
+        ["xpath=//li[contains(.,'Fahrenheit para Kelvin: 255.37')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "e29fb092-6878-47f6-9557-a2a1d13d5091",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=li:nth-child(8)",
+      "targets": [
+        ["css=li:nth-child(8)", "css:finder"],
+        ["xpath=//li[6]", "xpath:position"],
+        ["xpath=//li[contains(.,'Fahrenheit para Kelvin: 255.37')]", "xpath:innerText"]
+      ],
+      "value": "Fahrenheit para Kelvin: 255.37"
+    }]
+  }, {
+    "id": "da354262-e7b8-456c-ba34-16c05adcbf60",
+    "name": "fahrenheit em kelvin (valor decimal)",
+    "commands": [{
+      "id": "a30eedb0-4cb8-4362-8586-118c0acd8f96",
+      "comment": "",
+      "command": "open",
+      "target": "http://127.0.0.1:5500/web/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "951141b7-df16-4d0f-85aa-efe83a7ce095",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "974x1032",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "0275aa09-905a-42f2-a6b0-a06f14c441da",
+      "comment": "",
+      "command": "click",
+      "target": "id=celcius",
+      "targets": [
+        ["id=celcius", "id"],
+        ["css=#celcius", "css:finder"],
+        ["xpath=//input[@id='celcius']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e3315e4d-d987-418e-b73f-5519dfd66727",
+      "comment": "",
+      "command": "type",
+      "target": "id=celcius",
+      "targets": [
+        ["id=celcius", "id"],
+        ["css=#celcius", "css:finder"],
+        ["xpath=//input[@id='celcius']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "0"
+    }, {
+      "id": "010fcda6-3cae-4738-938f-3da2abcfe179",
+      "comment": "",
+      "command": "type",
+      "target": "id=kelvin",
+      "targets": [
+        ["id=kelvin", "id"],
+        ["css=#kelvin", "css:finder"],
+        ["xpath=//input[@id='kelvin']", "xpath:attributes"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "0"
+    }, {
+      "id": "e0be3447-a4f1-4c62-99d8-4e8b398f6767",
+      "comment": "",
+      "command": "type",
+      "target": "id=fahrenheit",
+      "targets": [
+        ["id=fahrenheit", "id"],
+        ["css=#fahrenheit", "css:finder"],
+        ["xpath=//input[@id='fahrenheit']", "xpath:attributes"],
+        ["xpath=//input[3]", "xpath:position"]
+      ],
+      "value": "77.9"
+    }, {
+      "id": "4a701651-70d9-491e-b824-cfb1cb30172c",
+      "comment": "",
+      "command": "click",
+      "target": "css=button",
+      "targets": [
+        ["css=button", "css:finder"],
+        ["xpath=//button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "92eb8442-3417-4373-83bf-da926d8f675a",
+      "comment": "",
+      "command": "click",
+      "target": "css=li:nth-child(8)",
+      "targets": [
+        ["css=li:nth-child(8)", "css:finder"],
+        ["xpath=//li[6]", "xpath:position"],
+        ["xpath=//li[contains(.,'Fahrenheit para Kelvin: 298.65')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "091a91ca-c64c-4ebe-a8b6-2f002e51a639",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=li:nth-child(8)",
+      "targets": [
+        ["css=li:nth-child(8)", "css:finder"],
+        ["xpath=//li[6]", "xpath:position"],
+        ["xpath=//li[contains(.,'Fahrenheit para Kelvin: 298.65')]", "xpath:innerText"]
+      ],
+      "value": "Fahrenheit para Kelvin: 298.65"
+    }]
+  }, {
+    "id": "cbfb03d3-1968-40a5-85f2-00eff21aa4d9",
+    "name": "fahrenheit em kelvin (valor natural)",
+    "commands": [{
+      "id": "f8849eb7-f3fc-42da-9a75-b3b758eb9dd5",
+      "comment": "",
+      "command": "open",
+      "target": "http://127.0.0.1:5500/web/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7a713281-aefb-43cb-989f-0f6254f5bccd",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "974x1032",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "03598ce5-1b1f-4f79-8719-6457699c964e",
+      "comment": "",
+      "command": "click",
+      "target": "id=celcius",
+      "targets": [
+        ["id=celcius", "id"],
+        ["css=#celcius", "css:finder"],
+        ["xpath=//input[@id='celcius']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c5e26ecb-4ae3-404d-aff6-f9b28bec0c5f",
+      "comment": "",
+      "command": "type",
+      "target": "id=celcius",
+      "targets": [
+        ["id=celcius", "id"],
+        ["css=#celcius", "css:finder"],
+        ["xpath=//input[@id='celcius']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "0"
+    }, {
+      "id": "71d04cec-0610-4106-8939-1d6371a1dbdf",
+      "comment": "",
+      "command": "type",
+      "target": "id=kelvin",
+      "targets": [
+        ["id=kelvin", "id"],
+        ["css=#kelvin", "css:finder"],
+        ["xpath=//input[@id='kelvin']", "xpath:attributes"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "0"
+    }, {
+      "id": "ba1009fd-7031-4770-89dc-34c9bf9ac67d",
+      "comment": "",
+      "command": "type",
+      "target": "id=fahrenheit",
+      "targets": [
+        ["id=fahrenheit", "id"],
+        ["css=#fahrenheit", "css:finder"],
+        ["xpath=//input[@id='fahrenheit']", "xpath:attributes"],
+        ["xpath=//input[3]", "xpath:position"]
+      ],
+      "value": "73"
+    }, {
+      "id": "bee112d3-7085-4c9f-8211-ea787897ee61",
+      "comment": "",
+      "command": "click",
+      "target": "css=button",
+      "targets": [
+        ["css=button", "css:finder"],
+        ["xpath=//button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "78523cc7-6749-42a2-b475-d42123d9f748",
+      "comment": "",
+      "command": "click",
+      "target": "css=li:nth-child(8)",
+      "targets": [
+        ["css=li:nth-child(8)", "css:finder"],
+        ["xpath=//li[6]", "xpath:position"],
+        ["xpath=//li[contains(.,'Fahrenheit para Kelvin: 295.93')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "5a4af65a-4b61-490c-8276-c487255eba10",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=li:nth-child(8)",
+      "targets": [
+        ["css=li:nth-child(8)", "css:finder"],
+        ["xpath=//li[6]", "xpath:position"],
+        ["xpath=//li[contains(.,'Fahrenheit para Kelvin: 295.93')]", "xpath:innerText"]
+      ],
+      "value": "Fahrenheit para Kelvin: 295.93"
+    }]
+  }, {
+    "id": "e60d73b9-51ea-42c1-a5f5-1c5f20314372",
+    "name": "fahrenheit em kelvin (valor negativo)",
+    "commands": [{
+      "id": "ad017357-7409-482c-8ce6-53f237198573",
+      "comment": "",
+      "command": "open",
+      "target": "http://127.0.0.1:5500/web/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a8c97521-b1cb-45c4-bd42-ea9bc528318d",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "974x1032",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "061c4ff4-8530-4d79-ad16-08f8cb10a326",
+      "comment": "",
+      "command": "click",
+      "target": "id=celcius",
+      "targets": [
+        ["id=celcius", "id"],
+        ["css=#celcius", "css:finder"],
+        ["xpath=//input[@id='celcius']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f747dddd-f6bd-4bf7-8c56-4c3dcb48ef22",
+      "comment": "",
+      "command": "type",
+      "target": "id=celcius",
+      "targets": [
+        ["id=celcius", "id"],
+        ["css=#celcius", "css:finder"],
+        ["xpath=//input[@id='celcius']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "0"
+    }, {
+      "id": "1508f849-0a7d-4996-940a-9ba07550e571",
+      "comment": "",
+      "command": "type",
+      "target": "id=kelvin",
+      "targets": [
+        ["id=kelvin", "id"],
+        ["css=#kelvin", "css:finder"],
+        ["xpath=//input[@id='kelvin']", "xpath:attributes"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "0"
+    }, {
+      "id": "56f711c5-b1b6-40ef-bbb6-35ec3f965f2a",
+      "comment": "",
+      "command": "type",
+      "target": "id=fahrenheit",
+      "targets": [
+        ["id=fahrenheit", "id"],
+        ["css=#fahrenheit", "css:finder"],
+        ["xpath=//input[@id='fahrenheit']", "xpath:attributes"],
+        ["xpath=//input[3]", "xpath:position"]
+      ],
+      "value": "-40"
+    }, {
+      "id": "4e95c159-543f-4b7c-8518-5c76efff316c",
+      "comment": "",
+      "command": "click",
+      "target": "css=button",
+      "targets": [
+        ["css=button", "css:finder"],
+        ["xpath=//button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8cea9b1e-e455-4064-8a70-b0da2e265695",
+      "comment": "",
+      "command": "click",
+      "target": "css=li:nth-child(8)",
+      "targets": [
+        ["css=li:nth-child(8)", "css:finder"],
+        ["xpath=//li[6]", "xpath:position"],
+        ["xpath=//li[contains(.,'Fahrenheit para Kelvin: 233.15')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "de0834af-ab0c-470c-817b-e7e37d01536c",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=li:nth-child(8)",
+      "targets": [
+        ["css=li:nth-child(8)", "css:finder"],
+        ["xpath=//li[6]", "xpath:position"],
+        ["xpath=//li[contains(.,'Fahrenheit para Kelvin: 233.15')]", "xpath:innerText"]
+      ],
+      "value": "Fahrenheit para Kelvin: 233.15"
+    }]
+  }],
+  "suites": [{
+    "id": "d8b064cf-ab44-4963-ab7c-ba8f93071093",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": []
+  }],
+  "urls": ["http://127.0.0.1:5500/web/"],
+  "plugins": []
+}

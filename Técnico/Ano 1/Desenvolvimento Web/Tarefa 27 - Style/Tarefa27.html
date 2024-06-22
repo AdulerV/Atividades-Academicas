@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarefa 27</title>
+    <link rel="stylesheet" href="Tarefa27.css">
+    <script>
+        function minhaFuncao() {
+            let varInput = document.getElementById("inputNumber").value;
+
+            if ((varInput == 0) || (varInput.length < 1)) {
+                document.getElementById("inputNumber").style.backgroundColor = "yellow"
+            }
+
+            else if (varInput < 18) {
+                document.getElementById("inputNumber").style.backgroundColor = "red"
+            }
+
+            else if (varInput >= 18) {
+                document.getElementById("inputNumber").style.backgroundColor = "green"
+            }
+        }
+    </script>
+
+</head>
+
+<body>
+    <form>
+        <h2>Propriedade Style</h2>
+        <label for="inputNumber">Insira sua idade:</label>
+        <input type="text" id="inputNumber" onkeyup="minhaFuncao()">
+    </form>
+
+</body>
+
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questão3</title>
+    <script>
+        /*3. Crie uma função chamada calcMRU que receba como parâmetro o espaço inicial, a velocidade
+        e o tempo e retorne o espaço final. O programa principal deve imprimir o espaço final retornado
+        pela função na página HTML.*/
+
+        function calcMRU(Si, V, T) {
+
+            let S = Si + V * T
+            return (S)
+        }
+
+        let Si = parseFloat(prompt("Insira o espaço inicial"));
+        let V = parseFloat(prompt("Insira a velocidade"));
+        let T = parseFloat(prompt("Insira o tempo"));
+        document.write("<b>O espaço final é: </b>", calcMRU(Si, V, T))
+    </script>
+</head>
+
+<body>
+</body>
+
+</html>

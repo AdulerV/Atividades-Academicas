@@ -1,0 +1,69 @@
+form {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 300px;
+    height: 450px;
+    background-color: #102875;
+    background-image: linear-gradient(#17171C, #25727c);
+    border-style: ridge;
+    border-color: #004E5F;
+    border-width: 7px;
+    border-radius: 3%;
+    font-family: TheEvil;
+    text-align: center;
+}
+
+body {
+    background-image: linear-gradient(30deg, black, #25727c);
+}
+
+h1 {
+    color: rgb(58, 173, 173);
+    text-decoration: underline;
+    font-family: TheEvil;
+    text-shadow: #1b575d 0.1em 0.1em 0.2em
+}
+
+@font-face {
+    font-family: TheEvil;
+    src: url(TheEvilWithin.ttf)
+}
+
+.labelTipo1 {
+    color: white;
+    text-shadow: 0.2em 0.2em #1b575d
+}
+
+.labelTipo2 {
+    color: white;
+    text-shadow: 0.2em 0.2em #153336
+}
+
+#inputReset:hover {
+    background-color: aqua;
+    border-radius: 5%;
+}
+
+#inputReset {
+    background-color: rgb(32, 180, 180);
+    color: rgba(0, 0, 0, 0.842);
+    border-style: outset;
+    border-color: rgb(32, 180, 180);
+    font-family: TheEvil;
+    width: 60px;
+}
+
+#inputButton:hover {
+    background-color: aqua;
+}
+
+#inputButton {
+    background-color: rgb(32, 180, 180);
+    color: rgba(0, 0, 0, 0.842);
+    border-style: outset;
+    border-color: rgb(32, 180, 180);
+    font-family: TheEvil;
+    width: 60px;
+}

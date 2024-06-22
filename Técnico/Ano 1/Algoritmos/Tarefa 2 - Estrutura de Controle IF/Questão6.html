@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questão 6</title>
+</head>
+
+<body>
+    <script type="text/javascript">
+        /*6. Faça um algoritmo que lê 2 valores (A e B). Após a mensagem, o algoritmo deve mostrar uma mensagem "
+        São Múltiplos" ou "Não são Múltiplos", correspondente aos valores lidos.*/
+
+        var A, B;
+        A = parseFloat(prompt("Insira um número para a primeira variavel (A)"));
+        B = parseFloat(prompt("Insira um número para a segunda variavel (B)"));
+
+        if ((A % B == 0) || (B % A == 0)) {
+            document.write("São Múltiplos.");
+        }
+        else {
+            document.write("Não são Múltiplos.");
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questão3</title>
+    <link rel="stylesheet" href="Aduler_questao3.css">
+    <script>
+        var Resultado1, Resultado2, Resultado3, Resultado4, Resultado5, Total;
+
+        function funcaoPrecos() {
+
+            let Cachorro = parseInt(document.getElementById('HotDog').value);
+            Resultado1 = Cachorro * 4.00
+            document.getElementById('tdQuente').innerHTML = Resultado1.toFixed(2);
+
+            let Salada = parseInt(document.getElementById('Salada').value);
+            Resultado2 = Salada * 4.50
+            document.getElementById('tdSalada').innerHTML = Resultado2.toFixed(2);
+
+            let Bacon = parseInt(document.getElementById('Bacon').value);
+            Resultado3 = Bacon * 5.00
+            document.getElementById('tdBacon').innerHTML = Resultado3.toFixed(2);
+
+            let Torrada = parseInt(document.getElementById('Torrada').value);
+            Resultado4 = Torrada * 2.00
+            document.getElementById('tdTorrada').innerHTML = Resultado4.toFixed(2);
+
+            let Refri = parseInt(document.getElementById('Refri').value);
+            Resultado5 = Refri * 1.50
+            document.getElementById('tdRefri').innerHTML = Resultado5.toFixed(2);
+
+            Total = Resultado1 + Resultado2 + Resultado3 + Resultado4 + Resultado5;
+
+            document.getElementById('Total').innerHTML = Total.toFixed(2);
+
+            return;
+        }
+
+    </script>
+</head>
+
+<body>
+    <div>
+        <h1>Lanchonete Bacana:</h1>
+
+        <table>
+            <tr>
+                <td>Quantidade</td>
+                <td>Especificação</td>
+                <td>Preço Unitário</td>
+                <td>Totais (R$):</td>
+            </tr>
+
+            <tr>
+                <td><label for="HotDog"><input type="number" name="HotDog" id="HotDog" value="0" min="0"
+                            onchange="funcaoPrecos()"></label></td>
+                <td>Cachorro Quente</td>
+                <td>4.00</td>
+                <td id="tdQuente">--</td>
+            </tr>
+
+            <tr>
+                <td><label for="Salada"><input type="number" name="Salada" id="Salada" value="0" min="0"
+                            onchange="funcaoPrecos()"></label></td>
+                <td>X-Salada</td>
+                <td>4.50</td>
+                <td id="tdSalada">--</td>
+            </tr>
+
+            <tr>
+                <td><label for="Bacon"><input type="number" name="Bacon" id="Bacon" value="0" min="0"
+                            onchange="funcaoPrecos()"></label></td>
+                <td>X-Bacon</td>
+                <td>5.00</td>
+                <td id="tdBacon">--</td>
+            </tr>
+
+            <tr>
+                <td><label for="Torrada"><input type="number" name="Torrada" id="Torrada" value="0" min="0"
+                            onchange="funcaoPrecos()"></label></td>
+                <td>Torrada Simples</td>
+                <td>2.00</td>
+                <td id="tdTorrada">--</td>
+            </tr>
+
+            <tr>
+                <td><label for="Refri"><input type="number" name="Refri" id="Refri" value="0" min="0"
+                            onchange="funcaoPrecos()"></label></td>
+                <td>Refrigerante</td>
+                <td>1.50</td>
+                <td id="tdRefri">--</td>
+            </tr>
+            <tr>
+                <td colspan="3">Total (R$):</td>
+                <td id="Total" onchange="funcaoPrecos()">--</td>
+            </tr>
+        </table>
+    </div>
+</body>
+
+</html>

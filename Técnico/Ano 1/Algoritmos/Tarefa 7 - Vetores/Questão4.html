@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questão4</title>
+    <script>
+
+        /*4. Faça um algoritmo que leia um vetor D[8]. 
+        A seguir, troque o 1º elemento com o 5º, o 2º com o 6º, etc. 
+        Mostre no final o vetor modificado.*/
+
+        var A = []
+        for (let D = 0; D < 8; D++) {
+            A[D] = Number(prompt("Insira algum número"));
+        }
+
+        let C = A[0];
+        A[0] = A[4];
+        A[4] = C;
+
+        C = A[1];
+        A[1] = A[5];
+        A[5] = C;
+
+        C = A[2];
+        A[2] = A[6];
+        A[6] = C;
+
+        C = A[3];
+        A[3] = A[7];
+        A[7] = C;
+
+        document.write("<b>Ordem modificada: </b>", A)
+    </script>
+</head>
+
+<body>
+</body>
+
+</html>

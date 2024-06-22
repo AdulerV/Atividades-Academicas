@@ -1,0 +1,13 @@
+header.cabecalho {
+    margin: 10px;
+    border-bottom: solid 1px #000;
+    flex: 0.2;
+}
+
+header.cabecalho h1 {
+    text-align: center;
+}
+
+header.cabecalho p {
+    margin-left: 10px;
+}

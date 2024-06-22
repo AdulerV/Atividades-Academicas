@@ -1,0 +1,29 @@
+1. Ao trabalhar com o PHP em nossa máquina local os scripts devem ser amazenados em uma pasta especial, que pasta é essa?
+
+R: c:/wamp64/www
+
+
+2. Qual o significado da sigla PHP?
+R: PHP significa Php, Hipertext, Preprocessor.
+
+
+3. Qual a função do comando echo em PHP?
+R: A função do comando "echo" é imprimir a informação na tela.
+
+
+4. Qual o significado da sigla AMP?
+R: AMP significa Apache + MySQL + PHP
+
+5. Quais os softwares necessários para o trabalho com o PHP em uma máquina local?
+R: Para executar o PHP é necessário um editor de texto (Visual Studio Code, Notepad++) e de um servidor (WAMP, LAMP ou MAMP).
+
+6. Diferencie tecnolgia client-side e server-side.
+R: A tecnologia client-side tem como função do servidor emitir apenas arquivos que o usuário solicitar, enquanto que a tecnologia 
+server-side o servidor irá obter a maior parte do trabalho, pois afinal existe a interpretação ao lado do servidor.
+
+7. Como executamos nosso script PHP?
+R: Para executar os scripts PHP utilizamos um servidor (WAMP, por exemplo). Então, para a tal execução acessamos o localhost da máquina pelo browser e escolhemos a 
+pasta "c:/wamp64/www".
+
+8. Qual a extensão devemos usar em nossos scripts PHP?
+Utilizamos a extensão de mesmo nome (.php) Exemplo: exemplo.php

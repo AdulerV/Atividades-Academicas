@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=], initial-scale=1.0">
+    <title>Questão 4</title>
+</head>
+
+<body>
+    <script>
+        /*
+        A Escola de Natação Mergulhar, deseja implantar um sistema que auxilie a
+        calcular o valor das mensalidades. A escola trabalha com a tabela de preços abaixo.
+        Construa um programa em JavaScript, que solicite os dados necessários para calcular a
+        mensalidade, e imprima uma mensagem contendo as informações descrição da
+        atividade e total a ser pago.
+        Exemplo: se o usuário disser código 3 e 2 vezes na semana, o programa deverá imprimir
+        “Hidroginástica 2 vezes na semana terá mensalidade de R$ 130,00.”
+    
+        CÓDIGO              DESCRIÇÃO                     VALOR POR DIA DA SEMANA
+        1                   Natação Adulto                       R$ 62,00
+        2                   Natação Infantil                     R$ 70,00
+        3                   Hidroginástica                       R$ 65,00
+        4                   Hidrobike                            R$ 75,00
+        */
+        var CODE, total, vezes
+        CODE = parseInt(prompt("Insira o código da modalidade:"));
+        vezes = parseInt(prompt("Insira a quantidade de vezes na semana:"));
+
+        switch (CODE) {
+            case 1:
+                total = 62.00 * vezes
+                document.write("Natação Adulto ", vezes, " vezes na semana terá mensalidade de R$ ", total);
+                break;
+
+            case 2:
+                total = 70.00 * vezes
+                document.write("Natação Infantil ", vezes, " vezes na semana terá mensalidade de R$ ", total);
+                break;
+
+            case 3:
+                total = 65.00 * vezes
+                document.write("Hidroginástica ", vezes, " vezes na semana terá mensalidade de R$ ", total);
+                break;
+
+            case 4:
+                total = 75.00 * vezes
+                document.write("Hidrobike ", vezes, " vezes na semana terá mensalidade de R$ ", total);
+                break;
+
+            default:
+                document.write("Código inválido.");
+        }
+    </script>
+</body>
+
+</html>

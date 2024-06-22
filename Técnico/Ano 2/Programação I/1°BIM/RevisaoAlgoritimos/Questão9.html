@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+        /*9. Elaborar um algoritmo que leia o nome e o sexo de uma pessoa, 
+        informando o nome seguido da palavra homem (sexo = ‘masculino’) 
+        ou mulher (sexo = ‘feminino’).*/
+
+        let nome = prompt("Insira o nome")
+        let sexo = prompt("Insira seu sexo (masculino) ou (feminino)")
+
+        if ((sexo == "masculino") || (sexo == "Masculino") || (sexo == "MASCULINO")) {
+            document.write(nome, " é homem")
+        }
+
+        else if ((sexo == "feminino") || (sexo == "Feminino") || (sexo == "FEMININO")) {
+            document.write(nome, " é mulher")
+        }
+
+        else {
+            document.write("Sexo invalido")
+        }
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+        /*1. Elaborar um algoritmo que calcule a área de um trapézio, 
+        suas dimensões são fornecidas pelo teclado.*/
+
+        let baseMaior = parseFloat(prompt("Insira a base maior"));
+        let baseMenor = parseFloat(prompt("Insira a base menor"));
+        let altura = parseFloat(prompt("Insira a altura"));
+
+        let area = (baseMaior + baseMenor) * altura / 2
+        document.write("A área do trapézio: ", area)
+
+    </script>
+</body>
+
+</html>

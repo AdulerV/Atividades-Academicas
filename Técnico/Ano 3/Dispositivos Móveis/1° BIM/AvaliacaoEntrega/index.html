@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            height: 100vh;
+            margin: 0;
+            display: flex;
+        }
+
+        div {
+            border: solid 2px black;
+            padding: 20px;
+            flex: 1;
+        }
+    </style>
+</head>
+
+<body onload="inserirExcluirLista()">
+
+    <!--//Questão 1:-->
+    <div id="questao1">
+        <select onchange="corFundo()" id="selectCor">
+            <option id="opcao1" value="red">Vermelho</option>
+            <option id="opcao2" value="blue">Azul</option>
+            <option id="opcao3" value="yellow">Amarelo</option>
+            <option id="opcao4" value="pink">Rosa</option>
+        </select>
+    </div>
+
+    <!--Questão 2:-->
+    <div id="questao2">
+        <button onclick="botaoClique()" id="btnSoma">0</button>
+    </div>
+
+    <!--Questão 3:-->
+    <div id="questao3">
+        <select id="selectTag">
+            <option value="h1">h1</option>
+            <option value="h2">h2</option>
+            <option value="h3">h3</option>
+            <option value="h4">h4</option>
+            <option value="h5">h5</option>
+            <option value="h6">h6</option>
+            <option value="p">p</option>
+        </select>
+        <input type="text" id="campoTextoTag">
+        <button onclick="inserirTag()">Inserir</button></br>
+        <span id="pai"></span>
+    </div>
+
+    <!--Questão 4:-->
+    <div id="questao4">
+        <input type="text" id="campoTextoLista">
+        <button id="adicionar">Inserir</button>
+        <button id="remover">Remover</button>
+        <ol id="lista"></ol>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

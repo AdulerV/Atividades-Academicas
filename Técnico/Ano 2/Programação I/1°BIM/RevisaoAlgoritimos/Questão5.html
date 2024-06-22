@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+        let minimo = -99999999999999999999999, maximo = 99999999999999999999999, flag = 0;
+
+        while (flag > -1) {
+
+            flag = Number(prompt("Insira numeros"));
+
+            if (flag > minimo) {
+                minimo = flag
+            }
+
+            if ((flag < maximo) && (flag != -1)) {
+                maximo = flag
+            }
+        }
+
+        document.write("Menor número: ", maximo, " <br> Maior número: ", minimo)
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,36 @@
+div {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+td {
+    width: 100px;
+    height: 50px;
+    text-align: center;
+}
+
+input {
+    width: 50px;
+    border-style: ridge;
+    border-color: black;
+    border-width: 2px;
+}
+
+tr:nth-child(even) {
+    background: rgb(209, 208, 208)
+}
+
+tr:nth-child(odd) {
+    background: white
+}
+
+table {
+    border: solid;
+    border-radius: 2%;
+}

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questão6</title>
+    <script>
+        /*6. Construa um programa que armazene em um vetor chamado aposta seis números escolhidos
+        por um apostador. Após realizar a leitura do vetor aposta seu programa deve solicitar que o
+        usuário digite os seis números sorteados na Mega-Sena e informar na tela qual é o resultado
+        na aposta (acertou a sena, acertou a quina, acertou a quadra ou aposta não premiada.*/
+
+        let aposta = []; megaSena = [], contador = 0
+
+        for (let x = 1; x <= 6; x++) {
+            aposta[x] = parseInt(prompt("Insira algum número entre 01 e 60"));
+        }
+
+        for (let i = 1; i <= 6; i++) {
+            megaSena[i] = parseInt(prompt("Insira algum número entre 01 e 60 (Mega Sena)"));
+        }
+
+        if (((aposta[1] == megaSena[1]) || (aposta[1] == megaSena[2])
+            || (aposta[1] == megaSena[3]) || (aposta[1] == megaSena[4])
+            || (aposta[1] == megaSena[5] || (aposta[1] == megaSena[6])))) {
+            contador++
+        }
+        if (((aposta[2] == megaSena[1]) || (aposta[2] == megaSena[2])
+            || (aposta[2] == megaSena[3]) || (aposta[2] == megaSena[4])
+            | (aposta[2] == megaSena[5] || (aposta[2] == megaSena[6])))) {
+            contador++
+        }
+        if (((aposta[3] == megaSena[1]) || (aposta[3] == megaSena[2])
+            || (aposta[3] == megaSena[3]) || (aposta[3] == megaSena[4])
+            || (aposta[3] == megaSena[5] || (aposta[3] == megaSena[6])))) {
+            contador++
+        }
+        if (((aposta[4] == megaSena[1]) || (aposta[4] == megaSena[2])
+            || (aposta[4] == megaSena[3]) || (aposta[4] == megaSena[4])
+            || (aposta[4] == megaSena[5] || (aposta[4] == megaSena[6])))) {
+            contador++
+        }
+        if (((aposta[5] == megaSena[1]) || (aposta[5] == megaSena[2])
+            || (aposta[5] == megaSena[3]) || (aposta[5] == megaSena[4])
+            || (aposta[5] == megaSena[5] || (aposta[5] == megaSena[6])))) {
+            contador++
+        }
+        if (((aposta[6] == megaSena[1]) || (aposta[6] == megaSena[2])
+            || (aposta[6] == megaSena[3]) || (aposta[6] == megaSena[4])
+            || (aposta[6] == megaSena[5] || (aposta[6] == megaSena[6])))) {
+            contador++
+        }
+
+        if (contador == 6) {
+            document.write("Acertou a sena")
+        }
+        else if (contador == 5) {
+            document.write("Acertou a quina")
+        }
+        else if (contador == 4) {
+            document.write("Acertou a quadra")
+        }
+        else if (contador < 4) {
+            document.write("Aposta não premiada")
+        }
+    </script>
+</head>
+
+<body>
+</body>
+
+</html>

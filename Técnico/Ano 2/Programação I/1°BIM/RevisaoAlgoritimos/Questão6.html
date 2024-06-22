@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        
+        /*6. Construir um algoritmo para calcular as raízes de uma equação do 2º grau, 
+        sendo que os coeficientes a,b e c são fornecidos pelo teclado.*/
+
+        let A = parseInt(prompt("Insira o valor do coeficiente A"));
+        let B = parseInt(prompt("Insira o valor do coeficiente B"));
+        let C = parseInt(prompt("Insira o valor do coeficiente C"));
+        let X1, X2;
+
+        let delta = B * B - 4 * A * C
+
+        if (delta < 0) {
+            X1 = 'Não possui raízes reais';
+            X2 = '';
+            document.write(X1, "<br>", X2)
+        }
+
+        else if ((X1 = (-B - Math.sqrt(delta)) / (2 * A)) && (X2 = (-B + Math.sqrt(delta)) / (2 * A))) {
+            document.write("S = {", X1, ",", X2, "}")
+        }
+
+    </script>
+</body>
+
+</html>

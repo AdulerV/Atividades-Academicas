@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarefa 26</title>
+    <script>
+        setInterval(minhaFuncao, 1000)
+
+        var X = 11
+
+        function minhaFuncao() {
+            document.getElementById("demo").innerHTML = X;
+
+            if (X > 0) {
+                X = document.getElementById("demo").innerHTML -= 1;
+            }
+
+            if (X == 0) {
+                X = document.getElementById("demo").innerHTML = "Tempo esgotado.";
+            }
+
+        }
+    </script>
+    <style>
+        div {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+
+            border-width: 10px;
+            border-color: cornflowerblue;
+            border-style: inset;
+            background-color: cyan;
+            width: 120px;
+            height: 125px;
+        }
+
+        #demo {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <p id="tempo">⠀Tempo restante: </p>
+        <p id="demo">10</p>
+    </div>
+</body>
+
+</html>

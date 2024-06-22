@@ -1,0 +1,60 @@
+body {
+    background-color: black;
+}
+
+h2 {
+    text-decoration: underline;
+    font-family: kleymisska;
+
+}
+
+form {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    width: 400px;
+    height: 300px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    background-image: linear-gradient(rgb(42, 11, 36), rgb(118, 33, 101));
+    box-shadow: 0px 10px 10px 10px rgb(72, 13, 43);
+
+    border-style: inset;
+    border-width: 10px;
+    border-color: black;
+    border-color: rgb(18, 16, 16);
+    border-radius: 10px;
+
+    color: whitesmoke;
+    text-align: center;
+}
+
+label {
+    font-family: 'Times New Roman', Times, serif
+}
+
+#Enviar {
+    color: rgb(255, 255, 255);
+    background-image: linear-gradient(black, rgb(18, 16, 16));
+    font-family: 'Times New Roman', Times, serif
+}
+
+#Enviar:hover {
+    color: rgb(255, 255, 255);
+    background-image: linear-gradient(black, rgb(18, 16, 16));
+    font-family: 'Times New Roman', Times, serif;
+    width: 55px;
+
+}
+
+
+@font-face {
+    font-family: kleymisska;
+    src: url(Kleymisska.ttf);
+}

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questão4</title>
+</head>
+
+<body>
+    <script>
+        //4. Escrever um algoritmo que lê um valor N inteiro e positivo e que calcula e escreve o valor de E.
+
+        var E = 0, N, A;
+        N = parseInt(prompt("Insira um número inteiro positivo:"));
+
+        for (A = 1; A <= N; A = A + 1) {
+            E = E + 1 / A;
+        }
+        document.write("E: ", E);
+    </script>
+
+</html>
+</body>
+
+</html>

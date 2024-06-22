@@ -1,0 +1,109 @@
+body {
+    font-family: 'Segoe UI';
+    background: url(../images/wallpaper.jpg) center center no-repeat fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+nav {
+    position: absolute;
+    top: 83%;
+}
+
+a {
+    color: rgb(143, 226, 0);
+}
+
+a:visited {
+    color: rgb(76, 117, 4);
+}
+
+.cabecalho,
+.titulo,
+.elementoLista,
+.rodape {
+    color: rgb(143, 226, 0);
+    text-align: center;
+}
+
+.cabecalho {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: center;
+    z-index: 1;
+    background-color: black;
+    height: 2.5cm;
+    width: 100%;
+}
+
+.sumario {
+    position: relative;
+    text-transform: uppercase;
+    width: 3.2cm;
+}
+
+.elementoLista {
+    position: relative;
+    top: 100%;
+    left: -30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    color: rgb(143, 226, 0);
+    border: 1px rgb(143, 226, 0) solid;
+    border-radius: 5px;
+    height: 1cm;
+    width: 2.5cm;
+}
+
+.artigo {
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%);
+    z-index: 0;
+    text-align: justify;
+    color: aliceblue;
+    box-shadow: 1px 5px 5px 5px gray;
+    background-color: rgb(22, 22, 22);
+    margin: 5px;
+    height: 30cm;
+    max-width: 20cm;
+}
+
+.secaoConteudo {
+    margin: 5%;
+}
+
+.secaoImagem {
+    display: flex;
+    justify-content: center;
+}
+
+.logotipo {
+    max-width: 5cm;
+    max-height: 5cm;
+}
+
+.rodape {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+    color: rgb(118, 185, 0);
+    background-color: black;
+    height: 2cm;
+    width: 100%;
+}

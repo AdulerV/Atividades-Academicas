@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        /*Num frigorífico existem vários bois. Cada boi traz preso no seu pescoço um
+        cartão contendo um número de identificação e seu peso. Construa um algortimo em
+        JavaScript que escreva o número e o peso do boi mais gordo e do boi mais magro. O
+        algoritmo acaba quando se digita um número igual ou menor a zero para identificação.*/
+
+        var ident, peso, Menor, Maior, identMaior, identMenor;
+
+        peso = 0;
+        ident = 1;
+
+        ident = parseInt(prompt("Insira o número de identificação"));
+        if (ident > 0) {
+            peso = parseFloat(prompt("Insira o peso do boi:"));
+        }
+        identMaior = ident
+        Maior = peso
+        Menor = peso
+        while (ident > 0) {
+            if (peso > Maior) {
+                Maior = peso;
+                identMaior = ident
+            }
+            if (peso <= Menor) {
+                Menor = peso;
+                identMenor = ident
+            }
+            ident = parseInt(prompt("Insira o número de identificação:"));
+            if (ident > 0) {
+                peso = parseFloat(prompt("Insira o peso do boi:"));
+            }
+        }
+
+        document.write("Peso do boi mais pesado: ", Maior, "<br> Peso do boi menos pesado: ", Menor, "<br> Número de Identificação do mais pesado: ", identMaior, "<br> Número de Identificação do menos pesado: ", identMenor);
+    </script>
+</body>
+
+</html>

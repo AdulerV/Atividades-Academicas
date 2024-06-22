@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questão1</title>
+    <script>
+
+        /*1. Faça um algoritmo que leia um vetor de 6 posições inteiras e em seguida informe
+        quantos valores são negativos.*/
+
+        var A = [];
+        var B = 0;
+
+        for (let C = 0; C < 6; C++) {
+            A[C] = parseInt(prompt("Insira algum número"));
+        }
+
+        for (C = 0; C <= 6; C++) {
+            if (A[C] < 0) {
+                B++;
+            }
+        }
+        document.write("Os valores negativos são: ", B);
+    </script>
+</head>
+
+<body>
+</body>
+
+</html>

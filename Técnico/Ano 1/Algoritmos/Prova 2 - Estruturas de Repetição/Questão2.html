@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questão2</title>
+</head>
+
+<body>
+    <script>
+        /*Construa um algortimo em JavaScript que leia 20 números e imprima a
+        soma dos números cujos quadrados são menores que 225.*/
+
+        var contador, num, resultado;
+        contador = 0;
+        resultado = 0;
+
+        while (contador < 20) {
+            num = parseInt(prompt("Insira um número:"))
+            num = num * num;
+            contador = contador + 1;
+            if (num < 225) {
+                resultado = resultado + num;
+            }
+        }
+
+        document.write("Resultado: ", resultado);
+    </script>
+</body>
+
+</html>

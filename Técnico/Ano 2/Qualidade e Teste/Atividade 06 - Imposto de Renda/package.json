@@ -1,0 +1,24 @@
+{
+  "name": "impostorenda",
+  "version": "1.0.0",
+  "description": "To make it easy for you to get started with GitLab, here's a list of recommended next steps.",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://gitlab.com/aula-daves/ifet/2022/qualidade/grupo/trabalho3bim/grupo1/impostorenda.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://gitlab.com/aula-daves/ifet/2022/qualidade/grupo/trabalho3bim/grupo1/impostorenda/issues"
+  },
+  "homepage": "https://gitlab.com/aula-daves/ifet/2022/qualidade/grupo/trabalho3bim/grupo1/impostorenda#readme",
+  "devDependencies": {
+    "@babel/plugin-transform-modules-commonjs": "^7.19.6",
+    "jest": "^29.3.1"
+  }
+}

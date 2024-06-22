@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <title>Questão 2</title>
+    <meta charset="utf-8">
+    <script>
+        /*2. Faça uma função que recebe a idade de um nadador por parâmetro e retorna, 
+        a categoria desse nadador de acordo com a tabela*/
+
+        function funcao(x) {
+            if (x >= 5 && x <= 7) {
+                document.write("Infantil A")
+            }
+            else {
+                if (x >= 8 && x <= 10) {
+                    document.write("Infantil B");
+                }
+                else {
+                    if (x >= 11 && x <= 13) {
+                        document.write("Juvenil A");
+                    }
+                    else {
+                        if (x >= 14 && x <= 17) {
+                            document.write("Juvenil B");
+                        }
+                        else {
+                            if (x >= 18) {
+                                document.write("Adulto");
+                            }
+                            else {
+                                document.write("Idade não cadastrada");
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        x = parseInt(prompt("Insira a idade"));
+        funcao(x);
+    </script>
+</head>
+
+<body>
+</body>
+
+</html>

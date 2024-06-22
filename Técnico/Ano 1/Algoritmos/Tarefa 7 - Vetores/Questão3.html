@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questão3</title>
+    <script>
+
+        /*3. Faça um algoritmo que leia um vetor N[20]. 
+        A seguir, encontre o menor elemento do vetor N e a sua posição dentro do vetor, mostrando: 
+        “O menor elemento de N é”, M, “e sua posição dentro do vetor é:”, P.*/
+
+        var A = [];
+
+        for (let N = 0; N < 20; N++) {
+            A[N] = Number(prompt("Insira algum número"));
+        }
+        let C = A[0];
+        let P = 0;
+        for (N = 0; N < 20; N++) {
+            if (A[N] < C) {
+                C = A[N];
+                P = N;
+            }
+        }
+        document.write("<b>O menor elemento de N é: </b>", C, "<b> e sua posição dentro do vetor é: </b>", P);
+    </script>
+</head>
+
+<body>
+</body>
+
+</html>

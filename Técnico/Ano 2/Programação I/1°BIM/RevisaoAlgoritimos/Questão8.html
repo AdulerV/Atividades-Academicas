@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+
+        /*8. Supondo que a população de um país A seja da ordem de 90 milhões de habitantes com
+        uma taxa anual de crescimento de 3% e que a população de um país B seja
+        aproximadamente de 200 milhões de habitantes com uma taxa anual de crescimento de
+        1,5%, elaborar um algoritmo que calcule e imprima o número de anos necessários para
+        que a população do país A ultrapasse ou se iguale a população do país B. (mantidas essas
+        taxas de crescimento)*/
+
+        let paisA = 90000000, paisB = 200000000, contador = 0;
+
+        while (paisA <= paisB) {
+            paisA = paisA + paisA * 0.03
+            paisB = paisB + paisB * 0.015
+            contador++
+        }
+
+        document.write("Será necessário ", contador, " anos")
+        
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

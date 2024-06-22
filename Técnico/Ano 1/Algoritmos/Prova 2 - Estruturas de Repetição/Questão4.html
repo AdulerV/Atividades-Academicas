@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questão4</title>
+</head>
+
+<body>
+    <script>
+        /*Construa um algortimo em JavaScript que calcule o M.M.C. entre dois
+        números lidos. (Lembrete: O M.M.C. – Mínimo Múltiplos Comum – é o menor número
+        múltiplo comum encontrado entre dois ou mais números.)*/
+
+        var N1, N2, MMC;
+        N1 = parseInt(prompt("Insira algum número: "));
+        N2 = parseInt(prompt("Insira outro número: "));
+        MMC = N2;
+
+        while (!(MMC % N1 == 0)) {
+            MMC = MMC + N2;
+        }
+
+        document.write("MMC: ", MMC);
+    </script>
+</body>
+
+</html>

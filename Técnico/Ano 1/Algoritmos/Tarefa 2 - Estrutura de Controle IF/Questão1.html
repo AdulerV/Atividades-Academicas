@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questão 1</title>
+</head>
+
+<body>
+    <script type="text/javascript">
+        /*Faça um algoritmo que leia 4 variáveis A, B, C e D. A seguir, verifique se B for maior do que C e se D 
+        for maior do que A e a soma de C com D for maior que a soma de A e B e se C e D, 
+        ambos, forem positivos e se a variável A for par escrever a mensagem "valores aceitos", 
+        senão escrever "valores não aceitos".*/
+
+        var A, B, C, D;
+        A = Number(prompt("Insira o valor da primeira variavel (A)"));
+        B = Number(prompt("Insira o valor da segunda variavel (B)"));
+        C = Number(prompt("Insira o valor da terceira variavel (C)"));
+        D = Number(prompt("Insira o valor da quarta variavel (D)"));
+
+        if ((((B > C && D > A) && (C + D > A + B)) && ((C > 0 && D > 0) && (A % 2 == 0)))) {
+            document.write("Valores aceitos.");
+        }
+        else {
+            document.write("Valores não aceitos.");
+        }
+    </script>
+</body>
+
+</html>

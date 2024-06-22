@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let gramasInicial = parseFloat(prompt("Insira a massa do material"))
+        let num = 0, segundo = 0, minuto = 0, hora = 0, gramasFinal = gramasInicial;
+
+        while (gramasFinal >= 0.5) {
+            gramasFinal = gramasFinal / 2
+            num++
+        }
+
+        let tempo = num * 50;
+        segundo = tempo
+
+        if (tempo > 59) {
+            minuto = Math.floor(tempo / 60)
+            segundo = tempo % 60
+        }
+
+        if (minuto > 60) {
+            hora = Math.floor(minuto / 60)
+            minuto = minuto % 60
+        }
+
+        document.write("Massa Inicial: ", gramasInicial, "<br>")
+        document.write("Massa Final: ", gramasFinal, "; <br>")
+        document.write("O tempo necessário será de horas: ", hora, " | Minutos: ", minuto, " | Segundos: ", segundo)
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clã de Jörmungandr</title>
+    <style>
+    aside#lateral
+    {
+        display: block;
+        width: 350px;
+        float: right;
+        background-color: #dddddd;
+        padding: 10px;
+        margin-top: 10px;
+        box-shadow: 2px 2px 2px rgba(0, 0, 0, .5);
+    }
+    </style>
+</head>
+
+<body>
+    <main>
+    <form action="http://backend.php" method="GET">
+        
+        <h1>Seja Bem-vindo ao Clã de Jörmungandr!!!</h1>
+
+        <p>Clã de Jörmungandr é um MMORPG Online, onde o jogador é inserido em mundo de fantasia e aventuras! <span style="color: royalblue;">Para se cadastrar e jogar preencha as seguintes informações:</span></p>
+
+            <label for="ID">ID:</label>
+            <input id="ID" type="text" name="IDname">
+        <br>
+        <br>
+            <label for="EMAIL">EMAIL:</label>
+            <input id="EMAIL" type="email" name="Email"> 
+        <br>
+        <br>
+            <label for="SENHA">SENHA:</label>
+            <input id="SENHA" type="password" name="loginPass">
+        <br>
+        <br>
+            <label for="TELEFONE">TELEFONE (OPCIONAL):</label>
+            <input id="TELEFONE" type="tel" name="Telefone">
+        <br>
+        <br>
+            <label for="DATA">DATA DE NASCIMENTO:</label>
+            <input id="DATA" type="date" name="Data">
+        <br>
+        <br>
+            <label>CLASSE:</label>
+        <br>
+            <label><input type="radio" name="class">Clérigo</label>
+        <br>
+            <label><input type="radio" name="class">Mago</label>   
+        <br>
+            <label><input type="radio" name="class">Guerreiro</label>
+        <br>
+            <label><input type="radio" name="class">Arqueiro</label>
+        <br>
+        <br>
+            <label>EQUIPAMENTOS INICIAIS:</label>
+        <br>
+            <label><input type="checkbox" name="class">Espada</label>
+        <br>
+            <label><input type="checkbox" name="class">Poção de Cura</label>
+        <br>
+            <label><input type="checkbox" name="class">Escudo</label>
+        <br>
+            <label><input type="checkbox" name="class">Cajado</label>
+        <br>
+            <label><input type="checkbox" name="class">Arco e flecha</label>
+        <br>
+        <br>
+            <label>Escolha o nível da sua habilidade:</label>
+        <br>
+            <label><input type="range" name="nivel"> Força </label>
+        <br>
+            <label><input type="range" name="nivel"> Inteligência </label>
+        <br>
+            <label><input type="range" name="nivel"> Fé </label>
+        <br>
+            <label><input type="range" name="nivel"> Agilidade </label>
+
+        <br>
+        <br>
+        <label>Cor das vestimentas e armaduras:</label>
+        <br>
+            <label><input type="color" name="COR"></label>
+        <br>
+        <br>
+            <label>Já jogou Clã de Jörmungandr? Diga o que você achou do game!! (OPCIONAL)</label>
+        <br>
+            <textarea cols="40" rows="10"></textarea>
+            <br>
+        <select name="Respostas prontas">
+            <option value="OTM">Ótimo</option>
+            <option value="BOM">Bom</option>
+            <option value="RUI">Ruim</option>
+        </select>
+        <br>
+        <br>
+            <input type="submit" value="Start!">
+        <br>
+    </form>
+    </main>
+    
+        <aside id="lateral">
+        <nav>
+            <p> Parceiros:
+            <a href="https://www.amazon.com.br/">/Amazon/</a>
+            <a href="https://www.playstation.com/">/PlayStation/</a>
+            <a href="https://www.microsoft.com/">Microsoft/</a>
+            </p>
+        </nav>
+        </aside>
+</body>
+</html>

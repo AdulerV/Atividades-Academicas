@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questão 2</title>
+</head>
+
+<body>
+    <script type="text/javascript">
+        /*2. Com base na tabela, escreva um algoritmo que leia o código de um item e a quantidade deste item. 
+        A seguir, calcule e mostre o valor da conta a pagar.*/
+        
+        var CODE, Quantidade, Resultado;
+        CODE = parseInt(prompt("Insira o código do produto"));
+        Quantidade = parseInt(prompt("Insira a quantidade comprada"));
+
+        switch (CODE) {
+            case 1:
+                Resultado = 4 * Quantidade;
+                document.write("Você gastou R$", Resultado);
+                break;
+
+            case 2:
+                Resultado = 4.5 * Quantidade;
+                document.write("Você gastou R$", Resultado);
+                break;
+
+            case 3:
+                Resultado = 5 * Quantidade;
+                document.write("Você gastou R$", Resultado);
+                break;
+
+            case 4:
+                Resultado = 2 * Quantidade;
+                document.write("Você gastou R$", Resultado);
+                break;
+
+            case 5:
+                Resultado = 1.5 * Quantidade;
+                document.write("Você gastou R$", Resultado);
+                break;
+
+            default:
+                document.write("Código inválido.")
+        }
+    </script>
+</body>

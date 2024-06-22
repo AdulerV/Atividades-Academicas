@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+
+
+
+
+
+
+
+        var matriculas = [], pos;
+        
+        for(pos = 0; pos < 40; pos++){
+            matriculas[pos] = (pos + 1).toString();
+        }
+        for(pos = 0; pos < 40; pos++){
+            matriculas[pos] = "2021".concat(matriculas[pos].padStart(2,0));
+        }
+        document.write(matriculas)
+    </script>
+</body>
+</html>

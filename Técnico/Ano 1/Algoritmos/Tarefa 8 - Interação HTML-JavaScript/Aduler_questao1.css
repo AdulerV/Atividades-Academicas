@@ -1,0 +1,55 @@
+div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+form {
+    height: 200px;
+    width: 900px;
+}
+
+h1 {
+
+    width: 800px;
+    text-align: center;
+}
+
+fieldset {
+    height: 200px;
+    width: 900px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+input,
+label {
+    position: relative;
+    left: 10%;
+}
+
+.labelClass {
+    position: relative;
+    top: 9%;
+    left: 5%;
+}
+
+#inputName {
+    width: 200px;
+}
+
+#inputIdade {
+    width: 40px;
+}
+
+#button {
+    position: relative;
+    left: 35%;
+}
