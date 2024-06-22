@@ -1,5 +1,5 @@
 # Atividades do Técnico Integrado
-Diretório destinado às atividades desenvolvidas durante o curso técnico em Desenvolvimento de Sistemas (2021 - 2023).
+Diretório destinado às atividades de programação desenvolvidas durante o curso técnico em Desenvolvimento de Sistemas (2021 - 2023).
 
 **Sumário:**
 1. **Primeiro Ano:** Desenvolvimento Web e Laboratório de Algoritmos;
