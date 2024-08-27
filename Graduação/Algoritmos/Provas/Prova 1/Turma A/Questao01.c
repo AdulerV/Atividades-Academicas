@@ -1,35 +1,30 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include <locale.h>
 
-/*Codificar uma função capaz de simular um editor de textos bem simples, ou seja, que
-permita apenas a digitação de texto. Ao final, a função deverá calcular a quantidade
-total de caracteres digitados pelo usuário.*/
+/*Considere o saldo de uma determinada conta bancÃ¡ria que perde 1% do seu valor ao
+final de cada mÃªs. Codificar uma funÃ§Ã£o que considerando um determinado saldo
+inicial para essa conta bancÃ¡ria, calcule a perda total sofrida apÃ³s decorrer alguns
+meses.*/
+
+float calcularPerdaSaldo(float saldoInicial, float desconto, int meses);
 
 main()
 {
-    setlocale(LC_ALL, "");
-    imprimirMenu();
-    int resultado = calcularCaracteres();
-    printf("\nVocê digitou %d caracteres.", resultado);
+    printf("Valor perdido: $%.2f \n", calcularPerdaSaldo(1000.0, 1, 3));
+    printf("Valor perdido: $%.2f \n", calcularPerdaSaldo(500.2, 1, 5));
+    printf("Valor perdido: $%.2f \n", calcularPerdaSaldo(225.7, 1, 7));
 }
 
-void imprimirMenu()
+float calcularPerdaSaldo(float saldoInicial, float desconto, int meses)
 {
-    printf("************************************************************\n");
-    printf("Bem-vindo ao editor de texto! Para sair, pressione barra (/)\n");
-    printf("************************************************************\n");
-}
-
-int calcularCaracteres()
-{
-    char caractere = 'A';
+    float saldoAtual = saldoInicial;
     int contador = 0;
+    desconto /= 100;
 
-    while(caractere != '/')
+    while(contador < meses)
     {
-        caractere = getche();
+        saldoAtual -= saldoAtual * desconto;
         contador++;
     }
-    return contador;
+    return saldoInicial - saldoAtual;
 }
