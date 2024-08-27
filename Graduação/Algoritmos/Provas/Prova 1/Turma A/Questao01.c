@@ -1,9 +1,9 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-/*Considere o saldo de uma determinada conta bancÃ¡ria que perde 1% do seu valor ao
-final de cada mÃªs. Codificar uma funÃ§Ã£o que considerando um determinado saldo
-inicial para essa conta bancÃ¡ria, calcule a perda total sofrida apÃ³s decorrer alguns
+/*Considere o saldo de uma determinada conta bancária que perde 1% do seu valor ao
+final de cada mês. Codificar uma função que considerando um determinado saldo
+inicial para essa conta bancária, calcule a perda total sofrida após decorrer alguns
 meses.*/
 
 float calcularPerdaSaldo(float saldoInicial, float desconto, int meses);
