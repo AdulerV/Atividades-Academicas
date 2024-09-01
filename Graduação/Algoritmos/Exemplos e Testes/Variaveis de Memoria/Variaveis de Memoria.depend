@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1709391388 source:d:\alaul\Área de trabalho\developer\graduação\algoritmos\projetos em c\variaveis de memoria\main.c
+	<stdio.h>
+	<stdlib.h>
+	<locale.h>
+

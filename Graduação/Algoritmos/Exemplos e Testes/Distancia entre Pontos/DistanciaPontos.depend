@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1711482644 source:d:\alaul\Área de trabalho\developer\graduação\algoritmos\projetos em c\exemplos\distanciapontos\main.c
+	<stdio.h>
+	<stdlib.h>
+	<locale.h>
+	<math.h>
+

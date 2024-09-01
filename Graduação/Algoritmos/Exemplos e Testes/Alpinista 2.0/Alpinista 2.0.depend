@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1710000125 source:d:\alaul\Área de trabalho\developer\graduação\algoritmos\projetos em c\alpinista 2.0\main.c
+	<stdio.h>
+	<stdlib.h>
+	<math.h>
+	<locale.h>
+

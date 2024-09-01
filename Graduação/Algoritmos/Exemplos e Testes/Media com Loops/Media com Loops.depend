@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1712315405 source:d:\alaul\Área de trabalho\developer\graduação\algoritmos\projetos em c\exemplos\media com loops\main.c
+	<stdio.h>
+	<stdlib.h>
+	<locale.h>
+
