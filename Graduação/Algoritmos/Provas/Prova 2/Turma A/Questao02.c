@@ -10,10 +10,11 @@ A ONU, junto aos 193 países participantes, é responsável pelo registro desse índ
 main()
 {
     setlocale(LC_ALL, "");
-    float indiceDesenvolvimento[MAX] = {0.953, 0.944, 0.354, 0.758, 0.423, 0.929, 0.842, 0.435, 0.789, 0.404};
 
+    float indiceDesenvolvimento[MAX] = {0.953, 0.944, 0.354, 0.758, 0.423, 0.929, 0.842, 0.435, 0.789, 0.404};
     int resultado = calcularQuantidadePaises(indiceDesenvolvimento);
-    printf("Quantidade de países com IDH inferior à média geral: %d", resultado);
+
+    printf("Quantidade de países com IDH inferior à média geral: %d.\n", resultado);
 }
 
 int calcularQuantidadePaises(float indiceDesenvolvimento[MAX])

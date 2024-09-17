@@ -11,17 +11,18 @@ int verificarOrdemCrescente(int inteiros[MAX]);
 main()
 {
     setlocale(LC_ALL, "");
+
     int inteiros[MAX] = {1, 1, 5, 6, 9, 12, 12, 24, 26, 30};
 
     int resultado = verificarOrdemCrescente(inteiros);
 
     if(resultado)
     {
-        printf("O vetor está em ordem crescente.");
+        printf("O vetor está em ordem crescente.\n");
     }
     else
     {
-        printf("O vetor não está em ordem crescente.");
+        printf("O vetor não está em ordem crescente.\n");
     }
 }
 
