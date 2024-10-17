@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <form action="https://jkorpela.fi/cgi-bin/echo.cgi" method="post">
+        <table>
+            <tr>
+                <th>Hamburgueres Dona Chica</th>
+            </tr>
+            <tr>
+                <td><label for="email">Insira seu email: <input type="email" name="email" id="email"></label></td>
+            </tr>
+            <tr>
+                <td><label for="telefone">Insira seu telefone: <input type="tel" name="telefone" id="telefone"></label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="hamburgueres">Escolha o hambúrguer:</label>
+                    <select name="hamburgueres" id="hamburgueres">
+                        <option value="Selecione" selected disabled>Selecione</option>
+                        <option value="Hamburguer tradicional">Hambúrguer tradicional</option>
+                        <option value="Hamburguer gourmet">Hambúrguer gourmet</option>
+                        <option value="Hamburguer artesanal">Hambúrguer artesanal</option>
+                        <option value="Hamburguer vegetariano">Hambúrguer vegetariano</option>
+                        <option value="Hamburguer vegano">Hambúrguer vegano</option>
+                        <option value="Smash burger">Smash burger</option>
+                        <option value="Hamburguer slider">Hambúrguer slider</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div>Escolha o tipo de pão:</div>
+                    <input type="radio" name="tipoPao" value="Pao Italiano" id="paoItaliano">
+                    <label for="paoItaliano">Pão italiano</label><br>
+                    <input type="radio" name="tipoPao" value="Pao australiano" id="paoAustraliano">
+                    <label for="paoAustraliano">Pão australiano</label><br>
+                    <input type="radio" name="tipoPao" value="Brioche" id="brioche">
+                    <label for="brioche">Brioche</label><br>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div>Escolha o(s) complemento(s):</div>
+                    <input type="checkbox" name="batataFrita" id="batataFrita">
+                    <label for="batataFrita">Batata Frita</label><br>
+                    <input type="checkbox" name="nuggets" id="nuggets">
+                    <label for="nuggets">Nuggets de Frango</label><br>
+                    <input type="checkbox" name="refrigerante" id="refrigerante">
+                    <label for="refrigerante">Refrigerante</label><br>
+                    <input type="checkbox" name="mostarda" id="mostarda">
+                    <label for="mostarda">Mostarda</label><br>
+                    <input type="checkbox" name="maionese" id="maionese">
+                    <label for="maionese">Maionese</label><br>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="submit" name="enviar" id="enviar">
+                    <input type="reset" name="reiniciar" id="reiniciar">
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+
+</html>
