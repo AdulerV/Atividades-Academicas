@@ -2,4 +2,5 @@ table,
 td {
     border: 0.1cm, black, solid;
     position: relative;
+    text-align: center;
 }

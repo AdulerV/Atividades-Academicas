@@ -10,20 +10,25 @@
 
 <body>
     <form action="https://jkorpela.fi/cgi-bin/echo.cgi" method="post">
-        <table>
-            <tr>
-                <th>Hamburgueres Dona Chica</th>
-            </tr>
-            <tr>
-                <td><label for="email">Insira seu email: <input type="email" name="email" id="email"></label></td>
-            </tr>
-            <tr>
-                <td><label for="telefone">Insira seu telefone: <input type="tel" name="telefone" id="telefone"></label>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <label for="hamburgueres">Escolha o hambúrguer:</label>
+        <fieldset>
+            <legend id="titulo">Hamburgueres Dona Chica</legend>
+
+            <fieldset>
+                <legend>Informações Pessoais:</legend>
+                <div>
+                    <label for="email">Insira seu email:</label>
+                    <input type="email" name="email" id="email">
+                </div>
+
+                <div>
+                    <label for="telefone">Insira seu telefone:</label>
+                    <input type="tel" name="telefone" id="telefone">
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Escolha o hambúrguer:</legend>
+                <div>
                     <select name="hamburgueres" id="hamburgueres">
                         <option value="Selecione" selected disabled>Selecione</option>
                         <option value="Hamburguer tradicional">Hambúrguer tradicional</option>
@@ -34,41 +39,56 @@
                         <option value="Smash burger">Smash burger</option>
                         <option value="Hamburguer slider">Hambúrguer slider</option>
                     </select>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <div>Escolha o tipo de pão:</div>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Escolha o tipo de pão:</legend>
+
+                <div>
                     <input type="radio" name="tipoPao" value="Pao Italiano" id="paoItaliano">
-                    <label for="paoItaliano">Pão italiano</label><br>
+                    <label for="paoItaliano">Pão italiano</label>
+                </div>
+                <div>
                     <input type="radio" name="tipoPao" value="Pao australiano" id="paoAustraliano">
-                    <label for="paoAustraliano">Pão australiano</label><br>
+                    <label for="paoAustraliano">Pão australiano</label>
+                </div>
+                <div>
                     <input type="radio" name="tipoPao" value="Brioche" id="brioche">
-                    <label for="brioche">Brioche</label><br>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <div>Escolha o(s) complemento(s):</div>
+                    <label for="brioche">Brioche</label>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Escolha o(s) complemento(s):</legend>
+
+                <div>
                     <input type="checkbox" name="batataFrita" id="batataFrita">
-                    <label for="batataFrita">Batata Frita</label><br>
+                    <label for="batataFrita">Batata Frita</label>
+                </div>
+                <div>
                     <input type="checkbox" name="nuggets" id="nuggets">
-                    <label for="nuggets">Nuggets de Frango</label><br>
+                    <label for="nuggets">Nuggets de Frango</label>
+                </div>
+                <div>
                     <input type="checkbox" name="refrigerante" id="refrigerante">
-                    <label for="refrigerante">Refrigerante</label><br>
+                    <label for="refrigerante">Refrigerante</label>
+                </div>
+                <div>
                     <input type="checkbox" name="mostarda" id="mostarda">
-                    <label for="mostarda">Mostarda</label><br>
+                    <label for="mostarda">Mostarda</label>
+                </div>
+                <div>
                     <input type="checkbox" name="maionese" id="maionese">
-                    <label for="maionese">Maionese</label><br>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <input type="submit" name="enviar" id="enviar">
-                    <input type="reset" name="reiniciar" id="reiniciar">
-                </td>
-            </tr>
-        </table>
+                    <label for="maionese">Maionese</label>
+                </div>
+            </fieldset>
+
+            <div id="buttons">
+                <input type="submit" name="enviar" id="enviar" value="Enviar">
+                <input type="reset" name="reiniciar" id="reiniciar" value="Reiniciar">
+            </div>
+        </fieldset>
     </form>
 </body>
 

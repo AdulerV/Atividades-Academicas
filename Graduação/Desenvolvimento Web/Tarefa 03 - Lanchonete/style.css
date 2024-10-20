@@ -5,11 +5,6 @@ body {
     align-items: center;
 }
 
-table, td {
-    background-color: aliceblue;
-    border: 3px, gray, solid;
-}
-
-#enviar, #reiniciar {
+#buttons, #titulo {
     text-align: center;
 }
