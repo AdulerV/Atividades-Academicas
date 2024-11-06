@@ -28,6 +28,8 @@ int main()
     printf("Temperatura Mínima: %d.\n", calcularTemperaturaMinima(temperatura));
     printf("Temperatura Máxima: %d.\n", calcularTemperaturaMaxima(temperatura));
     printf("Temperatura Média: %.2f.\n", calcularTemperaturaMedia(temperatura));
+
+    free(temperatura);
     return 0;
 }
 

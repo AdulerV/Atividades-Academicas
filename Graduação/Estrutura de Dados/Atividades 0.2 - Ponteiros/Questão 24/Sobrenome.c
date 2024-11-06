@@ -26,6 +26,9 @@ int main()
         return 1;
     }
     printf("Sobrenome encontrado: %s.\n", sobrenome);
+
+    free(nome);
+    free(sobrenome);
     return 0;
 }
 
