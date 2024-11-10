@@ -3,4 +3,4 @@ Diretório destinado às atividades de programação desenvolvidas durante o Bac
 
 **Sumário:**
 1. **Primeiro Semestre:** Algoritmos;
-2. **Segundo Semestre:** Desenvolvimento Web e Estrutura de Dados;
+2. **Segundo Semestre:** Desenvolvimento Web, Estrutura de Dados, Organização de Computadores e Visão Computacional;
