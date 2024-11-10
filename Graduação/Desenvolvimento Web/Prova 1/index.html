@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Aduler Viana">
+    <title>Login</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <form action="https://servidor.com.br/login.php" method="POST">
+        <table>
+            <thead>
+                <tr>
+                    <th colspan="2">Login</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td><label for="inpCPF">CPF:</label></td>
+                    <td><input type="text" name="inpCPF" id="inpCPF"></td>
+                </tr>
+                <tr>
+                    <td><label for="inpSenha">Senha:</label></td>
+                    <td><input type="password" name="inpSenha" id="inpSenha"></td>
+                </tr>
+            </tbody>
+
+            <tfoot>
+                <tr>
+                    <td><input type="submit" value="ENVIAR"></td>
+                    <td><input type="reset" value="REINICIAR"></td>
+                </tr>
+            </tfoot>
+        </table>
+    </form>
+</body>
+
+</html>
