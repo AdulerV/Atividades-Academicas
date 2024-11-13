@@ -1,0 +1,14 @@
+
+ul {
+    list-style-type: square;
+}
+
+#negrito-titulo {
+    color: #ffa60f;
+    font-size: 1.2em;
+}
+
+.marca {
+    color: yellow;
+   font-weight: bold;
+}
