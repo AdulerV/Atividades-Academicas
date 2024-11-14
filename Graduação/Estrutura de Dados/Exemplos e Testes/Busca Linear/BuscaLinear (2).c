@@ -3,30 +3,28 @@
 #include <locale.h>
 #include <time.h>
 
-#define TAMANHO 1000
-#define NUM_BUSCAS 5
+#define TAMANHO 100
+#define NUM_BUSCAS 1000
 
-int buscarValor(int vetor[], int numero);
-int calcularMedia(int vetor[], int numero);
-void preencherVetor(int vetor[]);
+int buscarValor(int *vetor, int numero);
+float calcularMedia(int *vetor, int numero);
+void preencherVetor(int *vetor);
 
 
 int main()
 {
     setlocale(LC_ALL, "");
+    srand(time(NULL));
 
-    int *vetor = (int*) malloc(sizeof(int) * TAMANHO), resultado;
-
-    preencherVetor(vetor);
+    int *vetor = (int*) malloc(sizeof(int) * TAMANHO);
+    float resultado;
     resultado = calcularMedia(vetor, 8);
-    printf("Valor médio da busca: %d", resultado);
-
+    printf("Valor mÃ©dio da busca: %.2f.\n", resultado);
     free(vetor);
 }
 
 void preencherVetor(int *vetor)
 {
-    srand(time(NULL));
     int numero;
 
     for(int i = 0; i < TAMANHO; i++)
@@ -36,12 +34,13 @@ void preencherVetor(int *vetor)
 
     for(int i = 0; i < TAMANHO; i++)
     {
-        numero = rand() % TAMANHO;
-
-        if(buscarValor(vetor, numero) == -1)
+        do
         {
-            *(vetor + i) = numero;
+            numero = rand() % TAMANHO;
         }
+        while(buscarValor(vetor, numero) != -1);
+
+        *(vetor + i) = numero;
     }
 }
 
@@ -57,17 +56,19 @@ int buscarValor(int *vetor, int numero)
     return -1;
 }
 
-int calcularMedia(int *vetor, int numero)
+float calcularMedia(int *vetor, int numero)
 {
-    int media = 0, resultadoBusca;
+    float media = 0;
+    int resultadoBusca;
 
     for(int i = 0; i < NUM_BUSCAS; i++)
     {
+        preencherVetor(vetor);
         resultadoBusca = buscarValor(vetor, numero);
 
         if(resultadoBusca != -1)
         {
-            media += resultadoBusca;
+            media += resultadoBusca + 1;
         }
     }
     media /= NUM_BUSCAS;
