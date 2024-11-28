@@ -5,9 +5,9 @@
 
 #define TAMANHO 5
 
-/* Faça um programa em C que conte quantos pares de números em um vetor (lista) de
+/* FaÃ§a um programa em C que conte quantos pares de nÃºmeros em um vetor (lista) de
 tamanho n possuem soma igual a um valor k. Qual a complexidade de tempo? Conte as
-instruções que são função de n e compare os resultados.
+instruÃ§Ãµes que sÃ£o funÃ§Ã£o de n e compare os resultados.
 
 Exemplo: vetor = {1, 5, 7, -1, 5}
 k = 6
@@ -45,7 +45,7 @@ int contarParesIguaisEscalar(int *escalar, int *vetor)
 
     for(int i = 0; i < TAMANHO; i++)
     {
-        for(int j = i; j < TAMANHO; j++)
+        for(int j = i + 1; j < TAMANHO; j++)
         {
             if(*(vetor + i) + *(vetor + j) == *escalar)
             {
@@ -63,7 +63,7 @@ int contarPassosPares(int *escalar, int *vetor)
 
     for(int i = 0; i < TAMANHO; i++) // n + 1
     {
-        for(int j = i; j < TAMANHO; j++) // n / 2
+        for(int j = i + 1; j < TAMANHO; j++) // n / 2
         {
             contador++;
             if(*(vetor + i) + *(vetor + j) == *escalar)
