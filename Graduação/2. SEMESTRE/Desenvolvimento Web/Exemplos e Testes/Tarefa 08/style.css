@@ -1,0 +1,83 @@
+.carro {
+    background-image: url(images/car-removebg-preview.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 17rem;
+    height: 4.699rem;
+}
+
+#translate:hover {
+    transform: translate(100vh);
+    transition-duration: 5s;
+}
+
+#translate3D:hover {
+    transform: translate3d(30px, 70px, -10px);
+    transition-duration: 5s;
+}
+
+#translate3D {
+    height: 50px;
+    width: 50px;
+    background-color: aqua;
+}
+
+.lua {
+    background-image: url(images/lua.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 17rem;
+    height: 250px;
+}
+
+#rotate:hover {
+    transform: rotate(3.142rad);
+    transition-duration: 5s;
+}
+
+.satelite {
+    background-image: url(images/satelite-espaco.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 17rem;
+    height: 200px;
+}
+
+#scale3D:hover {
+    transform: scale3d(1.3, 1.3, 1.3);
+    transition-duration: 5s;
+}
+
+#rotate3D:hover {
+    transform: rotate3d(1, 1, 1, 360deg);
+    transition-duration: 5s;
+}
+
+#scale:hover {
+    transform: scale(1.3, 0.4);
+    transition-duration: 5s;
+}
+
+.putin {
+    background-image: url(images/putin.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 18rem;
+    height: 500px;
+}
+
+.lupa {
+    background-image: url(images/lupa.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 18rem;
+    height: 200px;
+}
+
+.pessoa {
+    background-image: url(images/homem-caindo.avif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 40rem;
+    height: 600px;
+}
