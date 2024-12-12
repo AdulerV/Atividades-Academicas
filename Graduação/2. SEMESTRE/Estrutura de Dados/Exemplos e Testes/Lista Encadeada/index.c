@@ -10,22 +10,90 @@ typedef struct EstruturaProduto
     struct EstruturaProduto* proximo;
 } Produto;
 
+Produto* buscarProduto(int codigo, Produto* estoque);
+
+
 int main()
 {
     setlocale(LC_ALL, "");
 
-    Produto* novo;
+    Produto* estoque = NULL;
     int resultado = imprimirMenu();
 
-    inserirDados(novo);
+    while(resultado != 7)
+    {
+        switch(resultado)
+        {
+        case 1:
+            inserirDados(estoque);
+            break;
+        case 2:
+            comprarProduto(estoque);
+            break;
+        case 3:
+            inserirDados(estoque);
+            break;
+        case 4:
+            inserirDados(estoque);
+            break;
+        case 5:
+            inserirDados(estoque);
+            break;
+        case 6:
+            inserirDados(estoque);
+            break;
+        case 7:
+            break;
+        default:
+            printf("Opção inválida.\n");
+        }
+        resultado = imprimirMenu();
+    }
+
+}
+void comprarProduto(Produto* produto)
+{
+    int codigo, quantidade;
+
+    printf("Insira o código: ");
+    scanf("%d", &codigo);
+    produto = buscarProduto(codigo, produto);
+
+    if(produto == NULL)
+    {
+        printf("Código de produto inexistente.");
+        return NULL;
+    }
+
+    printf("Insira a quantidade: ");
+    scanf("%d", quantidade);
+
+    if(quantidade <= 0)
+    {
+        printf("Quantidade de produto inválida.");
+        return NULL;
+    }
+    produto->quantidade += quantidade;
 }
 
+Produto* buscarProduto(int codigo, Produto* estoque)
+{
+    Produto* produtoAtual = estoque;
+
+    while(produtoAtual != NULL && produtoAtual->codigo != codigo)
+    {
+        produtoAtual = produtoAtual->proximo;
+    }
+    return (produtoAtual);
+}
 
 void inserirDados(Produto* produto)
 {
-    printf("Insira o código: ");
-    scanf("%d", produto->codigo);
+    int codigo;
 
+    printf("Insira o código: ");
+    scanf("%d", &codigo);
+    produto->codigo = codigo;
 
     printf("Insira o nome: ");
     produto->nome = malloc(sizeof(char) * 81);
@@ -34,6 +102,11 @@ void inserirDados(Produto* produto)
 
     printf("Insira a quantidade: ");
     scanf("%d", produto->quantidade);
+
+    printf("Código: %d.\n", produto->codigo);
+    printf("Nome: %s.\n", produto->nome);
+    printf("Quantidade: %d.\n", produto->quantidade);
+
 }
 
 int imprimirMenu()
@@ -56,4 +129,3 @@ int imprimirMenu()
 
     return opcao;
 }
-
