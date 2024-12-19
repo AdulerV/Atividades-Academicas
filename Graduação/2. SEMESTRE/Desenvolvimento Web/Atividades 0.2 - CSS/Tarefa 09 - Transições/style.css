@@ -1,0 +1,51 @@
+h1 {
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: space-between;
+    padding: 1rem;
+    margin: 1rem;
+    width: 100vw;
+}
+
+.container > div {
+    transition-duration: 5s;
+    background-color: cadetblue;
+    color: aliceblue;
+    width: 3cm;
+    height: 3cm;
+    padding: 1rem;
+    margin: 1rem;
+}
+
+#translate:hover {
+    transform: translate(-50px, 100px);
+}
+
+#rotate:hover {
+    transform: rotate(90deg);
+}
+
+#scale:hover {
+    transform: scale(0.5, 2.5);
+}
+
+#skew:hover {
+    transform: skew(20deg, 10deg);
+}
+
+#translate3D:hover {
+    transform: perspective(150px) translate3d(-50px, 20px, 100px);
+}
+
+#rotate3D:hover {
+    transform: rotate3d(1, 0.7, 0.5, 360deg);
+}
+
+#scale3D:hover {
+    transform: perspective(150px) scale3d(1, 2.5, 5);
+}
