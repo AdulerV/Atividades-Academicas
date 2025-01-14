@@ -1,0 +1,14 @@
+Perguntas:
+
+a) Qual o número máximo de elementos que a pilha pode armazenar?
+b) Qual o nome da variável que controla todas as operações sobre a pilha?
+c) Quais as duas principais operações que se realiza com uma pilha e as respectivas funções implementadas no programa acima?
+d) A forma como o seu programa representa a pilha está sujeita a limitações. Quais são essas limitações? O que fazer para eliminar essas limitações?
+
+Respostas:
+
+a) O número máximo de elementos que a pilha pode armazenar é 5.
+b) A variável "topo".
+c) A operação de inserção/empilhamento (push) e a operação de recuperação/desempilhamento (pop).
+d) 
+Equívocos: Uso de variáveis globais, listas por contiguidade, sem mensagens indicando pilhas vazias ou cheias, etc. Solução: Variáveis locais utilizando de ponteiros e structs, listas por encadeamento e inserção de tais mensagens.
