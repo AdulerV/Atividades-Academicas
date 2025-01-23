@@ -56,8 +56,12 @@ const acumularProduto = () => {
     let contador = document.querySelector("#acumulado");
     let numero1 = document.querySelector("#inpNumero1");
     let numero2 = document.querySelector("#inpNumero2");
+    let btn = document.querySelector("#botao");
+
     acumulado += numero1.value * numero2.value;
+    contador.innerHTML = `Acumulado: ${acumulado}`;
+
     numero1.value = null;
     numero2.value = null;
-    contador.innerHTML = `Acumulado: ${acumulado}`;
+    btn.disabled = true;
 }
