@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manipulando Strings</title>
+</head>
+
+<body>
+    <input type="password" name="inpSenha" id="inpSenha" onkeyup="validarSenha()">
+    <input type="password" name="inpConfirmacao" id="inpConfirmacao" onkeyup="validarSenha()">
+    <ul>
+        <li style="color: red;" id="caracteres">Pelo menos 8 caracteres</li>
+        <li style="color: red;" id="letras">Letras minúsculas e maiúsculas</li>
+        <li style="color: red;" id="especiais">Caracteres especiais</li>
+        <li style="color: red;" id="iguais">Senha e confirmação iguais</li>
+    </ul>
+    <script src="script.js"></script>
+</body>
+
+</html>
