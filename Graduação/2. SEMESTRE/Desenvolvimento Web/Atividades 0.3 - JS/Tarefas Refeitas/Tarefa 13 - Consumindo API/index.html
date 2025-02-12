@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Distribuição de Cartas - Truco</title>
+    <script>
+        async function iniciarJogo() {
+            // Criar um baralho (deck)
+            const deckResponse = await fetch('https://deckofcardsapi.com/api/deck/new/shuffle/?deck_count=1');
+            const deckData = await deckResponse.json();
+            const deckId = deckData.deck_id;
+
+            // Comprar 16 cartas do baralho (4 para cada jogador)
+            const drawResponse = await fetch(`https://deckofcardsapi.com/api/deck/${deckId}/draw/?count=16`);
+            const drawData = await drawResponse.json();
+            const cartas = drawData.cards;
+
+            // Adicionar as cartas em montes (piles) para cada jogador
+            for (let i = 0; i < 4; i++) {
+                await fetch(`https://deckofcardsapi.com/api/deck/${deckId}/pile/jogador${i + 1}/add/?cards=${cartas.slice(i * 4, i * 4 + 4).map(carta => carta.code).join(',')}`);
+            }
+
+            // Exibir as cartas de cada jogador
+            for (let i = 0; i < 4; i++) {
+                const pileResponse = await fetch(`https://deckofcardsapi.com/api/deck/${deckId}/pile/jogador${i + 1}/list`);
+                const pileData = await pileResponse.json();
+                const jogador = document.getElementById(`jogador${i + 1}`);
+                jogador.innerHTML = ''; // Limpa as cartas anteriores
+
+                pileData.piles[`jogador${i + 1}`].cards.forEach(carta => {
+                    const img = document.createElement('img');
+                    img.src = carta.image;
+                    jogador.appendChild(img);
+                });
+            }
+        }
+    </script>
+</head>
+<body>
+    <h1>Distribuição de Cartas - Truco</h1>
+    <button onclick="iniciarJogo()">Iniciar Jogo</button>
+
+    <div>
+        <h2>Jogador 1</h2>
+        <div id="jogador1"></div>
+    </div>
+    <div>
+        <h2>Jogador 2</h2>
+        <div id="jogador2"></div>
+    </div>
+    <div>
+        <h2>Jogador 3</h2>
+        <div id="jogador3"></div>
+    </div>
+    <div>
+        <h2>Jogador 4</h2>
+        <div id="jogador4"></div>
+    </div>
+</body>
+</html>
