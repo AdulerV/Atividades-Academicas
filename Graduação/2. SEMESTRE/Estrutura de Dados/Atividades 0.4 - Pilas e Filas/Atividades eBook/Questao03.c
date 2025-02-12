@@ -9,11 +9,8 @@ struct TipoPilha
 };
 typedef struct TipoPilha Pilha;
 
-/* inserção de um elemento no topo da pilha. */
 Pilha *insere(Pilha *atual, int v);
-/* recupera um elemento do topo da pilha.*/
 Pilha *recupera(Pilha *atual);
-/* retorna o tamanho da pilha. */
 int getTamanho(Pilha *atual);
 
 int main()
