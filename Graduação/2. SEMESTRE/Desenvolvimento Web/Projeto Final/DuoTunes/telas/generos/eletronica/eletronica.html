@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eletrônica</title>
+    <link rel="icon" type="image/x-icon" href="../../../imagens/favicon.ico">
+    <link href='https://fonts.googleapis.com/css?family=Open Sans' rel='stylesheet'>
+    <link rel="stylesheet" href="../../../geral.css">
+    <link rel="stylesheet" href="../generos.css">
+    <!-- biblioteca de icones: -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+
+<body>
+    <header>
+        <span>DuoTunes</span>
+        <img src="../../../imagens/logo.png" alt="logo do site" id="logo-site">
+    </header>
+
+    <nav class="menu-lateral">
+        <div class="btn-expandir">
+            <i class="bi bi-list" id="btn-exp"></i>
+        </div>
+
+        <ul>
+            <li class="item-menu ativo">
+                <a href="../../../index.html">
+                    <span class="icon"><i class="bi bi-house-door"></i></span>
+                    <span class="txt-link">Home</span>
+                </a>
+            </li>
+            <li class="item-menu">
+                <a href="../../upload/upload.html">
+                    <span class="icon"><i class="bi bi-file-arrow-up"></i></span>
+                    <span class="txt-link">Arquivo</span>
+                </a>
+            </li>
+            <li class="item-menu">
+                <a href="../../conta/sign-in/signin.html">
+                    <span class="icon"><i class="bi bi-person-circle"></i></span>
+                    <span class="txt-link">Login</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+    <main>
+        <button class="voltar" onclick="history.go(-1);"><i class="bi bi-arrow-left-circle"></i>Voltar</button>
+        <section>
+            <h1>Eletrônica</h1>
+            <div class="lista-musicas">
+                <div class="musica" data-src="./src/audios/betterOffAlone.mp3" data-title="Better Off Alone"
+                    data-artist="Alice Deejay">
+                    <div class="musica-img-btn">
+                        <img src="./src/capas/betterOffAlone.jpg" alt="Better Off Alone">
+                        <i class="bi bi-play-circle btn-play"></i>
+                    </div>
+                    <span id="musica-txt">Better Off Alone</span>
+                    <span>1998 • Alice Deejay</span>
+                </div>
+                <div class="musica" data-src="./src/audios/callOnMe.mp3" data-title="Call on Me"
+                    data-artist="Eric Prydz">
+                    <div class="musica-img-btn">
+                        <img src="./src/capas/callOnMe.jpg" alt="Call on Me">
+                        <i class="bi bi-play-circle btn-play"></i>
+                    </div>
+                    <span id="musica-txt">Call on Me</span>
+                    <span>2004 • Eric Prydz</span>
+                </div>
+                <div class="musica" data-src="./src/audios/dontYouWorryChild.mp3" data-title="Don't You Worry Child"
+                    data-artist="Swedish House Mafia">
+                    <div class="musica-img-btn">
+                        <img src="./src/capas/dontYouWorryChild.jpg" alt="Don't You Worry Child">
+                        <i class="bi bi-play-circle btn-play"></i>
+                    </div>
+                    <span id="musica-txt">Don't You Worry Child</span>
+                    <span>2012 • Swedish House Mafia</span>
+                </div>
+                <div class="musica" data-src="./src/audios/dragosteaDinTei.mp3" data-title="Dragostea Din Tei"
+                    data-artist="O-Zone">
+                    <div class="musica-img-btn">
+                        <img src="./src/capas/dragosteaDinTei.jpg" alt="Dragostea Din Tei">
+                        <i class="bi bi-play-circle btn-play"></i>
+                    </div>
+                    <span id="musica-txt">Dragostea Din Tei</span>
+                    <span>2003 • O-Zone</span>
+                </div>
+                <div class="musica" data-src="./src/audios/levels.mp3" data-title="Levels" data-artist="Avicii">
+                    <div class="musica-img-btn">
+                        <img src="./src/capas/levels.jpg" alt="Levels">
+                        <i class="bi bi-play-circle btn-play"></i>
+                    </div>
+                    <span id="musica-txt">Levels</span>
+                    <span>2011 • Avicii</span>
+                </div>
+                <div class="musica" data-src="./src/audios/oneMoreTime.mp3" data-title="One More Time"
+                    data-artist="Daft Punk">
+                    <div class="musica-img-btn">
+                        <img src="./src/capas/oneMoreTime.jpg" alt="One More Time">
+                        <i class="bi bi-play-circle btn-play"></i>
+                    </div>
+                    <span id="musica-txt">One More Time</span>
+                    <span>2000 • Daft Punk</span>
+                </div>
+                <div class="musica" data-src="./src/audios/safeSound.mp3" data-title="Safe and Sound"
+                    data-artist="Capital Cities">
+                    <div class="musica-img-btn">
+                        <img src="./src/capas/safeSound.jpg" alt="Safe and Sound">
+                        <i class="bi bi-play-circle btn-play"></i>
+                    </div>
+                    <span id="musica-txt">Safe and Sound</span>
+                    <span>2013 • Capital Cities</span>
+                </div>
+                <div class="musica" data-src="./src/audios/saturdayNight.mp3" data-title="Saturday Night"
+                    data-artist="Whigfield">
+                    <div class="musica-img-btn">
+                        <img src="./src/capas/saturdayNight.jpg" alt="Saturday Night">
+                        <i class="bi bi-play-circle btn-play"></i>
+                    </div>
+                    <span id="musica-txt">Saturday Night</span>
+                    <span>1994 • Whigfield</span>
+                </div>
+                <div class="musica" data-src="./src/audios/sugar.mp3" data-title="Sugar" data-artist="Robin Schulz">
+                    <div class="musica-img-btn">
+                        <img src="./src/capas/sugar.jpg" alt="Sugar">
+                        <i class="bi bi-play-circle btn-play"></i>
+                    </div>
+                    <span id="musica-txt">Sugar</span>
+                    <span>2015 • Robin Schulz</span>
+                </div>
+                <div class="musica" data-src="./src/audios/worldHoldOn.mp3" data-title="World Hold On"
+                    data-artist="Bob Sinclar">
+                    <div class="musica-img-btn">
+                        <img src="./src/capas/worldHoldOn.jpg" alt="World Hold On">
+                        <i class="bi bi-play-circle btn-play"></i>
+                    </div>
+                    <span id="musica-txt">World Hold On</span>
+                    <span>2006 • Bob Sinclar</span>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="player-musica-informacoes">
+            <span id="musica-atual-titulo">Nenhuma música tocando</span>
+            <span id="musica-atual-artista"></span>
+        </div>
+        <div class="player-controles">
+            <div class="player-progresso-volume">
+                <div class="progresso">
+                    <input type="range" id="barraProgresso" value="0" disabled>
+                    <span id="minutagemMusica">&nbsp;--:-- / --:--&nbsp;&nbsp;</span>
+                </div>
+                <div class="volume">
+                    <i class="bi bi-volume-up-fill" id="botao-volume"></i>
+                    <input type="range" id="barraVolume">
+                </div>
+            </div>
+            <div class="player-reproducao">
+                <button id="anterior-btn"><i class="bi bi-skip-start-fill"></i></button>
+                <button id="player-pause-btn"><i class="bi bi-play-fill"></i></button>
+                <button id="proxima-btn"><i class="bi bi-skip-end-fill"></i></button>
+            </div>
+        </div>
+        <audio id="player-audio"></audio>
+    </footer>
+
+    <script src="../../../menu.js"></script>
+    <script src="../player.js"></script>
+</body>
+
+</html>

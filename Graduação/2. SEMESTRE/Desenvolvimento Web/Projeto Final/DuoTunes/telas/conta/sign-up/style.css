@@ -1,0 +1,185 @@
+
+
+.span-conta {
+    font-size: small;
+    color: var(--cor5);
+}
+
+fieldset,
+.helper {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.3);
+    background-color: var(--cor3);
+    color: var(--corTexto);
+    border-radius: 15px;
+    border: none;
+    min-width: 20rem;
+    max-width: 31.25rem;
+    max-width: 400px;
+    margin: 2rem auto;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+dialog::backdrop {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+dialog {
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.5);
+    width: 80%;
+    max-width: 600px;
+    background-color: var(--cor3);
+    padding: 2rem;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    color: var(--corTexto);
+    text-align: justify;
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+    opacity: 0;
+    visibility: hidden;
+    max-height: 90vh;
+    overflow-y: auto;
+}
+
+dialog[open] {
+    opacity: 1;
+    visibility: visible;
+    transform: translate(-50%, -50%) scale(1);
+}
+
+dialog h1 {
+    margin-bottom: 1rem;
+    color: var(--cor2);
+    font-size: 1.8rem;
+}
+
+dialog h2 {
+    margin: 1rem 0;
+    color: var(--cor4);
+    font-size: 1.4rem;
+}
+
+dialog p {
+    margin-bottom: 1rem;
+    opacity: 0.85;
+}
+
+dialog a {
+    color: var(--corLink);
+    text-decoration: underline;
+}
+
+dialog a:hover {
+    color: var(--cor2);
+}
+
+dialog button {
+    background-color: var(--cor4);
+    color: var(--corTexto);
+    padding: 0.8rem 1.5rem;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 1.5rem;
+}
+
+dialog button:hover {
+    background-color: var(--cor2);
+}
+
+hr {
+    border: 1px solid var(--corTexto);
+    margin-bottom: 1.5rem;
+    width: 100%;
+}
+
+hr {
+    width: 100%;
+    color: var(--corTexto);
+}
+
+fieldset:hover,
+.helper:hover {
+    box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.5);
+}
+
+.helper {
+    padding: 1rem;
+    color: var(--cor2);
+    font-size: 0.9rem;
+    background-color: var(--cor5);
+}
+
+a {
+    color: var(--corLink);
+    text-decoration: none;
+    transition: color 0.3s ease;
+    text-decoration: underline;
+}
+
+a:hover {
+    color: var(--cor4);
+}
+
+h1 {
+    color: var(--corTexto);
+}
+
+label {
+    text-align: left;
+    width: 100%;
+    margin-bottom: 0.5rem;
+    color: var(--corTexto);
+    font-weight: bold;
+}
+
+input {
+    width: 100%;
+    height: 2.5rem;
+    border-radius: 8px;
+    border: 1px solid var(--cor4);
+    background-color: var(--cor1);
+    color: var(--corTexto);
+    padding: 0 1rem;
+    margin-bottom: 1rem;
+    transition: border 0.3s ease;
+}
+
+input:focus {
+    border-color: var(--cor4);
+    outline: none;
+}
+
+input[type="submit"] {
+    width: 100%;
+    background-color: var(--cor4);
+    color: var(--corTexto);
+    border: none;
+    padding: 0.8rem 0;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    border-radius: 8px;
+}
+
+input[type="submit"]:hover {
+    background-color: var(--cor2);
+    transform: translateY(-3px);
+}
+
+input[type="submit"]:active,
+#ancoraDialog:active {
+    transform: translateY(0);
+}

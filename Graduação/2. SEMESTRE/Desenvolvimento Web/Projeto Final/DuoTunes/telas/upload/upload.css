@@ -1,0 +1,44 @@
+input,
+#selectGenero {
+    width: 100%;
+    height: 2rem;
+    /* color: red; */
+}
+
+.helper {
+    padding: 1rem;
+    color: var(--cor2);
+    font-size: 0.9rem;
+    background-color: var(--cor5);
+}
+
+label {
+    font-size: 15px;
+    margin-left: 5px;
+}
+
+fieldset {
+    max-width: 400px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input::file-selector-button {
+    margin: 0.3rem;
+    background-color: transparent;
+    color: white;
+    border: 1px solid rgba(255, 255, 255, 0.63);
+    border-radius: 6px;
+}
+
+input[type="submit"] {
+    padding: 0;
+}
+
+.asterisco {
+    color: red;
+}

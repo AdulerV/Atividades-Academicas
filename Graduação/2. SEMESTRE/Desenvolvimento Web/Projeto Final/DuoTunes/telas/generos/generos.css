@@ -1,0 +1,224 @@
+main {
+    margin-bottom: 50px;
+}
+
+.voltar {
+    align-self: flex-start;
+    position: fixed;
+    border: 2px solid var(--cor4);
+    background-color: var(--cor3);
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+    color: var(--corTexto);
+    padding: .5rem;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.voltar>i {
+    font-size: 20px;
+    margin-right: 5px;
+}
+
+.voltar:hover {
+    transform: translateY(-5px);
+    box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.4);
+}
+
+.lista-musicas {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.musica {
+    flex-basis: auto;
+    margin: 10px;
+    width: 230px;
+    height: 310px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    padding: 10px 10px 10px 10px;
+    transition: all 0.3s ease;
+    color: var(--corTexto);
+    font-size: 12px;
+    cursor: pointer;
+    user-select: none;
+}
+
+.musica-img-btn {
+    position: relative;
+}
+
+.musica-img-btn>i {
+    visibility: hidden;
+    transition: all .2s;
+    opacity: 0;
+    position: absolute;
+    top: 80%;
+    left: 72%;
+    font-size: 62px;
+}
+
+.musica-img-btn>img {
+    width: 100%;
+    height: 100%;
+}
+
+.musica span {
+    margin-left: 3px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.musica #musica-txt {
+    margin-top: 3px;
+    font-size: 18px;
+}
+
+.musica:hover {
+    transform: translateY(-5px);
+    background-color: rgba(0, 0, 0, 0.111);
+    box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.4);
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: var(--cor1);
+    padding: 10px;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+.player-controles {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    width: 50%;
+    font-size: 14px;
+}
+
+.player-controles .player-progresso-volume {
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+    width: 100%;
+}
+
+.player-controles .player-progresso-volume .volume {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+
+.player-controles .player-progresso-volume .progresso {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+
+.player-controles .player-progresso-volume .progresso #barraProgresso {
+    width: 250px;
+}
+
+.player-controles .player-progresso-volume .progresso input[type='range'], .player-controles .player-progresso-volume .volume input[type='range'] {
+    overflow: hidden;
+    width: 80px;
+    height: 7px;
+    -webkit-appearance: none;
+    background-color: transparent;
+    border: 1px solid #7c7c7c43;
+    border-radius: 5px;
+}
+
+.player-controles .player-progresso-volume .progresso input[type='range']::-webkit-slider-runnable-track, .player-controles .player-progresso-volume .volume input[type='range']::-webkit-slider-runnable-track {
+    height: 7px;
+}
+ 
+.player-controles .player-progresso-volume .progresso input[type='range']::-webkit-slider-thumb, .player-controles .player-progresso-volume .volume input[type='range']::-webkit-slider-thumb {
+    width: 7px;
+    -webkit-appearance: none;
+    height: 7px;
+    box-shadow: -900px 0 0 895px #7c7c7c;
+    background: #7c7c7c;
+    border-radius: 100%;
+}
+
+.player-controles .player-progresso-volume .progresso span {
+    white-space: nowrap;
+}
+
+.player-controles .player-progresso-volume .volume {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.player-controles .player-progresso-volume .volume #barraVolume {
+    width: 80px;
+}
+
+.player-controles .player-progresso-volume .volume>i {
+    font-size: 20px;
+}
+
+.player-controles .player-reproducao {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.player-controles .player-reproducao button {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 20px;
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+.player-musica-informacoes {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    max-height: auto;
+}
+
+.player-musica-informacoes span {
+    font-size: 14px;
+}
+
+.progresso {
+    margin-right: 15spx;
+}
+
+#barraProgresso {
+    margin-right: 10px;
+}
+
+#botao-volume, #barraProgresso, #barraVolume{
+    cursor: pointer;
+}
+
+.musica:hover>.musica-img-btn>i {
+    transition: all .2s;
+    visibility: visible;
+    transform: translateY(-28%);
+    opacity: 1;
+}
+
+.musica:hover>#musica-txt {
+    white-space: wrap;
+    overflow: visible;
+    text-overflow: unset;
+}

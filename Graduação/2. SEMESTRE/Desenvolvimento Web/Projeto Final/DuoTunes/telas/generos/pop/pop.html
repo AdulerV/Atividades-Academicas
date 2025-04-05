@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pop</title>
+    <link rel="icon" type="image/x-icon" href="../../../imagens/favicon.ico">
+    <link href='https://fonts.googleapis.com/css?family=Open Sans' rel='stylesheet'>
+    <link rel="stylesheet" href="../../../geral.css">
+    <link rel="stylesheet" href="../generos.css">
+    <!-- biblioteca de icones: -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+
+<body>
+    <header>
+        <span>DuoTunes</span>
+        <img src="../../../imagens/logo.png" alt="logo do site" id="logo-site">
+    </header>
+
+    <nav class="menu-lateral">
+        <div class="btn-expandir">
+            <i class="bi bi-list" id="btn-exp"></i>
+        </div>
+
+        <ul>
+            <li class="item-menu ativo">
+                <a href="../../../index.html">
+                    <span class="icon"><i class="bi bi-house-door"></i></span>
+                    <span class="txt-link">Home</span>
+                </a>
+            </li>
+            <li class="item-menu">
+                <a href="../../upload/upload.html">
+                    <span class="icon"><i class="bi bi-file-arrow-up"></i></span>
+                    <span class="txt-link">Arquivo</span>
+                </a>
+            </li>
+            <li class="item-menu">
+                <a href="../../conta/sign-in/signin.html">
+                    <span class="icon"><i class="bi bi-person-circle"></i></span>
+                    <span class="txt-link">Login</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+    <main>
+        <button class="voltar" onclick="history.go(-1);"><i class="bi bi-arrow-left-circle"></i>Voltar</button>
+        <section>
+            <h1>Pop</h1>
+            <div class="lista-musicas">
+                <div class="musica" data-src="./src/audios/espresso.mp3" data-title="Espresso"
+                    data-artist="Sabrina Carpenter">
+                    <div class="musica-img-btn">
+                        <img src="./src/capas/espresso.jpg" alt="Capa">
+                        <i class="bi bi-play-circle btn-play"></i>
+                    </div>
+                    <span id="musica-txt">Espresso</span>
+                    <span>2024 • Sabrina Carpenter</span>
+                </div>
+                <div class="musica" data-src="./src/audios/blindingLights.mp3" data-title="Blinding Lights"
+                    data-artist="The Weeknd">
+                    <div class="musica-img-btn">
+                        <img src="./src/capas/blindingLights.jpg" alt="Capa">
+                        <i class="bi bi-play-circle btn-play"></i>
+                    </div>
+                    <span id="musica-txt">Blinding Lights</span>
+                    <span>2020 • The Weeknd</span>
+                </div>
+                <div class="musica" data-src="./src/audios/cruelSummer.mp3" data-title="Cruel Summer"
+                    data-artist="Taylor Swift">
+                    <div class="musica-img-btn">
+                        <img src="./src/capas/cruelSummer.jpg" alt="Capa">
+                        <i class="bi bi-play-circle btn-play"></i>
+                    </div>
+                    <span id="musica-txt">Cruel Summer</span>
+                    <span>2019 • Taylor Swift</span>
+                </div>
+                <div class="musica" data-src="./src/audios/apple.mp3" data-title="Apple" data-artist="Charli xcx">
+                    <div class="musica-img-btn">
+                        <img src="./src/capas/apple.jpg" alt="Capa">
+                        <i class="bi bi-play-circle btn-play"></i>
+                    </div>
+                    <span id="musica-txt">Apple</span>
+                    <span>2024 • Charli xcx</span>
+                </div>
+                <div class="musica" data-src="./src/audios/myKinkIsKarma.mp3" data-title="My Kink Is Karma"
+                    data-artist="Chappell Roan">
+                    <div class="musica-img-btn">
+                        <img src="./src/capas/myKinkIsKarma.jpg" alt="Capa">
+                        <i class="bi bi-play-circle btn-play"></i>
+                    </div>
+                    <span id="musica-txt">My Kink Is Karma</span>
+                    <span>2022 • Chappell Roan</span>
+                </div>
+                <div class="musica" data-src="./src/audios/kissItBetter.mp3" data-title="Kiss It Better"
+                    data-artist="Rihanna">
+                    <div class="musica-img-btn">
+                        <img src="./src/capas/kissItBetter.jpg" alt="Capa">
+                        <i class="bi bi-play-circle btn-play"></i>
+                    </div>
+                    <span id="musica-txt">Kiss It Better</span>
+                    <span>2016 • Rihanna</span>
+                </div>
+                <div class="musica" data-src="./src/audios/intoYou.mp3" data-title="Into You"
+                    data-artist="Ariana Grande">
+                    <div class="musica-img-btn">
+                        <img src="./src/capas/intoYou.jpg" alt="Capa">
+                        <i class="bi bi-play-circle btn-play"></i>
+                    </div>
+                    <span id="musica-txt">Into You</span>
+                    <span>2016 • Ariana Grande</span>
+                </div>
+                <div class="musica" data-src="./src/audios/greenLight.mp3" data-title="Green Light" data-artist="Lorde">
+                    <div class="musica-img-btn">
+                        <img src="./src/capas/greenLight.jpg" alt="Capa">
+                        <i class="bi bi-play-circle btn-play"></i>
+                    </div>
+                    <span id="musica-txt">Green Light</span>
+                    <span>2017 • Lorde</span>
+                </div>
+                <div class="musica" data-src="./src/audios/hotNcold.mp3" data-title="Hot N Cold"
+                    data-artist="Katy Perry">
+                    <div class="musica-img-btn">
+                        <img src="./src/capas/hotNcold.jpg" alt="Capa">
+                        <i class="bi bi-play-circle btn-play"></i>
+                    </div>
+                    <span id="musica-txt">Hot N Cold</span>
+                    <span>2008 • Katy Perry</span>
+                </div>
+                <div class="musica" data-src="./src/audios/killBill.mp3" data-title="Kill Bill" data-artist="SZA">
+                    <div class="musica-img-btn">
+                        <img src="./src/capas/killBill.jpg" alt="Capa">
+                        <i class="bi bi-play-circle btn-play"></i>
+                    </div>
+                    <span id="musica-txt">Kill Bill</span>
+                    <span>2022 • SZA</span>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="player-musica-informacoes">
+            <span id="musica-atual-titulo">Nenhuma música tocando</span>
+            <span id="musica-atual-artista"></span>
+        </div>
+        <div class="player-controles">
+            <div class="player-progresso-volume">
+                <div class="progresso">
+                    <input type="range" id="barraProgresso" value="0" disabled>
+                    <span id="minutagemMusica">&nbsp;--:-- / --:--&nbsp;&nbsp;</span>
+                </div>
+                <div class="volume">
+                    <i class="bi bi-volume-up-fill" id="botao-volume"></i>
+                    <input type="range" id="barraVolume">
+                </div>
+            </div>
+            <div class="player-reproducao">
+                <button id="anterior-btn"><i class="bi bi-skip-start-fill"></i></button>
+                <button id="player-pause-btn"><i class="bi bi-play-fill"></i></button>
+                <button id="proxima-btn"><i class="bi bi-skip-end-fill"></i></button>
+            </div>
+        </div>
+        <audio id="player-audio"></audio>
+    </footer>
+
+    <script src="../../../menu.js"></script>
+    <script src="../player.js"></script>
+</body>
+
+</html>

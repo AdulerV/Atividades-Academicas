@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscrição</title>
+    <link rel="icon" type="image/x-icon" href="../../../imagens/favicon.ico">
+    <link href='https://fonts.googleapis.com/css?family=Open Sans' rel='stylesheet'>
+    <link rel="stylesheet" href="../../../geral.css">
+    <link rel="stylesheet" href="style.css">
+    <!-- biblioteca de icones: -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+
+<body>
+    <header>
+        <span>DuoTunes</span>
+        <img src="../../../imagens/logo.png" alt="logo do site" id="logo-site">
+    </header>
+
+    <nav class="menu-lateral">
+        <div class="btn-expandir">
+            <i class="bi bi-list" id="btn-exp"></i>
+        </div>
+
+        <ul>
+            <li class="item-menu">
+                <a href="../../../index.html">
+                    <span class="icon"><i class="bi bi-house-door"></i></span>
+                    <span class="txt-link">Home</span>
+                </a>
+            </li>
+            <li class="item-menu">
+                <a href="../../upload/upload.html">
+                    <span class="icon"><i class="bi bi-file-arrow-up"></i></span>
+                    <span class="txt-link">Arquivo</span>
+                </a>
+            </li>
+            <li class="item-menu ativo">
+                <a href="../sign-in/signin.html">
+                    <span class="icon"><i class="bi bi-person-circle"></i></span>
+                    <span class="txt-link">Login</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+    <main>
+        <section>
+            <form action="https://jkorpela.fi/cgi-bin/echo.cgi" method="post" class="formulario">
+                <fieldset>
+                    <h1>Crie sua Conta</h1><br>
+
+                    <label for="emailInput">Endereço de email:</label>
+                    <input type="email" name="emailInput" placeholder="Insira seu email" id="emailInput"
+                        class="inputFormulario"><br>
+
+                    <label for="senhaInput">Senha:</label>
+                    <input type="password" name="senhaInput" placeholder="Insira sua senha" id="senhaInput"
+                        class="inputFormulario"><br>
+
+                    <label for="confirmaSenhaInput">Confirmar senha:</label>
+                    <input type="password" name="confirmaSenhaInput" placeholder="Repita sua senha"
+                        id="confirmaSenhaInput" class="inputFormulario">
+
+                    <hr><br>
+                    <span class="span-conta">Já tem uma conta? <a href="../sign-in/signin.html">Iniciar
+                            Sessão</a></span><br>
+                    <input type="submit" value="Iniciar Sessão">
+                </fieldset>
+            </form>
+
+            <div class="helper">
+                <a id="ancoraDialog" href="#">Termos de Uso</a>
+                <span id="resultado"></span>
+            </div>
+        </section>
+    </main>
+
+    <dialog>
+        <h1><a href="#"></a>Termos de Uso</h1>
+
+        <h2>1. Aceitação dos Termos</h2>
+        <p>Ao se cadastrar, você declara ter lido, compreendido e aceitado integralmente estes Termos de Uso, comprometendo-se a respeitá-los em todas as suas ações dentro do site.</p>
+
+        <h2>2. Cadastro e Conta de Usuário</h2>
+        <p>Para acessar determinadas funcionalidades do site, é necessário criar uma conta. Durante o cadastro, você se compromete a fornecer informações verdadeiras, precisas e atualizadas.</p>
+
+        <h2>3. Uso dos Serviços</h2>
+        <p>Nosso site tem como objetivo promover a descoberta e o compartilhamento de músicas, playlists e conteúdos relacionados. Você se compromete a utilizar os serviços de forma ética e legal.</p>
+
+        <h2>4. Propriedade Intelectual</h2>
+        <p>Todo o conteúdo presente no site está protegido por direitos autorais e outras leis de propriedade intelectual. A reprodução ou modificação de qualquer conteúdo sem a devida autorização é proibida.</p>
+
+        <h2>5. Conteúdo Gerado pelo Usuário</h2>
+        <p>Ao enviar ou compartilhar conteúdos na plataforma, você declara ser o titular dos direitos necessários para fazê-lo e concede ao site uma licença para exibir esse conteúdo.</p>
+
+        <h2>6. Modificações dos Termos</h2>
+        <p>Reservamo-nos o direito de alterar estes Termos de Uso a qualquer momento. O uso continuado do site após a modificação implica a aceitação dos novos termos.</p>
+
+        <h2>7. Limitação de Responsabilidade</h2>
+        <p>O site se esforça para manter um serviço estável, mas não se responsabiliza por eventuais interrupções, perdas de dados ou danos decorrentes do uso dos serviços.</p>
+
+        <h2>8. Contato</h2>
+        <p>Para dúvidas ou sugestões sobre estes Termos de Uso, entre em contato pelo e-mail: <a href="mailto:mepef47606@jarars.com">suporte.duotunes@email.com</a>.</p>
+        <button id="btnModal">Ok</button>
+    </dialog>
+
+    <footer>
+        <p>Copyright © - Todos os Direitos Reservados - DuoTunes</p>
+    </footer>
+
+    <script src="../../../menu.js"></script>
+    <script type="module" src="./script.js"></script>
+    <script src="./modal.js"></script>
+</body>
+
+</html>
