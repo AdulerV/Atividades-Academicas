@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Agenda Telefônica</title>
+</head>
+
+<body>
+    <table>
+        <caption>Agenda Telefônica</caption>
+
+        <thead>
+            <tr>
+                <th colspan="4">Lista de Contatos</th>
+            </tr>
+        </thead>
+
+        <tbody>
+        </tbody>
+
+        <tfoot>
+            <tr>
+                <td>Nome</td>
+                <td>Email</td>
+                <td>Telefone</td>
+                <td>Endereço</td>
+            </tr>
+        </tfoot>
+    </table>
+
+    <button id="btn-adicionar-contato">Adicionar Contato</button>
+
+    <dialog>
+        <fieldset>
+            <legend id="titulo">Contato</legend>
+            <form>
+                <fieldset>
+                    <legend>Informações Básicas</legend>
+
+                    <label for="nome-contato">Nome</label>
+                    <input type="text" name="nome-contato" id="nome-contato" placeholder="João da Silva"
+                        class="dados-contato">
+
+                    <label for="correio-eletronico-contato">Email</label>
+                    <input type="email" name="correio-eletronico-contato" id="correio-eletronico-contato"
+                        placeholder="contato@email.com" class="dados-contato">
+
+                    <label for="telefone-contato">Telefone</label>
+                    <input type="tel" name="telefone-contato" id="telefone-contato" placeholder="55-21-99999-9999"
+                        pattern="[0-9]{2}-[0-9]{2}-[0-9]{5}-[0-9]{4}" class="dados-contato">
+                </fieldset>
+
+                <fieldset>
+                    <legend>Endereço</legend>
+
+                    <label for="estado">Estado</label>
+                    <input type="text" name="estado" id="estado" placeholder="Rio de Janeiro" class="endereco-contato">
+
+                    <label for="municipio">Município</label>
+                    <input type="text" name="municipio" id="municipio" placeholder="Rio de Janeiro"
+                        class="endereco-contato">
+
+                    <label for="bairro">Bairro</label>
+                    <input type="text" name="bairro" id="bairro" placeholder="Copacabana" class="endereco-contato">
+
+                    <label for="logradouro">Logradouro</label>
+                    <input type="text" name="logradouro" id="logradouro" placeholder="Avenida Prado Júnior"
+                        class="endereco-contato">
+
+                    <label for="numero">Número</label>
+                    <input type="number" name="numero" id="numero" placeholder="0" class="endereco-contato">
+                </fieldset>
+
+                <button id="btn-salvar-contato" type="button">Salvar</button>
+                <button id="btn-fechar-popup" type="button">Fechar</button>
+            </form>
+        </fieldset>
+    </dialog>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
