@@ -14,7 +14,7 @@
 
         <thead>
             <tr>
-                <th colspan="4">Lista de Contatos</th>
+                <th colspan="5">Lista de Contatos</th>
             </tr>
         </thead>
 
@@ -27,6 +27,7 @@
                 <td>Email</td>
                 <td>Telefone</td>
                 <td>Endereço</td>
+                <td>Ação</td>
             </tr>
         </tfoot>
     </table>
@@ -71,7 +72,7 @@
                         class="endereco-contato">
 
                     <label for="numero">Número</label>
-                    <input type="number" name="numero" id="numero" placeholder="0" class="endereco-contato">
+                    <input type="number" name="numero" id="numero" placeholder="0" class="endereco-contato" min="0">
                 </fieldset>
 
                 <button id="btn-salvar-contato" type="button">Salvar</button>
