@@ -1,14 +1,14 @@
 const btnAdicionaContato = document.querySelector("#btn-adicionar-contato");
 const btnSalvaContato = document.querySelector("#btn-salvar-contato");
 const btnFechaPopup = document.querySelector("#btn-fechar-popup");
-const btnApagaContato = document.querySelectorAll(".btn-apagar-contato");
+const btnExcluiContato = document.querySelectorAll(".btn-exclui-contato");
 const popup = document.querySelector("dialog");
 
-btnAdicionaContato.addEventListener('click', () => {
+btnAdicionaContato.addEventListener("click", () => {
     mostrarModal();
 });
 
-btnSalvaContato.addEventListener('click', () => {
+btnSalvaContato.addEventListener("click", () => {
     const novaLinhaTabela = document.createElement("tr");
     const inputs = document.querySelectorAll("input");
 
@@ -23,7 +23,7 @@ btnSalvaContato.addEventListener('click', () => {
     }
 });
 
-btnFechaPopup.addEventListener('click', () => fecharModal());
+btnFechaPopup.addEventListener("click", () => fecharModal());
 
 function validarInputs(inputs) {
     for (const input of inputs) {
@@ -42,11 +42,11 @@ function adicionarInformacoesBasicas(novaLinhaTabela) {
     let dadosContato = document.querySelectorAll(".dados-contato");
 
     const corpoTabela = document.querySelector("tbody");
-    const mensagem = document.querySelector("#mensagem");
+    /* const mensagem = document.querySelector("#mensagem");
 
     if (mensagem) {
         mensagem.closest("tr").remove();
-    }
+    } */
 
     corpoTabela.appendChild(novaLinhaTabela);
 
@@ -75,17 +75,19 @@ function adicionarEndereco(novaLinhaTabela) {
 
 function adicionarBotao(novaLinhaTabela) {
     const novoDadoTabela = document.createElement("td");
-    const botaoApaga = document.createElement("button");
+    const botaoExclui = document.createElement("button");
     const conteudoBotao = document.createTextNode("Excluir");
-    botaoApaga.appendChild(conteudoBotao);
-    botaoApaga.classList.add("btn-apagar-contato");
+    botaoExclui.appendChild(conteudoBotao);
+    botaoExclui.classList.add("btn-exclui-contato");
 
-    botaoApaga.addEventListener('click', () => {
-        const linhaContato = botaoApaga.closest("tr");
-        linhaContato.remove();
+    botaoExclui.addEventListener("click", () => {
+        if (window.confirm("Tem certeza de que deseja exclui-lo?")) {
+            const linhaContato = botaoExclui.closest("tr");
+            linhaContato.remove();
+        }
     });
 
-    novoDadoTabela.appendChild(botaoApaga);
+    novoDadoTabela.appendChild(botaoExclui);
     novaLinhaTabela.appendChild(novoDadoTabela);
 }
 
