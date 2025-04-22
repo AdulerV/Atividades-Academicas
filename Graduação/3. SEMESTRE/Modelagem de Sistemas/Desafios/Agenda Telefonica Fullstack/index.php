@@ -1,0 +1,3 @@
+<?php 
+    $endereco = $_POST[]
+?>
