@@ -119,6 +119,15 @@ dialog form button {
     transition: background-color 0.3s;
 }
 
+#container-btns {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#btn-limpar-informacoes {
+    background-color: #e0cd1f;
+}
+
 #btn-salvar-contato {
     background-color: #28a745;
 }
