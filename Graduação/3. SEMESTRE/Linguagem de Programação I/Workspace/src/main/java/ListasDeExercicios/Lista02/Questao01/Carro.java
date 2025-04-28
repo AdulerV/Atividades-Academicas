@@ -39,7 +39,7 @@ public class Carro {
     }
 
     public void setVelocidadeAtual(float velocidadeAtual) {
-        if(velocidadeAtual < 0) {
+        if(velocidadeAtual < 0 || !this.estado) {
             throw new IllegalArgumentException("Velocidade inválida!");
         }
         this.velocidadeAtual = velocidadeAtual;
@@ -54,15 +54,15 @@ public class Carro {
     }
 
     public void acelerar(float quantidade) {
-        if(quantidade < 0) {
+        if(quantidade < 0 || !this.estado) {
             throw new IllegalArgumentException("Valor inválido!");
         }
         this.velocidadeAtual += quantidade;
     }
 
     public void frear(float quantidade) {
-        if(quantidade <= 0 || quantidade > this.velocidadeAtual) {
-            throw new IllegalArgumentException("Valor de freada inválido!");
+        if(quantidade <= 0 || quantidade > this.velocidadeAtual || !this.estado) {
+            throw new IllegalArgumentException("Valor de freada inválido ou carro desligado!");
         }
         this.velocidadeAtual -= quantidade;
     }
