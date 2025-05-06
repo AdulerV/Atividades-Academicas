@@ -6,6 +6,11 @@ public class Produto {
     private int quantidadeEstoque;
     private String categoria;
 
+    Produto() {
+        this.quantidadeEstoque = 0;
+        this.preco = 0;
+    }
+
     public String getNome() {
         return nome;
     }
@@ -52,14 +57,14 @@ public class Produto {
     }
 
     public void removerEstoque(int quantidade) {
-        if(quantidade < 0 || quantidade > this.quantidadeEstoque) {
+        if(quantidade <= 0 || quantidade > this.quantidadeEstoque) {
             throw new IllegalArgumentException("Quantidade inválida ou estoque insuficiente!");
         }
         this.quantidadeEstoque -= quantidade;
     }
 
     public void aplicarDesconto(float percentual) {
-        if(percentual < 0) {
+        if(percentual <= 0) {
             throw new IllegalArgumentException("Percentual inválido!");
         }
         this.preco -= (this.preco * (percentual / 100));
