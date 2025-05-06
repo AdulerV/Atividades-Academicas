@@ -5,6 +5,10 @@
     font-family: Arial, sans-serif;
 }
 
+a {
+    text-decoration: none;
+}
+
 body {
     background-color: #f5f5f5;
     padding: 2rem;
@@ -24,9 +28,9 @@ table {
 table caption {
     caption-side: top;
     font-size: 1.8rem;
-    font-weight: bold;   
-    text-align: center;  
-    padding: 1rem 0; 
+    font-weight: bold;
+    text-align: center;
+    padding: 1rem 0;
     background-color: #2d89ef;
     color: white;
     border-bottom: 2px solid #ccc;
@@ -45,6 +49,7 @@ tbody td,
 tfoot td {
     padding: 1rem;
     border-bottom: 1px solid #eee;
+    text-align: center;
 }
 
 tbody tr:nth-child(even) {
@@ -54,6 +59,13 @@ tbody tr:nth-child(even) {
 tfoot td {
     background-color: #f0f0f0;
     font-weight: bold;
+}
+
+#mensagem-nenhum-contato {
+    color: #ff4d4d;
+    font-weight: bold;
+    text-align: center;
+    padding: 1rem;
 }
 
 #btn-adicionar-contato {
@@ -67,102 +79,38 @@ tfoot td {
     transition: background-color 0.3s;
     display: block;
     margin: 0 auto;
+    text-align: center;
 }
 
 #btn-adicionar-contato:hover {
     background-color: #1e65b5;
 }
 
-dialog {
-    padding: 2rem;
-    border: none;
-    border-radius: 10px;
-    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.3);
-    max-width: 600px;
-    width: 100%;
-}
-
-fieldset {
-    border: 1px solid #ccc;
-    padding: 1rem;
-    margin-top: 1rem;
-    border-radius: 8px;
-}
-
-legend {
-    font-weight: bold;
-    padding: 0 0.5rem;
-}
-
-label {
-    display: block;
-    margin-top: 1rem;
-    font-weight: 600;
-}
-
-input {
-    width: 100%;
-    padding: 0.5rem;
-    margin-top: 0.3rem;
-    border: 1px solid #ccc;
-    border-radius: 6px;
-}
-
-dialog form button {
-    margin-top: 1.5rem;
-    padding: 0.75rem 1.5rem;
-    color: white;
-    border: none;
-    border-radius: 6px;
-    font-size: 1rem;
-    cursor: pointer;
-    transition: background-color 0.3s;
-}
-
-#container-btns {
-    display: flex;
-    justify-content: space-evenly;
-}
-
-#btn-limpar-informacoes {
-    background-color: #e0cd1f;
-}
-
-#btn-salvar-contato {
-    background-color: #28a745;
-}
-
-#btn-fechar-popup {
-    background-color: #a72828;
-}
-
-dialog form button:hover {
-    background-color: #1e7e34;
-}
-
-#titulo {
-    font-size: x-large;
-}
-
-legend, tfoot, tbody {
-    text-align: center;
-}
-
-#mensagem-ausencia-contato {
-    color: #e60000;
-}
-
-.btn-exclui-contato {
-    background-color: #ff4d4d;
-    color: white;
+.btn-editar-contato,
+.btn-excluir-contato {
     border: none;
     padding: 0.4rem 0.8rem;
     border-radius: 6px;
     font-size: 0.9rem;
     cursor: pointer;
     transition: background-color 0.3s ease;
+    text-align: center;
 }
 
-.btn-exclui-contato:hover {
+.btn-editar-contato {
+    background-color: #2d89ef;
+    color: white;
+}
+
+.btn-editar-contato:hover {
+    background-color: #1e65b5;
+}
+
+.btn-excluir-contato {
+    background-color: #ff4d4d;
+    color: white;
+}
+
+.btn-excluir-contato:hover {
     background-color: #e60000;
 }
