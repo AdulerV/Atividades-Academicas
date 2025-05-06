@@ -6,6 +6,10 @@ public class Funcionario {
     private float salario;
     private String departamento;
 
+    Funcionario() {
+        this.salario = 0;
+    }
+
     public String getNome() {
         return nome;
     }
