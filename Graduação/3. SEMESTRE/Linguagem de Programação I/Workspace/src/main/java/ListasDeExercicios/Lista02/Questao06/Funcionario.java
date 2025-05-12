@@ -7,11 +7,7 @@ public class Funcionario {
     private String departamento;
 
     Funcionario() {
-<<<<<<< Updated upstream
-        this.salario = 0;
-=======
         this.salario = 0.1f;
->>>>>>> Stashed changes
     }
 
     public String getNome() {

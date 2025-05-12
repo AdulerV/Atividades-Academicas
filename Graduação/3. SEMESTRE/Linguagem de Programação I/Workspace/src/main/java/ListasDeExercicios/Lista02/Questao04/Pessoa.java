@@ -7,14 +7,9 @@ public class Pessoa {
     private float peso;
 
     Pessoa() {
-<<<<<<< Updated upstream
-        this.altura = 0;
-        this.peso = 0;
-=======
         idade = 0;
         altura = 0.1f;
         peso = 0.1f;
->>>>>>> Stashed changes
     }
 
     public String getNome() {
@@ -70,14 +65,14 @@ public class Pessoa {
     }
 
     public void ganharPeso(float quilos) {
-        if(quilos <= 0) {
+        if(quilos < 0) {
             throw new IllegalArgumentException("Quantidade de quilogramas inválido!");
         }
         this.peso += quilos;
     }
 
     public void perderPeso(float quilos) {
-        if(quilos <= 0) {
+        if(quilos < 0) {
             throw new IllegalArgumentException("Quantidade de quilogramas inválido!");
         }
         this.peso -= quilos;

@@ -7,13 +7,8 @@ public class Produto {
     private String categoria;
 
     Produto() {
-<<<<<<< Updated upstream
-        this.quantidadeEstoque = 0;
-        this.preco = 0;
-=======
         this.preco = 0;
         this.quantidadeEstoque = 0;
->>>>>>> Stashed changes
     }
 
     public String getNome() {
@@ -62,7 +57,7 @@ public class Produto {
     }
 
     public void removerEstoque(int quantidade) {
-        if(quantidade <= 0 || quantidade > this.quantidadeEstoque) {
+        if(quantidade < 0 || quantidade > this.quantidadeEstoque) {
             throw new IllegalArgumentException("Quantidade inválida ou estoque insuficiente!");
         }
         this.quantidadeEstoque -= quantidade;

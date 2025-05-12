@@ -13,6 +13,8 @@ class PessoaTest {
         pessoa = new Pessoa();
     }
 
+    // Testando a validação das entradas
+
     @Test
     public void deveTestarPesoNegativo() {
         try {
@@ -43,6 +45,8 @@ class PessoaTest {
         }
     }
 
+    // Encontrando resultados distintos conforme o gênero
+
     @Test
     public void deveEncontrarResultadoFeminino() {
         pessoa.setPeso(57.8f); // IMC ≈ 20
@@ -58,6 +62,9 @@ class PessoaTest {
         pessoa.setSexo("Masculino");
         assertEquals("Abaixo do peso", pessoa.encontrarResultado());
     }
+
+    // Resultados para sexo feminino
+
     @Test
     public void deveEncontrarResultadoFemininoAbaixoDoPeso() {
         pessoa.setPeso(19.09f); // IMC = 19.09 (menor que 19.1)
@@ -97,6 +104,8 @@ class PessoaTest {
         pessoa.setSexo("Feminino");
         assertEquals("Obeso", pessoa.encontrarResultado());
     }
+
+    // Resultados para sexo masculino
 
     @Test
     public void deveEncontrarResultadoMasculinoAbaixoDoPeso() {
