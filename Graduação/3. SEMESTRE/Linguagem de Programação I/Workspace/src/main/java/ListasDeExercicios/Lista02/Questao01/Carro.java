@@ -7,6 +7,11 @@ public class Carro {
     private float velocidadeAtual;
     private boolean estado;
 
+    Carro() {
+        this.estado = false;
+        this.velocidadeAtual = 0;
+    }
+
     public String getMarca() {
         return marca;
     }
@@ -39,9 +44,14 @@ public class Carro {
     }
 
     public void setVelocidadeAtual(float velocidadeAtual) {
-        if(velocidadeAtual < 0 || !this.estado) {
+        if(!this.estado) {
+            throw new IllegalArgumentException("O carro está desligado!");
+        }
+
+        if(velocidadeAtual < 0) {
             throw new IllegalArgumentException("Velocidade inválida!");
         }
+
         this.velocidadeAtual = velocidadeAtual;
     }
 
@@ -54,25 +64,45 @@ public class Carro {
     }
 
     public void acelerar(float quantidade) {
-        if(quantidade < 0 || !this.estado) {
+        if(!this.estado) {
+            throw new IllegalArgumentException("O carro está desligado!");
+        }
+
+        if(quantidade < 0) {
             throw new IllegalArgumentException("Valor inválido!");
         }
+
         this.velocidadeAtual += quantidade;
     }
 
     public void frear(float quantidade) {
-        if(quantidade <= 0 || quantidade > this.velocidadeAtual || !this.estado) {
-            throw new IllegalArgumentException("Valor de freada inválido ou carro desligado!");
+        if(!this.estado) {
+            throw new IllegalArgumentException("O carro está desligado!");
         }
+
+        if(quantidade <= 0 || quantidade > this.velocidadeAtual) {
+            throw new IllegalArgumentException("Valor de freada inválido!");
+        }
+
         this.velocidadeAtual -= quantidade;
     }
 
     public void ligar() {
+        if(this.estado) {
+            throw new IllegalArgumentException("O carro já está ligado!");
+        }
         this.estado = true;
     }
 
     public void desligar() {
+        if(!this.estado) {
+            throw new IllegalArgumentException("O carro já está desligado!");
+        }
         this.estado = false;
         this.velocidadeAtual = 0;
+    }
+
+    public String exibirDados() {
+        return "Marca: " + this.marca + " - Modelo: " + this.modelo + " - Ano: " + this.ano + " - Velocidade atual: " + this.velocidadeAtual + " - Estado: " + (this.estado ? "ligado" : "desligado");
     }
 }

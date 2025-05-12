@@ -14,6 +14,28 @@ class ContaBancariaTest {
     }
 
     @Test
+    public void deveDepositar() {
+        conta.setSaldo(1000.5f);
+        conta.depositar(100.5f);
+        assertEquals(1101, conta.getSaldo());
+    }
+
+    @Test
+    public void deveSacar() {
+        conta.setSaldo(1000.5f);
+        conta.sacar(100.2f);
+        assertEquals(900.3f, conta.getSaldo());
+    }
+
+    @Test
+    public void deveExibirDados() {
+        conta.setTitular("João da Silva");
+        conta.setNumeroConta(931200);
+        conta.setSaldo(15000.5f);
+        assertEquals("Titular: João da Silva - Número da Conta: 931200 - Saldo: 15000.5", conta.exibirDados());
+    }
+
+    @Test
     public void deveTestarSaldoNegativo() {
         try {
             conta.setSaldo(-0.1f);
@@ -62,19 +84,5 @@ class ContaBancariaTest {
         } catch (IllegalArgumentException e) {
             assertEquals("Valor inválido!", e.getMessage());
         }
-    }
-
-    @Test
-    public void deveDepositar() {
-        conta.setSaldo(1000.5f);
-        conta.depositar(100.5f);
-        assertEquals(1101, conta.getSaldo());
-    }
-
-    @Test
-    public void deveSacar() {
-        conta.setSaldo(1000.5f);
-        conta.sacar(100.2f);
-        assertEquals(900.3f, conta.getSaldo());
     }
 }

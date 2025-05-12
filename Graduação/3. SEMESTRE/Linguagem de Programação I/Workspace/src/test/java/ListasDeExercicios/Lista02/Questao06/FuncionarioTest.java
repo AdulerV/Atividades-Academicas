@@ -54,6 +54,6 @@ class FuncionarioTest {
         funcionario.setCargo("Contador");
         funcionario.setSalario(2200.9f);
         funcionario.setDepartamento("Financeiro");
-        assertEquals("Nome: João | Cargo: Contador | Salário: R$ 2200.9 | Departamento: Financeiro", funcionario.exibirDados());
+        assertEquals("Nome: João - Cargo: Contador - Salário: R$ 2200.9 - Departamento: Financeiro", funcionario.exibirDados());
     }
 }

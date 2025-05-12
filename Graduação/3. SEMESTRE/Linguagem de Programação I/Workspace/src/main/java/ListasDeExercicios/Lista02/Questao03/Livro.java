@@ -7,6 +7,14 @@ public class Livro {
     private int numeroPaginas;
     private int paginaAtual;
     private String genero;
+    private boolean estado;
+
+    Livro() {
+        this.anoPublicacao = 0;
+        this.numeroPaginas = 0;
+        this.paginaAtual = 0;
+        this.estado = false;
+    }
 
     public String getTitulo() {
         return titulo;
@@ -55,15 +63,33 @@ public class Livro {
         this.genero = genero;
     }
 
+    public boolean isEstado() {
+        return estado;
+    }
+
+    public void setEstado(boolean estado) {
+        this.estado = estado;
+    }
+
     public String abrir() {
+        if(this.estado) {
+            throw new IllegalArgumentException("O livro já está aberto!");
+        }
+        this.estado = true;
         return "O livro foi aberto!";
     }
 
     public String fechar() {
+        if(!this.estado) {
+            throw new IllegalArgumentException("O livro já está fechado!");
+        }
+        this.estado = false;
         return "O livro foi fechado!";
     }
 
     public void marcarPagina(int pagina) {
+        verificarEstadoLivro();
+
         if(pagina <= 0 || pagina > this.numeroPaginas) {
             throw new IllegalArgumentException("Página inválida!");
         }
@@ -71,6 +97,8 @@ public class Livro {
     }
 
     public void avancarPagina() {
+        verificarEstadoLivro();
+
         if(this.paginaAtual == this.numeroPaginas) {
             throw new IllegalArgumentException("Já está na última página!");
         }
@@ -78,9 +106,21 @@ public class Livro {
     }
 
     public void retrocederPagina() {
+        verificarEstadoLivro();
+
         if(this.paginaAtual == 1) {
             throw new IllegalArgumentException("Já está na primeira página!");
         }
         this.paginaAtual--;
+    }
+
+    public void verificarEstadoLivro() {
+        if (!this.estado) {
+            throw new IllegalArgumentException("O livro está fechado!");
+        }
+    }
+
+    public String exibirDados() {
+        return "Título: " + this.titulo + " - Autor: " + this.autor + " - Ano de Publicação: " + this.anoPublicacao + " - Número de Páginas: " + this.numeroPaginas + " - Página atual: " + this.paginaAtual + " - Gênero: " + this.genero + " - Estado: " + (this.estado ? "Aberto" : "Fechado");
     }
 }

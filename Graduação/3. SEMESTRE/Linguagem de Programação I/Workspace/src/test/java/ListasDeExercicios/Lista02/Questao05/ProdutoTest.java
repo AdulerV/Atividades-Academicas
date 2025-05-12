@@ -14,6 +14,36 @@ class ProdutoTest {
     }
 
     @Test
+    public void deveAdicionarEstoque() {
+        produto.setQuantidadeEstoque(10);
+        produto.adicionarEstoque(5);
+        assertEquals(15, produto.getQuantidadeEstoque());
+    }
+
+    @Test
+    public void deveRemoverEstoque() {
+        produto.setQuantidadeEstoque(10);
+        produto.removerEstoque(5);
+        assertEquals(5, produto.getQuantidadeEstoque());
+    }
+
+    @Test
+    public void deveAplicarDesconto() {
+        produto.setPreco(60.5f);
+        produto.aplicarDesconto(10);
+        assertEquals(54.45, produto.getPreco(), 0.01);
+    }
+
+    @Test
+    public void deveExibirDados() {
+        produto.setNome("Notebook");
+        produto.setPreco(3500.0f);
+        produto.setQuantidadeEstoque(15);
+        produto.setCategoria("Informática");
+        assertEquals("Nome: Notebook - Preço: 3500.0 - Estoque: 15 - Categoria: Informática", produto.exibirDados());
+    }
+
+    @Test
     public void deveTestarPrecoNegativo() {
         try {
             produto.setPreco(-0.1f);
@@ -55,7 +85,7 @@ class ProdutoTest {
     }
 
     @Test
-    public void deveTestarRemocaoMaiorDoQueEstoque() {
+    public void deveTestarRemocaoMaiorEstoque() {
         try {
             produto.setQuantidadeEstoque(10);
             produto.removerEstoque(11);
@@ -66,34 +96,13 @@ class ProdutoTest {
     }
 
     @Test
-    public void deveTestarPercentualNegativo() {
+    public void deveTestarPercentualInvalido() {
         try {
             produto.setPreco(60.5f);
-            produto.aplicarDesconto(-0.1f);
+            produto.aplicarDesconto(0);
             fail();
         } catch (IllegalArgumentException e) {
             assertEquals("Percentual inválido!", e.getMessage());
         }
-    }
-
-    @Test
-    public void deveAdicionarEstoque() {
-        produto.setQuantidadeEstoque(10);
-        produto.adicionarEstoque(5);
-        assertEquals(15, produto.getQuantidadeEstoque());
-    }
-
-    @Test
-    public void deveRemoverEstoque() {
-        produto.setQuantidadeEstoque(10);
-        produto.removerEstoque(5);
-        assertEquals(5, produto.getQuantidadeEstoque());
-    }
-
-    @Test
-    public void deveAplicarDesconto() {
-        produto.setPreco(60.5f);
-        produto.aplicarDesconto(10);
-        assertEquals(54.45, produto.getPreco(), 0.01);
     }
 }

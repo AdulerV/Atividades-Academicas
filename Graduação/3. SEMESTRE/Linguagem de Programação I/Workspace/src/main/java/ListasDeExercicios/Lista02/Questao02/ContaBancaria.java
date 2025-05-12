@@ -5,6 +5,11 @@ public class ContaBancaria {
     private int numeroConta;
     private float saldo;
 
+    ContaBancaria() {
+        this.numeroConta = 1;
+        this.saldo = 0;
+    }
+
     public String getTitular() {
         return titular;
     }
@@ -47,5 +52,9 @@ public class ContaBancaria {
             throw new IllegalArgumentException("Valor inválido!");
         }
         this.saldo -= valor;
+    }
+
+    public String exibirDados() {
+        return "Titular: " + this.titular + " - Número da Conta: " + this.numeroConta + " - Saldo: " + this.saldo;
     }
 }

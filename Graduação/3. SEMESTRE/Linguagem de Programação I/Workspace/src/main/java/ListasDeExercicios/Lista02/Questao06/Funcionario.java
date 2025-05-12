@@ -7,7 +7,11 @@ public class Funcionario {
     private String departamento;
 
     Funcionario() {
+<<<<<<< Updated upstream
         this.salario = 0;
+=======
+        this.salario = 0.1f;
+>>>>>>> Stashed changes
     }
 
     public String getNome() {
@@ -57,6 +61,6 @@ public class Funcionario {
     }
 
     public String exibirDados() {
-        return "Nome: " + this.nome + " | Cargo: " + this.cargo + " | Salário: R$ " + this.salario + " | Departamento: " + this.departamento;
+        return "Nome: " + this.nome + " - Cargo: " + this.cargo + " - Salário: R$ " + this.salario + " - Departamento: " + this.departamento;
     }
 }

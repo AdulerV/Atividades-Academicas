@@ -14,6 +14,44 @@ class PessoaTest {
     }
 
     @Test
+    public void deveEnvelhecer() {
+        pessoa.setIdade(5);
+        pessoa.envelhecer();
+        assertEquals(6, pessoa.getIdade());
+    }
+
+    @Test
+    public void deveCrescer() {
+        pessoa.setIdade(15);
+        pessoa.setAltura(1.60f);
+        pessoa.crescer(20.1f);
+        assertEquals(1.80f, pessoa.getAltura(), 0.01);
+    }
+
+    @Test
+    public void deveGanharPeso() {
+        pessoa.setPeso(100);
+        pessoa.ganharPeso(1.9f);
+        assertEquals(101.9f, pessoa.getPeso());
+    }
+
+    @Test
+    public void devePerderPeso() {
+        pessoa.setPeso(100);
+        pessoa.perderPeso(1.90f);
+        assertEquals(98.1f, pessoa.getPeso());
+    }
+
+    @Test
+    public void deveExibirDados() {
+        pessoa.setNome("Ana");
+        pessoa.setIdade(28);
+        pessoa.setAltura(1.65f);
+        pessoa.setPeso(60.0f);
+        assertEquals("Nome: Ana - Idade: 28 - Altura: 1.65 - Peso: 60.0", pessoa.exibirDados());
+    }
+
+    @Test
     public void deveTestarIdadeNegativa() {
         try {
             pessoa.setIdade(-1);
@@ -54,7 +92,7 @@ class PessoaTest {
     }
 
     @Test
-    public void deveTestarCrescimentoComIdadeInvalida() {
+    public void deveTestarCrescimentoIdadeInvalida() {
         try {
             pessoa.setIdade(21);
             pessoa.setAltura(1.80f);
@@ -84,34 +122,5 @@ class PessoaTest {
         } catch (IllegalArgumentException e) {
             assertEquals("Quantidade de quilogramas inválido!", e.getMessage());
         }
-    }
-
-    @Test
-    public void deveEnvelhecer() {
-        pessoa.setIdade(5);
-        pessoa.envelhecer();
-        assertEquals(6, pessoa.getIdade());
-    }
-
-    @Test
-    public void deveCrescer() {
-        pessoa.setIdade(15);
-        pessoa.setAltura(1.60f);
-        pessoa.crescer(20.1f);
-        assertEquals(1.80f, pessoa.getAltura(), 0.01);
-    }
-
-    @Test
-    public void deveGanharPeso() {
-        pessoa.setPeso(100);
-        pessoa.ganharPeso(1.9f);
-        assertEquals(101.9f, pessoa.getPeso());
-    }
-
-    @Test
-    public void devePerderPeso() {
-        pessoa.setPeso(100);
-        pessoa.perderPeso(1.90f);
-        assertEquals(98.1f, pessoa.getPeso());
     }
 }

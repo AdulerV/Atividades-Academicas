@@ -7,8 +7,13 @@ public class Produto {
     private String categoria;
 
     Produto() {
+<<<<<<< Updated upstream
         this.quantidadeEstoque = 0;
         this.preco = 0;
+=======
+        this.preco = 0;
+        this.quantidadeEstoque = 0;
+>>>>>>> Stashed changes
     }
 
     public String getNome() {
@@ -68,5 +73,9 @@ public class Produto {
             throw new IllegalArgumentException("Percentual inválido!");
         }
         this.preco -= (this.preco * (percentual / 100));
+    }
+
+    public String exibirDados() {
+        return "Nome: " + this.nome + " - Preço: " + this.preco + " - Estoque: " + this.quantidadeEstoque + " - Categoria: " + this.categoria;
     }
 }

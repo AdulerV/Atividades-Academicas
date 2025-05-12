@@ -7,8 +7,14 @@ public class Pessoa {
     private float peso;
 
     Pessoa() {
+<<<<<<< Updated upstream
         this.altura = 0;
         this.peso = 0;
+=======
+        idade = 0;
+        altura = 0.1f;
+        peso = 0.1f;
+>>>>>>> Stashed changes
     }
 
     public String getNome() {
@@ -75,5 +81,9 @@ public class Pessoa {
             throw new IllegalArgumentException("Quantidade de quilogramas inválido!");
         }
         this.peso -= quilos;
+    }
+
+    public String exibirDados() {
+        return "Nome: " + this.nome + " - Idade: " + this.idade + " - Altura: " + this.altura + " - Peso: " + this.peso;
     }
 }
