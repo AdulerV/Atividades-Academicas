@@ -4,7 +4,8 @@ public abstract class Aluno extends Pessoa {
     private float[] notas;
     private int matricula;
 
-    Aluno() {
+    Aluno(String nome) {
+        super(nome);
         setNotas(new float[2]);
         setMatricula(0);
     }
@@ -41,5 +42,11 @@ public abstract class Aluno extends Pessoa {
         }
 
         return media / this.notas.length;
+    }
+
+    public abstract boolean verificarAprovacao();
+
+    public String exibirDados() {
+        return "Nome: " + this.getNome() + " - Matrícula: " + this.getMatricula() + " - Aprovação: " + ((this.verificarAprovacao()) ? "Aprovado" : "Reprovado");
     }
 }

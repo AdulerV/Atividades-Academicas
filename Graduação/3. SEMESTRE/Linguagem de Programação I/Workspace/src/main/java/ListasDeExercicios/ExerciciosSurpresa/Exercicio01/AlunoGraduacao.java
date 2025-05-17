@@ -1,11 +1,11 @@
 package ListasDeExercicios.ExerciciosSurpresa.Exercicio01;
 
 public class AlunoGraduacao extends Aluno {
-    public boolean verificarAprovacao() {
-        return this.calcularMedia() >= 7;
+    AlunoGraduacao(String nome) {
+        super(nome);
     }
 
-    public String exibirDados() {
-        return "Nome: " + this.getNome() + " - Matrícula: " + this.getMatricula() + " - Aprovação: " + ((this.verificarAprovacao()) ? "Aprovado" : "Reprovado");
+    public boolean verificarAprovacao() {
+        return this.calcularMedia() >= 7;
     }
 }

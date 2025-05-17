@@ -10,7 +10,7 @@ class AlunoGraduacaoTest {
 
     @BeforeEach
     public void setUp() {
-        alunoGraduacao = new AlunoGraduacao();
+        alunoGraduacao = new AlunoGraduacao("João da Silva");
     }
 
     @Test
@@ -31,7 +31,6 @@ class AlunoGraduacaoTest {
     public void deveExibirDadosAprovado() {
         float[] notas = {7, 7};
         alunoGraduacao.setNotas(notas);
-        alunoGraduacao.setNome("João da Silva");
         alunoGraduacao.setMatricula(1001);
         assertEquals("Nome: João da Silva - Matrícula: 1001 - Aprovação: Aprovado", alunoGraduacao.exibirDados());
     }
@@ -40,7 +39,6 @@ class AlunoGraduacaoTest {
     public void deveExibirDadosReprovado() {
         float[] notas = {7, 6.9f};
         alunoGraduacao.setNotas(notas);
-        alunoGraduacao.setNome("João da Silva");
         alunoGraduacao.setMatricula(1001);
         assertEquals("Nome: João da Silva - Matrícula: 1001 - Aprovação: Reprovado", alunoGraduacao.exibirDados());
     }

@@ -12,7 +12,7 @@ class AlunoEnsinoMedioTest {
 
     @BeforeEach
     public void setUp() {
-        alunoEnsinoMedio = new AlunoEnsinoMedio();
+        alunoEnsinoMedio = new AlunoEnsinoMedio("Pedro Luiz");
     }
 
     @Test
@@ -53,18 +53,16 @@ class AlunoEnsinoMedioTest {
     public void deveExibirDadosAprovado() {
         float[] notas = {6, 6};
         alunoEnsinoMedio.setNotas(notas);
-        alunoEnsinoMedio.setNome("João da Silva");
         alunoEnsinoMedio.setMatricula(1001);
-        assertEquals("Nome: João da Silva - Matrícula: 1001 - Aprovação: Aprovado", alunoEnsinoMedio.exibirDados());
+        assertEquals("Nome: Pedro Luiz - Matrícula: 1001 - Aprovação: Aprovado", alunoEnsinoMedio.exibirDados());
     }
 
     @Test
     public void deveExibirDadosReprovado() {
         float[] notas = {6, 5.9f};
         alunoEnsinoMedio.setNotas(notas);
-        alunoEnsinoMedio.setNome("João da Silva");
         alunoEnsinoMedio.setMatricula(1001);
-        assertEquals("Nome: João da Silva - Matrícula: 1001 - Aprovação: Reprovado", alunoEnsinoMedio.exibirDados());
+        assertEquals("Nome: Pedro Luiz - Matrícula: 1001 - Aprovação: Reprovado", alunoEnsinoMedio.exibirDados());
     }
 
     @Test

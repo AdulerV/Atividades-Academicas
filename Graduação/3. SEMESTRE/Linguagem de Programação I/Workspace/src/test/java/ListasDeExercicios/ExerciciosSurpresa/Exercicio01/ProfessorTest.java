@@ -10,19 +10,30 @@ class ProfessorTest {
 
     @BeforeEach
     public void setUp() {
-        professor = new Professor();
+        professor = new Professor("Marco Antônio");
     }
 
     @Test
     public void deveInserirNome() {
-        professor.setNome("Marco Antônio");
         assertEquals("Marco Antônio", professor.getNome());
     }
 
     @Test
+    public void deveInserirNomeTirandoEspacos() {
+        professor.setNome("  Sandro Fernandes  ");
+        assertEquals("Sandro Fernandes", professor.getNome());
+    }
+
+    @Test
     public void deveInserirTitulacao() {
-        professor.setNome("Doutorado");
-        assertEquals("Doutorado", professor.getNome());
+        professor.setTitulacao("Doutorado");
+        assertEquals("Doutorado", professor.getTitulacao());
+    }
+
+    @Test
+    public void deveInserirTitulacaoTirandoEspacos() {
+        professor.setTitulacao("  Mestrado  ");
+        assertEquals("Mestrado", professor.getTitulacao());
     }
 
     @Test
@@ -41,7 +52,7 @@ class ProfessorTest {
             professor.setTitulacao("");
             fail();
         } catch (IllegalArgumentException e) {
-            assertEquals("Não é permitida titulação vazia!", e.getMessage());
+            assertEquals("Não é permitido titulação vazia!", e.getMessage());
         }
     }
 }
