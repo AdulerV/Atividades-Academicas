@@ -66,7 +66,17 @@ public class Hospede {
         return this.reservas.contains(reserva);
     }
 
-    public float calcularValorTotalImoveis() {
+    public ArrayList<Float> consultarValoresReservas() {
+        ArrayList<Float> valores = new ArrayList<Float>();
+            
+        for (Reserva reserva : this.reservas) {
+               valores.add(reserva.calcularValor());
+        }
+        
+        return valores;
+    }
+
+    public float calcularValorTotalReservass() {
         float soma = 0;
 
         for (Reserva reserva : this.reservas) {
