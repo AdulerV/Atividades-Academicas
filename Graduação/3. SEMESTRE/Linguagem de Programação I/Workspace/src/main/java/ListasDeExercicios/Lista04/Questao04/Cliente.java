@@ -84,7 +84,6 @@ public class Cliente {
         for (Frete frete : this.fretes) {
             numeros.add(frete.getNumero());
         }
-
         return numeros;
     }
 
@@ -94,7 +93,6 @@ public class Cliente {
         for (Frete frete : this.fretes) {
             valores.add(frete.calcularValor());
         }
-
         return valores;
     }
 }

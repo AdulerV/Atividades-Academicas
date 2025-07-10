@@ -72,7 +72,6 @@ public class Hospede {
         for (Reserva reserva : this.reservas) {
             soma += reserva.calcularValor();
         }
-
         return soma;
     }
 }

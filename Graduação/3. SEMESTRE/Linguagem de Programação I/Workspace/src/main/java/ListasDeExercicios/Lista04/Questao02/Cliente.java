@@ -87,7 +87,6 @@ public class Cliente {
         for (ContaBancaria contaBancaria : this.contasBancarias) {
             numeros.add(contaBancaria.getNumero());
         }
-
         return numeros;
     }
 
@@ -97,7 +96,6 @@ public class Cliente {
         for (ContaBancaria contaBancaria : this.contasBancarias) {
             saldos.add(contaBancaria.calcularSaldo());
         }
-
         return saldos;
     }
 }

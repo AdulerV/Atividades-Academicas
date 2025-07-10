@@ -72,7 +72,6 @@ public class Contribuinte {
         for (Imovel imovel : this.imoveis) {
             valores.add(imovel.calcularValor());
         }
-
         return valores;
     }
 
@@ -82,7 +81,6 @@ public class Contribuinte {
         for (Imovel imovel : this.imoveis) {
             soma += imovel.calcularValor();
         }
-
         return soma;
     }
 }
