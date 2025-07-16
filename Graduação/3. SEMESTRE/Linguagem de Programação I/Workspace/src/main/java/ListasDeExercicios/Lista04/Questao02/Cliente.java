@@ -1,7 +1,5 @@
 package ListasDeExercicios.Lista04.Questao02;
 
-import ListasDeExercicios.Lista04.Questao04.Frete;
-
 import java.util.ArrayList;
 
 public class Cliente {

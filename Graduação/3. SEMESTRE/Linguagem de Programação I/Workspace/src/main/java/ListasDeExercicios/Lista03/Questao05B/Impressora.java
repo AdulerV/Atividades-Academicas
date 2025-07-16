@@ -1,10 +1,10 @@
-package ListasDeExercicios.Lista04.Questao05;
+package ListasDeExercicios.Lista04.Questao05B;
 
-public class Impressora extends EquipamentoMantido {
+public class Impressora extends Equipamento {
     private float valorTotalPecasTrocadas;
 
-    public Impressora(Cliente cliente, int numeroManutencao) {
-        super(cliente, numeroManutencao);
+    public Impressora(Manutencao manutencao) {
+        super(manutencao);
     }
 
     public float getValorTotalPecasTrocadas() {

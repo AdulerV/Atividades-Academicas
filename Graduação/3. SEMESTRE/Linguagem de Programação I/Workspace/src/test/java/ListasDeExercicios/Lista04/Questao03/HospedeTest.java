@@ -7,7 +7,6 @@ import java.util.ArrayList;
 import static org.junit.jupiter.api.Assertions.*;
 
 class HospedeTest {
-
     @Test
     void deveInserirCodigo() {
         Hospede hospede = new Hospede();
@@ -118,6 +117,21 @@ class HospedeTest {
     }
 
     @Test
+    void deveConsultarValoresReservas() {
+        Hospede hospede = new Hospede();
+        Reserva reserva1 = new ReservaQuartoSingle(new Hospede(), 1);
+        Reserva reserva2 = new ReservaQuartoDuplo(new Hospede(), 1);
+
+        hospede.adicionarReserva(reserva1);
+        hospede.adicionarReserva(reserva2);
+
+        ArrayList<Float> valores = hospede.consultarValoresReservas();
+        assertEquals(2, valores.size());
+        assertEquals(reserva1.calcularValor(), valores.get(0));
+        assertEquals(reserva2.calcularValor(), valores.get(1));
+    }
+
+    @Test
     void deveCalcularValorTotalReservas() {
         Hospede hospede = new Hospede();
 
@@ -135,6 +149,6 @@ class HospedeTest {
         triplo.setNumeroRefeicoes(8);
         hospede.adicionarReserva(triplo);
 
-        assertEquals(930.0f, hospede.calcularValorTotalImoveis());
+        assertEquals(930.0f, hospede.calcularValorTotalReservas());
     }
 }

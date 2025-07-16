@@ -5,7 +5,6 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
 class ImovelTest {
-
     @Test
     void deveInserirMetragem() {
         Imovel lote = new Lote();

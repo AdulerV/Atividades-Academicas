@@ -5,7 +5,6 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
 class ContaBancariaTest {
-
     @Test
     void deveInserirNumero() {
         Cliente cliente = new Cliente();

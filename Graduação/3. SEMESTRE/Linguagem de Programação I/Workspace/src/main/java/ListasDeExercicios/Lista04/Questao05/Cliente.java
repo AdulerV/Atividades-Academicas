@@ -5,10 +5,10 @@ import java.util.ArrayList;
 public class Cliente {
     private int codigo;
     private String nome;
-    private ArrayList<EquipamentoManutencao> equipamentos;
+    private ArrayList<EquipamentoMantido> equipamentos;
 
     public Cliente() {
-        this.equipamentos = new ArrayList<EquipamentoManutencao>();
+        this.equipamentos = new ArrayList<EquipamentoMantido>();
     }
 
     public int getCodigo() {
@@ -33,11 +33,11 @@ public class Cliente {
         this.nome = nome.trim();
     }
 
-    public ArrayList<EquipamentoManutencao> getEquipamentos() {
+    public ArrayList<EquipamentoMantido> getEquipamentos() {
         return equipamentos;
     }
 
-    public void setEquipamentos(ArrayList<EquipamentoManutencao> equipamentos) {
+    public void setEquipamentos(ArrayList<EquipamentoMantido> equipamentos) {
         if(equipamentos == null) {
             throw new IllegalArgumentException("Lista de equipamentos inválida!");
         }
@@ -48,28 +48,28 @@ public class Cliente {
         return this.equipamentos.size();
     }
 
-    public void adicionarEquipamento(EquipamentoManutencao equipamento) {
+    public void adicionarEquipamento(EquipamentoMantido equipamento) {
         if(equipamento == null || verificarEquipamentoEmManutencao(equipamento) || verificarNumeroEquipamentoEmManutencao(equipamento)) {
             throw new IllegalArgumentException("Equipamento inválido!");
         }
         this.equipamentos.add(equipamento);
     }
 
-    public void removerEquipamento(EquipamentoManutencao equipamento) {
+    public void removerEquipamento(EquipamentoMantido equipamento) {
         if(!verificarEquipamentoEmManutencao(equipamento)) {
             throw new IllegalArgumentException("Equipamento não pertence ao cliente!");
         }
         this.equipamentos.remove(equipamento);
     }
 
-    public boolean verificarEquipamentoEmManutencao(EquipamentoManutencao equipamento) {
+    public boolean verificarEquipamentoEmManutencao(EquipamentoMantido equipamento) {
         return this.equipamentos.contains(equipamento);
     }
 
-    public boolean verificarNumeroEquipamentoEmManutencao(EquipamentoManutencao equipamento) {
+    public boolean verificarNumeroEquipamentoEmManutencao(EquipamentoMantido equipamento) {
         boolean estado = false;
 
-        for (EquipamentoManutencao item : this.equipamentos) {
+        for (EquipamentoMantido item : this.equipamentos) {
             if(item.getNumeroManutencao() == equipamento.getNumeroManutencao()) {
                 estado = true;
                 break;
@@ -81,7 +81,7 @@ public class Cliente {
     public ArrayList<Integer> consultarEquipamentosEmManutencao() {
         ArrayList<Integer> numeros = new ArrayList<Integer>();
 
-        for (EquipamentoManutencao equipamento : this.equipamentos) {
+        for (EquipamentoMantido equipamento : this.equipamentos) {
             numeros.add(equipamento.getNumeroManutencao());
         }
 
@@ -91,7 +91,7 @@ public class Cliente {
     public ArrayList<Float> consultarValoresManutencao() {
         ArrayList<Float> valores = new ArrayList<Float>();
 
-        for (EquipamentoManutencao equipamento : this.equipamentos) {
+        for (EquipamentoMantido equipamento : this.equipamentos) {
             valores.add(equipamento.calcularValorManutencao());
         }
 

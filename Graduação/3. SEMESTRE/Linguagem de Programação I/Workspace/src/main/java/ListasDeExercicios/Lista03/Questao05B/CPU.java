@@ -1,12 +1,11 @@
-package ListasDeExercicios.Lista04.Questao05;
+package ListasDeExercicios.Lista04.Questao05B;
 
-public class Impressora extends EquipamentoMantido {
+public class CPU extends Equipamento {
     private float valorTotalPecasTrocadas;
 
-    public Impressora(Cliente cliente, int numeroManutencao) {
-        super(cliente, numeroManutencao);
+    public CPU(Manutencao manutencao) {
+        super(manutencao);
     }
-
     public float getValorTotalPecasTrocadas() {
         return valorTotalPecasTrocadas;
     }
@@ -20,6 +19,6 @@ public class Impressora extends EquipamentoMantido {
 
     @Override
     public float calcularValorManutencao() {
-        return this.valorMaoObra + this.valorTotalPecasTrocadas;
+        return this.valorMaoObra + valorTotalPecasTrocadas;
     }
 }

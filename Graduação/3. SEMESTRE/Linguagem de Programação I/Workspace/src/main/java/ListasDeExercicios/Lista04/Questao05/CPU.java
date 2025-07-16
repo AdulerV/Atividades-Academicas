@@ -1,6 +1,6 @@
 package ListasDeExercicios.Lista04.Questao05;
 
-public class CPU extends EquipamentoManutencao {
+public class CPU extends EquipamentoMantido {
     private float valorTotalPecasTrocadas;
 
     public CPU(Cliente cliente, int numeroManutencao) {

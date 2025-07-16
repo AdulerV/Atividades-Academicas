@@ -5,7 +5,6 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
 class VagaTest {
-
     @Test
     void deveInserirNumeroValidoLimite() {
         Vaga vaga = new VagaDiaria(1, 1);

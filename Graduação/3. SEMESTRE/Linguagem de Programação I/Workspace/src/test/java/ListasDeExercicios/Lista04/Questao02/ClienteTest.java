@@ -1,6 +1,5 @@
 package ListasDeExercicios.Lista04.Questao02;
 
-import ListasDeExercicios.Lista04.Questao04.FreteNormal;
 import org.junit.jupiter.api.Test;
 
 import java.util.ArrayList;
@@ -8,7 +7,6 @@ import java.util.ArrayList;
 import static org.junit.jupiter.api.Assertions.*;
 
 class ClienteTest {
-
     @Test
     void deveInserirCodigo() {
         Cliente cliente = new Cliente();

@@ -5,7 +5,6 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
 class FreteTest {
-
     @Test
     void deveInserirNumero() {
         FreteNormal frete = new FreteNormal(new Cliente(), 0);

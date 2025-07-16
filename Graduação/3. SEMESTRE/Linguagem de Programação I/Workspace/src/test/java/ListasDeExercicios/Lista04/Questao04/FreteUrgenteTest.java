@@ -5,7 +5,6 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
 class FreteUrgenteTest {
-
     @Test
     void deveRetornarTaxaEntrega() {
         FreteUrgente freteUrgente = new FreteUrgente(new Cliente(), 1);

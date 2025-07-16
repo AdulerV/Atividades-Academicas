@@ -4,7 +4,6 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
 class CasaTest {
-
     @Test
     void deveCalcularValorCasa() {
         Casa casa = new Casa();

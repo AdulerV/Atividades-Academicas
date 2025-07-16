@@ -7,7 +7,6 @@ import java.util.ArrayList;
 import static org.junit.jupiter.api.Assertions.*;
 
 class ClienteTest {
-
     @Test
     void deveInserirCodigo() {
         Cliente cliente = new Cliente();

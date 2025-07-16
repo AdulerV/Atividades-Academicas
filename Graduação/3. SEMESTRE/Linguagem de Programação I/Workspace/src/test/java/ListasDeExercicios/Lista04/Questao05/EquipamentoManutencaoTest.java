@@ -5,11 +5,10 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
 class EquipamentoManutencaoTest {
-
     @Test
     void deveInserirNumeroManutencao() {
         Cliente cliente = new Cliente();
-        EquipamentoManutencao equipamento = new Monitor(cliente, 0);
+        EquipamentoMantido equipamento = new Monitor(cliente, 0);
         equipamento.setNumeroManutencao(0);
         assertEquals(0, equipamento.getNumeroManutencao());
     }
@@ -18,7 +17,7 @@ class EquipamentoManutencaoTest {
     void deveImpedirNumeroManutencaoNegativo() {
         try {
             Cliente cliente = new Cliente();
-            EquipamentoManutencao equipamento = new Monitor(cliente, 1);
+            EquipamentoMantido equipamento = new Monitor(cliente, 1);
             equipamento.setNumeroManutencao(-1);
             fail();
         } catch (IllegalArgumentException e) {
@@ -29,7 +28,7 @@ class EquipamentoManutencaoTest {
     @Test
     void deveInserirValorMaoObraLimite() {
         Cliente cliente = new Cliente();
-        EquipamentoManutencao equipamento = new Monitor(cliente, 2);
+        EquipamentoMantido equipamento = new Monitor(cliente, 2);
         equipamento.setValorMaoObra(0.0f);
         assertEquals(0.0f, equipamento.getValorMaoObra());
     }
@@ -38,7 +37,7 @@ class EquipamentoManutencaoTest {
     void deveImpedirValorMaoObraNegativo() {
         try {
             Cliente cliente = new Cliente();
-            EquipamentoManutencao equipamento = new Monitor(cliente, 3);
+            EquipamentoMantido equipamento = new Monitor(cliente, 3);
             equipamento.setValorMaoObra(-0.01f);
             fail();
         } catch (IllegalArgumentException e) {
@@ -49,7 +48,7 @@ class EquipamentoManutencaoTest {
     @Test
     void deveRetornarCliente() {
         Cliente cliente = new Cliente();
-        EquipamentoManutencao equipamento = new Monitor(cliente, 4);
+        EquipamentoMantido equipamento = new Monitor(cliente, 4);
         assertEquals(cliente, equipamento.getCliente());
     }
 }

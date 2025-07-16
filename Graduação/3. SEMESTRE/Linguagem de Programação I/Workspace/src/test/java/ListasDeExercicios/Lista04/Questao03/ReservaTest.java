@@ -5,7 +5,6 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
 class ReservaTest {
-
     @Test
     void deveInserirNumeroDiasHospedagem() {
         Reserva reserva = new ReservaQuartoSingle(new Hospede(), 1);
