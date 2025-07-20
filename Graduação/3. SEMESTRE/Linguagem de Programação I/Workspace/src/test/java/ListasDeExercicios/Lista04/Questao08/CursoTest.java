@@ -13,7 +13,7 @@ class CursoTest {
     }
 
     @Test
-    void deveLancarExcecaoCodigoInvalido() {
+    void deveImpedirCodigoInvalido() {
         try {
             Curso curso = new Curso();
             curso.setCodigo(0);
@@ -31,7 +31,7 @@ class CursoTest {
     }
 
     @Test
-    void deveLancarExcecaoDescricaoInvalida() {
+    void deveImpedirDescricaoInvalida() {
         try {
             Curso curso = new Curso();
             curso.setDescricao(" ");
@@ -49,7 +49,7 @@ class CursoTest {
     }
 
     @Test
-    void deveLancarExcecaoCargaHorariaInvalida() {
+    void deveImpedirCargaHorariaInvalida() {
         try {
             Curso curso = new Curso();
             curso.setCargaHoraria(0.0f);

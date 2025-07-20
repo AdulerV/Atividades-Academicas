@@ -22,7 +22,7 @@ class AlunoParcialTest {
     }
 
     @Test
-    void deveLancarExcecaoDescontoInvalido() {
+    void deveImpedirDescontoInvalido() {
         try {
             AlunoParcial alunoParcial = new AlunoParcial(new Curso(), 1);
             alunoParcial.setDesconto(0);
