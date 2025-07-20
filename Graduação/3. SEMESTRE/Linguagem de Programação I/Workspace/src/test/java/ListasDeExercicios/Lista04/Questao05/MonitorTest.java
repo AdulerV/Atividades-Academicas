@@ -8,7 +8,7 @@ class MonitorTest {
     @Test
     void deveCalcularValorManutencaoMonitor() {
         Cliente cliente = new Cliente();
-        Monitor monitor = new Monitor(cliente, 8);
+        Monitor monitor = new Monitor(8);
         monitor.setValorMaoObra(100.0f);
         assertEquals(100.0f, monitor.calcularValorManutencao());
     }

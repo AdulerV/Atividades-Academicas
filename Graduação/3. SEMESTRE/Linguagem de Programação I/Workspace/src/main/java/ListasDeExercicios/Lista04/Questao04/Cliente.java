@@ -44,7 +44,7 @@ public class Cliente {
         this.fretes = fretes;
     }
 
-    public int getNumeroFretes() {
+    public int obterQuantidadeFretes() {
         return this.fretes.size();
     }
 

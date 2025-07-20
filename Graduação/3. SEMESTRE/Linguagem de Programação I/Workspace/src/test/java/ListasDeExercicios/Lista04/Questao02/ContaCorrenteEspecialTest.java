@@ -7,16 +7,14 @@ import static org.junit.jupiter.api.Assertions.*;
 class ContaCorrenteEspecialTest {
     @Test
     void deveInserirLimiteCredito() {
-        Cliente cliente = new Cliente();
-        ContaCorrenteEspecial conta = new ContaCorrenteEspecial(cliente, 1, 1);
+        ContaCorrenteEspecial conta = new ContaCorrenteEspecial(1, 1);
         assertEquals(1, conta.getLimiteCredito());
     }
 
     @Test
     void deveImpedirLimiteCreditoInvalido() {
         try {
-            Cliente cliente = new Cliente();
-            ContaCorrenteEspecial conta = new ContaCorrenteEspecial(cliente, 1, 0);
+            ContaCorrenteEspecial conta = new ContaCorrenteEspecial(1, 0);
             fail();
         } catch (IllegalArgumentException e) {
             assertEquals("Limite de crédito inválido!", e.getMessage());
@@ -25,8 +23,7 @@ class ContaCorrenteEspecialTest {
 
     @Test
     void deveCalcularSaldo() {
-        Cliente cliente = new Cliente();
-        ContaBancaria conta = new ContaCorrenteEspecial(cliente, 1, 2500);
+        ContaBancaria conta = new ContaCorrenteEspecial(1, 2500);
         conta.setSaldo(1000);
         assertEquals(3500, conta.calcularSaldo());
     }

@@ -7,14 +7,14 @@ import static org.junit.jupiter.api.Assertions.*;
 class FitaLancamentoTest {
     @Test
     void deveInserirValorAluguelValido() {
-        FitaLancamento fita = new FitaLancamento(new Cliente(), "01/01/2024", 1, 1);
+        FitaLancamento fita = new FitaLancamento("01/01/2024", 1, 1);
         assertEquals(1, fita.getValorAluguel());
     }
 
     @Test
     void deveImpedirValorAluguelInvalido() {
         try {
-            FitaLancamento fita = new FitaLancamento(new Cliente(), "01/01/2024", 1, 0f);
+            FitaLancamento fita = new FitaLancamento("01/01/2024", 1, 0f);
             fail();
         } catch (IllegalArgumentException e) {
             assertEquals("Valor do aluguel inválido!", e.getMessage());
@@ -23,7 +23,7 @@ class FitaLancamentoTest {
 
     @Test
     void deveCalcularValorEmprestimoCorreto() {
-        FitaLancamento fita = new FitaLancamento(new Cliente(), "01/01/2024", 3, 5.0f);
+        FitaLancamento fita = new FitaLancamento("01/01/2024", 3, 5.0f);
         assertEquals(15.0f, fita.calcularValorEmprestimo());
     }
 

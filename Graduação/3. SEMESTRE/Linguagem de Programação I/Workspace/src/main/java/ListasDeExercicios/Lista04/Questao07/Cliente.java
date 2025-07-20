@@ -44,7 +44,7 @@ public class Cliente {
         this.fitas = fitas;
     }
 
-    public int getNumeroFitasEmprestadas() {
+    public int obterQuantidadeFitasEmprestadas() {
         return this.fitas.size();
     }
 

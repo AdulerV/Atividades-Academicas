@@ -44,7 +44,7 @@ public class Cliente {
         this.equipamentos = equipamentos;
     }
 
-    public int getNumeroEquipamentos() {
+    public int obterQuantidadeEquipamentos() {
         return this.equipamentos.size();
     }
 

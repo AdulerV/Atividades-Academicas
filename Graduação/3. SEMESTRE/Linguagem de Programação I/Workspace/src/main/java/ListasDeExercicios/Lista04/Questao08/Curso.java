@@ -53,12 +53,12 @@ public class Curso {
         this.alunos = alunos;
     }
 
-    public int getNumeroAlunos() {
+    public int obterQuantidadeAlunos() {
         return this.alunos.size();
     }
 
     public void adicionarAluno(Aluno aluno) {
-        if(aluno == null || verificarAluno(aluno)) {
+        if(aluno == null || verificarAluno(aluno) || verificarMatriculaAluno(aluno)) {
             throw new IllegalArgumentException("Aluno inválido!");
         }
         this.alunos.add(aluno);
@@ -73,6 +73,18 @@ public class Curso {
 
     public boolean verificarAluno(Aluno aluno) {
         return this.alunos.contains(aluno);
+    }
+
+    public boolean verificarMatriculaAluno(Aluno aluno) {
+        boolean estado = false;
+
+        for (Aluno elemento : this.alunos) {
+            if(elemento.getMatricula() == aluno.getMatricula()) {
+                estado = true;
+                break;
+            }
+        }
+        return estado;
     }
 
     public ArrayList<Integer> consultarAlunosPorMatricula() {
@@ -107,12 +119,12 @@ public class Curso {
         return cursos;
     }
 
-    public ArrayList<Integer> consultarAlunosPorNumParcelas() {
-        ArrayList<Integer> numParcelas = new ArrayList<Integer>();
+    public ArrayList<Integer> consultarAlunosPorNumeroParcelas() {
+        ArrayList<Integer> numeroParcelas = new ArrayList<Integer>();
         for (Aluno aluno : this.alunos) {
-            numParcelas.add(aluno.getNumParcelas());
+            numeroParcelas.add(aluno.getNumeroParcelas());
         }
-        return numParcelas;
+        return numeroParcelas;
     }
 
     public ArrayList<Float> consultarAlunosPorValorMensalidade() {

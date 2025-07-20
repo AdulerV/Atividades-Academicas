@@ -3,10 +3,8 @@ package ListasDeExercicios.Lista04.Questao05;
 public abstract class EquipamentoMantido {
     protected int numeroManutencao;
     protected float valorMaoObra;
-    protected Cliente cliente;
 
-    public EquipamentoMantido(Cliente cliente, int numeroManutencao) {
-        setCliente(cliente);
+    public EquipamentoMantido(int numeroManutencao) {
         setNumeroManutencao(numeroManutencao);
     }
 
@@ -31,14 +29,6 @@ public abstract class EquipamentoMantido {
             throw new IllegalArgumentException("Valor da mão de obra inválido!");
         }
         this.valorMaoObra = valorMaoObra;
-    }
-
-    public Cliente getCliente() {
-        return cliente;
-    }
-
-    public void setCliente(Cliente cliente) {
-        this.cliente = cliente;
     }
 
     public abstract float calcularValorManutencao();

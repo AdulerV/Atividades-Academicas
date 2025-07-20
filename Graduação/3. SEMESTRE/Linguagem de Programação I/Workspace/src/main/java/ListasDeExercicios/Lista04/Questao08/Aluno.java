@@ -1,5 +1,7 @@
 package ListasDeExercicios.Lista04.Questao08;
 
+import ListasDeExercicios.Lista04.Questao06.Vaga;
+
 public abstract class Aluno {
     protected int matricula;
     protected String nome;
@@ -10,7 +12,7 @@ public abstract class Aluno {
 
     public Aluno(Curso curso, int matricula) {
         setCurso(curso);
-       setMatricula(matricula);
+        setMatricula(matricula);
     }
 
     public int getMatricula() {
@@ -57,11 +59,14 @@ public abstract class Aluno {
         this.curso = curso;
     }
 
-    public int getNumParcelas() {
+    public int getNumeroParcelas() {
         return this.numeroParcelas;
     }
 
-    public void setNumParcelas(int numeroParcelas) {
+    public void setNumeroParcelas(int numeroParcelas) {
+        if(numeroParcelas <= 0) {
+            throw new IllegalArgumentException("Número de parcelas inválido!");
+        }
         this.numeroParcelas = numeroParcelas;
     }
 
@@ -70,6 +75,9 @@ public abstract class Aluno {
     }
 
     public void setValorMensalidade(float valorMensalidade) {
+        if(valorMensalidade <= 0) {
+            throw new IllegalArgumentException("Valor da mensalidade inválido!");
+        }
         this.valorMensalidade = valorMensalidade;
     }
 

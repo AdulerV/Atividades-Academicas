@@ -1,8 +1,8 @@
 package ListasDeExercicios.Lista04.Questao03;
 
 public class ReservaQuartoSingle extends Reserva{
-    public ReservaQuartoSingle(Hospede hospede, int numeroDiasHospedagem) {
-        super(hospede, numeroDiasHospedagem);
+    public ReservaQuartoSingle(int numeroDiasHospedagem) {
+        super(numeroDiasHospedagem);
     }
 
     @Override

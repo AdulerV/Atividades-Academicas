@@ -3,8 +3,8 @@ package ListasDeExercicios.Lista04.Questao03;
 public class ReservaQuartoTriplo extends Reserva{
     private float numeroRefeicoes;
 
-    public ReservaQuartoTriplo(Hospede hospede, int numeroDiasHospedagem) {
-        super(hospede, numeroDiasHospedagem);
+    public ReservaQuartoTriplo(int numeroDiasHospedagem) {
+        super(numeroDiasHospedagem);
     }
 
     public float getNumeroRefeicoes() {

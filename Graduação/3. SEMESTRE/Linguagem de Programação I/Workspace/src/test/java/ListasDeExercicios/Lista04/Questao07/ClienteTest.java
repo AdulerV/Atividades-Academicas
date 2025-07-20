@@ -64,9 +64,9 @@ class ClienteTest {
     @Test
     void deveAdicionarFita() {
         Cliente cliente = new Cliente();
-        FitaEmprestada fita = new FitaEspecial(cliente, "01/01/2024", 2, 5.0f);
+        FitaEmprestada fita = new FitaEspecial("01/01/2024", 2, 5.0f);
         cliente.adicionarFitaEmprestada(fita);
-        assertEquals(1, cliente.getNumeroFitasEmprestadas());
+        assertEquals(1, cliente.obterQuantidadeFitasEmprestadas());
     }
 
     @Test
@@ -84,7 +84,7 @@ class ClienteTest {
     void deveImpedirFitaDuplicada() {
         try {
             Cliente cliente = new Cliente();
-            FitaEmprestada fita = new FitaEspecial(cliente, "01/01/2024", 2, 5.0f);
+            FitaEmprestada fita = new FitaEspecial("01/01/2024", 2, 5.0f);
             cliente.adicionarFitaEmprestada(fita);
             cliente.adicionarFitaEmprestada(fita);
             fail();
@@ -96,7 +96,7 @@ class ClienteTest {
     @Test
     void deveRemoverFita() {
         Cliente cliente = new Cliente();
-        FitaEmprestada fita = new FitaEspecial(cliente, "01/01/2024", 2, 5.0f);
+        FitaEmprestada fita = new FitaEspecial("01/01/2024", 2, 5.0f);
         cliente.adicionarFitaEmprestada(fita);
         cliente.removerFitaEmprestada(fita);
         assertFalse(cliente.verificarFitaEmprestada(fita));
@@ -106,7 +106,7 @@ class ClienteTest {
     void deveImpedirRemoverFitaInexistente() {
         try {
             Cliente cliente = new Cliente();
-            FitaEmprestada fita = new FitaEspecial(cliente, "01/01/2024", 2, 5.0f);
+            FitaEmprestada fita = new FitaEspecial("01/01/2024", 2, 5.0f);
             cliente.removerFitaEmprestada(fita);
             fail();
         } catch (IllegalArgumentException e) {
@@ -118,8 +118,8 @@ class ClienteTest {
     void deveCalcularValorTotalEmprestimos() {
         Cliente cliente = new Cliente();
 
-        FitaEmprestada fita1 = new FitaEspecial(cliente, "01/01/2024", 2, 5.0f); // 10.0
-        FitaEmprestada fita2 = new FitaEspecial(cliente, "01/01/2024", 3, 7.0f); // 21.0
+        FitaEmprestada fita1 = new FitaEspecial("01/01/2024", 2, 5.0f); // 10.0
+        FitaEmprestada fita2 = new FitaEspecial("01/01/2024", 3, 7.0f); // 21.0
 
         cliente.adicionarFitaEmprestada(fita1);
         cliente.adicionarFitaEmprestada(fita2);

@@ -8,7 +8,7 @@ class ImpressoraTest {
     @Test
     void deveInserirValorTotalPecasTrocadas() {
         Cliente cliente = new Cliente();
-        Impressora impressora = new Impressora(cliente, 6);
+        Impressora impressora = new Impressora(6);
         impressora.setValorTotalPecasTrocadas(0.0f);
         assertEquals(0.0f, impressora.getValorTotalPecasTrocadas());
     }
@@ -17,7 +17,7 @@ class ImpressoraTest {
     void deveImpedirValorTotalPecasTrocadasNegativo() {
         try {
             Cliente cliente = new Cliente();
-            Impressora impressora = new Impressora(cliente, 7);
+            Impressora impressora = new Impressora(7);
             impressora.setValorTotalPecasTrocadas(-0.01f);
             fail();
         } catch (IllegalArgumentException e) {
@@ -28,7 +28,7 @@ class ImpressoraTest {
     @Test
     void deveCalcularValorManutencaoImpressora() {
         Cliente cliente = new Cliente();
-        Impressora impressora = new Impressora(cliente, 8);
+        Impressora impressora = new Impressora(8);
         impressora.setValorMaoObra(100.0f);
         impressora.setValorTotalPecasTrocadas(50.0f);
         assertEquals(150.0f, impressora.calcularValorManutencao());

@@ -66,11 +66,10 @@ class ContribuinteTest {
     void deveAdicionarImovel() {
         Contribuinte contribuinte = new Contribuinte();
         Lote lote = new Lote();
-        lote.setContribuinte(contribuinte);
         lote.setMetragemQuadrada(100);
         contribuinte.adicionarImovel(lote);
 
-        assertEquals(1, contribuinte.getNumeroImoveis());
+        assertEquals(1, contribuinte.obterQuantidadeImoveis());
         assertTrue(contribuinte.verificarImovel(lote));
     }
 
@@ -90,7 +89,6 @@ class ContribuinteTest {
         try {
             Contribuinte contribuinte = new Contribuinte();
             Casa casa = new Casa();
-            casa.setContribuinte(contribuinte);
             casa.setMetragemQuadrada(100);
             casa.setMetragemQuadradaConstrucao(50);
             contribuinte.adicionarImovel(casa);
@@ -105,7 +103,6 @@ class ContribuinteTest {
     void deveRemoverImovel() {
         Contribuinte contribuinte = new Contribuinte();
         Apartamento apartamento = new Apartamento();
-        apartamento.setContribuinte(contribuinte);
         apartamento.setMetragemQuadrada(60);
         apartamento.setAndar(2);
         contribuinte.adicionarImovel(apartamento);
@@ -130,18 +127,15 @@ class ContribuinteTest {
         Contribuinte contribuinte = new Contribuinte();
 
         Lote lote = new Lote();
-        lote.setContribuinte(contribuinte);
         lote.setMetragemQuadrada(100);
         contribuinte.adicionarImovel(lote);
 
         Casa casa = new Casa();
-        casa.setContribuinte(contribuinte);
         casa.setMetragemQuadrada(50);
         casa.setMetragemQuadradaConstrucao(50);
         contribuinte.adicionarImovel(casa);
 
         Apartamento apartamento = new Apartamento();
-        apartamento.setContribuinte(contribuinte);
         apartamento.setMetragemQuadrada(60);
         apartamento.setAndar(1);
         contribuinte.adicionarImovel(apartamento);
@@ -158,18 +152,15 @@ class ContribuinteTest {
         Contribuinte contribuinte = new Contribuinte();
 
         Lote lote = new Lote();
-        lote.setContribuinte(contribuinte);
         lote.setMetragemQuadrada(100);
         contribuinte.adicionarImovel(lote);
 
         Casa casa = new Casa();
-        casa.setContribuinte(contribuinte);
         casa.setMetragemQuadrada(50);
         casa.setMetragemQuadradaConstrucao(50);
         contribuinte.adicionarImovel(casa);
 
         Apartamento apartamento = new Apartamento();
-        apartamento.setContribuinte(contribuinte);
         apartamento.setMetragemQuadrada(60);
         apartamento.setAndar(1);
         contribuinte.adicionarImovel(apartamento);
@@ -180,7 +171,7 @@ class ContribuinteTest {
     @Test
     public void deveRetornarImovelAusente() {
         Contribuinte contribuinte = new Contribuinte();
-        assertEquals(0, contribuinte.getNumeroImoveis());
+        assertEquals(0, contribuinte.obterQuantidadeImoveis());
     }
 
     @Test
@@ -188,24 +179,21 @@ class ContribuinteTest {
         Contribuinte contribuinte = new Contribuinte();
         Imovel lote = new Lote();
         contribuinte.adicionarImovel(lote);
-        assertEquals(1, contribuinte.getNumeroImoveis());
+        assertEquals(1, contribuinte.obterQuantidadeImoveis());
     }
 
     @Test
     public void deveInserirMaisDeUmImovel() {
         Contribuinte contribuinte = new Contribuinte();
         Imovel lote = new Lote();
-        lote.setContribuinte(contribuinte);
         contribuinte.adicionarImovel(lote);
 
         Imovel casa = new Casa();
-        casa.setContribuinte(contribuinte);
         contribuinte.adicionarImovel(casa);
 
         Imovel apartamento = new Apartamento();
-        apartamento.setContribuinte(contribuinte);
         contribuinte.adicionarImovel(apartamento);
 
-        assertEquals(3, contribuinte.getNumeroImoveis());
+        assertEquals(3, contribuinte.obterQuantidadeImoveis());
     }
 }

@@ -3,10 +3,8 @@ package ListasDeExercicios.Lista04.Questao02;
 public abstract class ContaBancaria {
     protected int numero;
     protected float saldo;
-    protected Cliente cliente;
 
-    public ContaBancaria(Cliente cliente, int numero) {
-        setCliente(cliente);
+    public ContaBancaria(int numero) {
         setNumero(numero);
     }
 
@@ -32,17 +30,6 @@ public abstract class ContaBancaria {
         this.saldo = saldo;
     }
 
-    public Cliente getCliente() {
-        return cliente;
-    }
-
-    public void setCliente(Cliente cliente) {
-        if(cliente == null) {
-            throw new IllegalArgumentException("O cliente é obrigatório!");
-        }
-        this.cliente = cliente;
-    }
-
     public void depositar(float deposito) {
         if(deposito <= 0) {
             throw new IllegalArgumentException("Valor de depósito inválido!");
@@ -60,4 +47,6 @@ public abstract class ContaBancaria {
     public float calcularSaldo() {
         return this.getSaldo();
     }
+
+    public abstract void calcularJuros();
 }

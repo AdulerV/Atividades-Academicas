@@ -3,8 +3,8 @@ package ListasDeExercicios.Lista04.Questao02;
 public class ContaCorrenteEspecial extends ContaCorrente {
     private float limiteCredito;
 
-    public ContaCorrenteEspecial(Cliente cliente, int numero, float limiteCredito) {
-        super(cliente, numero);
+    public ContaCorrenteEspecial(int numero, float limiteCredito) {
+        super(numero);
         setLimiteCredito(limiteCredito);
     }
 

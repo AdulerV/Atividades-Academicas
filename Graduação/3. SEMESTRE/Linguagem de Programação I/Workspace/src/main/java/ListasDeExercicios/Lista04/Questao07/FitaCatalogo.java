@@ -1,8 +1,8 @@
 package ListasDeExercicios.Lista04.Questao07;
 
 public class FitaCatalogo extends FitaEmprestada {
-    public FitaCatalogo(Cliente cliente, String data, int numeroDias) {
-        super(cliente, data, numeroDias);
+    public FitaCatalogo(String data, int numeroDias) {
+        super(data, numeroDias);
     }
 
     @Override

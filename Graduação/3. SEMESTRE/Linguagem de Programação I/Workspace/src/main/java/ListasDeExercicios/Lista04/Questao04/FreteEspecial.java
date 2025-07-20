@@ -3,8 +3,8 @@ package ListasDeExercicios.Lista04.Questao04;
 public class FreteEspecial extends Frete {
     private final float taxaEntrega;
 
-    public FreteEspecial(Cliente cliente, int numero) {
-        super(cliente, numero);
+    public FreteEspecial(int numero) {
+        super(numero);
         this.taxaEntrega = 0.03f;
     }
 

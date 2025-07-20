@@ -8,7 +8,7 @@ class AlunoParcialTest {
     @Test
     void deveCalcularMensalidade() {
         AlunoParcial alunoParcial = new AlunoParcial(new Curso(), 1);
-        alunoParcial.setNumParcelas(10);
+        alunoParcial.setNumeroParcelas(10);
         alunoParcial.setValorMensalidade(50.0f);
         alunoParcial.setDesconto(10);
         assertEquals(450.0f, alunoParcial.calcularMensalidade());

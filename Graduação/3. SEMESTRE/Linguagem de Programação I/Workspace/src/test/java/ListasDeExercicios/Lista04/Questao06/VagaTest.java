@@ -54,12 +54,4 @@ class VagaTest {
             assertEquals("Período inválido!", e.getMessage());
         }
     }
-
-    @Test
-    void deveInserirERecuperarCliente() {
-        Cliente cliente = new Cliente();
-        Vaga vaga = new VagaDiaria(1, 1);
-        vaga.setCliente(cliente);
-        assertEquals(cliente, vaga.getCliente());
-    }
 }

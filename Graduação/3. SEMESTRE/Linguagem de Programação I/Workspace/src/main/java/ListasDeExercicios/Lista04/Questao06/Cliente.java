@@ -44,7 +44,7 @@ public class Cliente {
         this.vagas = vagas;
     }
 
-    public int getNumeroVagas() {
+    public int obterQuantidadeVagas() {
         return this.vagas.size();
     }
 

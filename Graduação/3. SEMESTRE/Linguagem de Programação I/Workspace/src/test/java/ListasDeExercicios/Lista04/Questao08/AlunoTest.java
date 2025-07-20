@@ -74,13 +74,38 @@ class AlunoTest {
     }
 
     @Test
-    void deveDefinirNumeroParcelasEValorMensalidade() {
+    void deveInserirNumeroParcelas() {
         Aluno aluno = new AlunoIntegral(new Curso(), 1);
-        aluno.setNumParcelas(10);
-        aluno.setValorMensalidade(500.0f);
-        assertEquals(10, aluno.getNumParcelas());
-        assertEquals(500.0f, aluno.getValorMensalidade());
+        aluno.setNumeroParcelas(1);
+        assertEquals(1, aluno.getNumeroParcelas());
     }
 
+    @Test
+    void deveInserirValorMensalidade() {
+        Aluno aluno = new AlunoIntegral(new Curso(), 1);
+        aluno.setValorMensalidade(1);
+        assertEquals(1, aluno.getValorMensalidade());
+    }
 
+    @Test
+    void deveImpedirNumeroParcelasInvalido() {
+        try {
+            Aluno aluno = new AlunoIntegral(new Curso(), 1);
+            aluno.setNumeroParcelas(0);
+            fail();
+        } catch (IllegalArgumentException e) {
+            assertEquals("Número de parcelas inválido!", e.getMessage());
+        }
+    }
+
+    @Test
+    void deveImpedirValorMensalidadeInvalido() {
+        try {
+            Aluno aluno = new AlunoIntegral(new Curso(), 1);
+            aluno.setValorMensalidade(0);
+            fail();
+        } catch (IllegalArgumentException e) {
+            assertEquals("Valor da mensalidade inválido!", e.getMessage());
+        }
+    }
 }

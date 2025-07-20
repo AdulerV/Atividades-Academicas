@@ -44,7 +44,7 @@ public class Cliente {
         this.contasBancarias = contasBancarias;
     }
 
-    public int getNumeroContasBancarias() {
+    public int obterQuantidadeContasBancarias() {
         return this.contasBancarias.size();
     }
 
@@ -77,7 +77,6 @@ public class Cliente {
         }
         return estado;
     }
-
 
     public ArrayList<Integer> consultarContasBancarias() {
         ArrayList<Integer> numeros = new ArrayList<Integer>();

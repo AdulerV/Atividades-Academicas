@@ -4,10 +4,8 @@ public abstract class FitaEmprestada {
     protected String nomeFilme;
     protected String data;
     protected int numeroDias;
-    protected Cliente cliente;
 
-    public FitaEmprestada(Cliente cliente, String data, int numeroDias) {
-        setCliente(cliente);
+    public FitaEmprestada(String data, int numeroDias) {
         setData(data);
         setNumeroDias(numeroDias);
     }
@@ -43,17 +41,6 @@ public abstract class FitaEmprestada {
             throw new IllegalArgumentException("Número de dias do empréstimo inválido!");
         }
         this.numeroDias = numeroDias;
-    }
-
-    public Cliente getCliente() {
-        return cliente;
-    }
-
-    public void setCliente(Cliente cliente) {
-        if(cliente == null) {
-            throw new IllegalArgumentException("O cliente é obrigatório!");
-        }
-        this.cliente = cliente;
     }
 
     public abstract float calcularValorEmprestimo();

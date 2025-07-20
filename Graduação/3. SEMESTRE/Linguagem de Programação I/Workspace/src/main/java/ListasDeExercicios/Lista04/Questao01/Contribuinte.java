@@ -44,7 +44,7 @@ public class Contribuinte {
         this.imoveis = imoveis;
     }
 
-    public int getNumeroImoveis() {
+    public int obterQuantidadeImoveis() {
         return this.imoveis.size();
     }
 

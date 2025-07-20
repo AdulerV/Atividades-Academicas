@@ -65,9 +65,9 @@ class HospedeTest {
     @Test
     void deveAdicionarReserva() {
         Hospede hospede = new Hospede();
-        Reserva reserva = new ReservaQuartoSingle(hospede, 1);
+        Reserva reserva = new ReservaQuartoSingle(1);
         hospede.adicionarReserva(reserva);
-        assertEquals(1, hospede.getNumeroReservas());
+        assertEquals(1, hospede.obterQuantidadeReservas());
         assertTrue(hospede.verificarReserva(reserva));
     }
 
@@ -86,7 +86,7 @@ class HospedeTest {
     void deveImpedirReservaDuplicada() {
         try {
             Hospede hospede = new Hospede();
-            Reserva reserva = new ReservaQuartoSingle(new Hospede(), 1);
+            Reserva reserva = new ReservaQuartoSingle(1);
             hospede.adicionarReserva(reserva);
             hospede.adicionarReserva(reserva);
             fail();
@@ -98,7 +98,7 @@ class HospedeTest {
     @Test
     void deveRemoverReserva() {
         Hospede hospede = new Hospede();
-        Reserva reserva = new ReservaQuartoSingle(new Hospede(), 1);
+        Reserva reserva = new ReservaQuartoSingle(1);
         hospede.adicionarReserva(reserva);
         hospede.removerReserva(reserva);
         assertFalse(hospede.verificarReserva(reserva));
@@ -108,7 +108,7 @@ class HospedeTest {
     void deveImpedirRemoverReservaInexistente() {
         try {
             Hospede hospede = new Hospede();
-            Reserva reserva = new ReservaQuartoSingle(new Hospede(), 1);
+            Reserva reserva = new ReservaQuartoSingle(1);
             hospede.removerReserva(reserva);
             fail();
         } catch (IllegalArgumentException e) {
@@ -119,8 +119,8 @@ class HospedeTest {
     @Test
     void deveConsultarValoresReservas() {
         Hospede hospede = new Hospede();
-        Reserva reserva1 = new ReservaQuartoSingle(new Hospede(), 1);
-        Reserva reserva2 = new ReservaQuartoDuplo(new Hospede(), 1);
+        Reserva reserva1 = new ReservaQuartoSingle(1);
+        Reserva reserva2 = new ReservaQuartoDuplo(1);
 
         hospede.adicionarReserva(reserva1);
         hospede.adicionarReserva(reserva2);
@@ -135,16 +135,16 @@ class HospedeTest {
     void deveCalcularValorTotalReservas() {
         Hospede hospede = new Hospede();
 
-        ReservaQuartoSingle single = new ReservaQuartoSingle(new Hospede(), 1);
+        ReservaQuartoSingle single = new ReservaQuartoSingle(1);
         single.setNumeroDiasHospedagem(3);
         hospede.adicionarReserva(single);
 
-        ReservaQuartoDuplo duplo = new ReservaQuartoDuplo(new Hospede(), 2);
+        ReservaQuartoDuplo duplo = new ReservaQuartoDuplo(2);
         duplo.setNumeroDiasHospedagem(2);
         duplo.setNumeroRefeicoes(4);
         hospede.adicionarReserva(duplo);
 
-        ReservaQuartoTriplo triplo = new ReservaQuartoTriplo(new Hospede(), 3);
+        ReservaQuartoTriplo triplo = new ReservaQuartoTriplo(3);
         triplo.setNumeroDiasHospedagem(5);
         triplo.setNumeroRefeicoes(8);
         hospede.adicionarReserva(triplo);

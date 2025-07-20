@@ -1,10 +1,10 @@
-package ListasDeExercicios.Lista04.Questao05;
+package Exemplos.Questao05B;
 
-public class CPU extends EquipamentoMantido {
+public class CPU extends Equipamento {
     private float valorTotalPecasTrocadas;
 
-    public CPU(int numeroManutencao) {
-        super(numeroManutencao);
+    public CPU(Manutencao manutencao) {
+        super(manutencao);
     }
 
     public float getValorTotalPecasTrocadas() {

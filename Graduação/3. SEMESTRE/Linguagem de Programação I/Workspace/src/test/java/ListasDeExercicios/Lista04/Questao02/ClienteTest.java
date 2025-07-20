@@ -65,9 +65,9 @@ class ClienteTest {
     @Test
     void deveAdicionarContaBancaria() {
         Cliente cliente = new Cliente();
-        ContaBancaria conta = new ContaPoupanca(cliente, 101);
+        ContaBancaria conta = new ContaPoupanca( 101);
         cliente.adicionarContaBancaria(conta);
-        assertEquals(1, cliente.getNumeroContasBancarias());
+        assertEquals(1, cliente.obterQuantidadeContasBancarias());
         assertTrue(cliente.verificarContaBancaria(conta));
     }
 
@@ -86,7 +86,7 @@ class ClienteTest {
     void deveImpedirContaBancariaDuplicada() {
         try {
             Cliente cliente = new Cliente();
-            ContaBancaria conta = new ContaPoupanca(cliente, 202);
+            ContaBancaria conta = new ContaPoupanca( 202);
             cliente.adicionarContaBancaria(conta);
             cliente.adicionarContaBancaria(conta);
             fail();
@@ -99,8 +99,8 @@ class ClienteTest {
     void deveImpedirContaBancariaNumeroIgual() {
         try {
             Cliente cliente = new Cliente();
-            ContaBancaria conta1 = new ContaPoupanca(cliente, 202);
-            ContaBancaria conta2 = new ContaPoupanca(cliente, 202);
+            ContaBancaria conta1 = new ContaPoupanca( 202);
+            ContaBancaria conta2 = new ContaPoupanca( 202);
             cliente.adicionarContaBancaria(conta1);
             cliente.adicionarContaBancaria(conta2);
             fail();
@@ -113,7 +113,7 @@ class ClienteTest {
     void deveImpedirContaBancaria() {
         try {
             Cliente cliente = new Cliente();
-            ContaBancaria conta = new ContaPoupanca(cliente, 202);
+            ContaBancaria conta = new ContaPoupanca( 202);
             cliente.adicionarContaBancaria(conta);
             cliente.adicionarContaBancaria(conta);
             fail();
@@ -125,7 +125,7 @@ class ClienteTest {
     @Test
     void deveRemoverContaBancaria() {
         Cliente cliente = new Cliente();
-        ContaBancaria conta = new ContaPoupanca(cliente, 303);
+        ContaBancaria conta = new ContaPoupanca( 303);
         cliente.adicionarContaBancaria(conta);
         cliente.removerContaBancaria(conta);
         assertFalse(cliente.verificarContaBancaria(conta));
@@ -135,7 +135,7 @@ class ClienteTest {
     void deveImpedirRemocaoContaInexistente() {
         try {
             Cliente cliente = new Cliente();
-            ContaBancaria conta = new ContaPoupanca(new Cliente(), 404);
+            ContaBancaria conta = new ContaPoupanca(404);
             cliente.removerContaBancaria(conta);
             fail();
         } catch (IllegalArgumentException e) {
@@ -146,8 +146,8 @@ class ClienteTest {
     @Test
     void deveConsultarNumerosContas() {
         Cliente cliente = new Cliente();
-        ContaBancaria conta1 = new ContaPoupanca(cliente, 111);
-        ContaBancaria conta2 = new ContaPoupanca(cliente, 222);
+        ContaBancaria conta1 = new ContaPoupanca( 111);
+        ContaBancaria conta2 = new ContaPoupanca( 222);
         cliente.adicionarContaBancaria(conta1);
         cliente.adicionarContaBancaria(conta2);
 
@@ -159,10 +159,10 @@ class ClienteTest {
     @Test
     void deveConsultarSaldosContas() {
         Cliente cliente = new Cliente();
-        ContaBancaria conta1 = new ContaCorrenteEspecial(cliente, 333, 250.0f);
+        ContaBancaria conta1 = new ContaCorrenteEspecial( 333, 250.0f);
         conta1.depositar(100);
 
-        ContaBancaria conta2 = new ContaPoupanca(cliente, 444);
+        ContaBancaria conta2 = new ContaPoupanca( 444);
         conta2.depositar(200);
 
         cliente.adicionarContaBancaria(conta1);

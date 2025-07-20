@@ -67,7 +67,7 @@ class ClienteTest {
         Cliente cliente = new Cliente();
         Vaga vaga1 = new VagaDiaria(1, 1);
         cliente.adicionarVaga(vaga1);
-        assertEquals(1, cliente.getNumeroVagas());
+        assertEquals(1, cliente.obterQuantidadeVagas());
         assertTrue(cliente.verificarVaga(vaga1));
     }
 
@@ -87,7 +87,6 @@ class ClienteTest {
         try {
             Cliente cliente = new Cliente();
             Vaga vaga1 = new VagaDiaria(1, 1);
-            vaga1.setCliente(cliente);
             cliente.adicionarVaga(vaga1);
             cliente.adicionarVaga(vaga1);
             fail();
@@ -167,13 +166,8 @@ class ClienteTest {
         Cliente cliente = new Cliente();
 
         VagaDiaria vaga1 = new VagaDiaria(1, 3);
-        vaga1.setCliente(cliente);
-
         VagaSemanal vaga2 = new VagaSemanal( 2, 2);
-        vaga2.setCliente(cliente);
-
         VagaMensal vaga3 = new VagaMensal(3, 1);
-        vaga3.setCliente(cliente);
 
         cliente.adicionarVaga(vaga1);
         cliente.adicionarVaga(vaga2);

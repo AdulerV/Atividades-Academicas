@@ -3,8 +3,8 @@ package ListasDeExercicios.Lista04.Questao07;
 public class FitaEspecial extends FitaEmprestada {
     private float valorAluguelDiario;
 
-    public FitaEspecial(Cliente cliente, String data, int numeroDias, float valorAluguelDiario) {
-        super(cliente, data, numeroDias);
+    public FitaEspecial(String data, int numeroDias, float valorAluguelDiario) {
+        super(data, numeroDias);
         setValorAluguel(valorAluguelDiario);
     }
 

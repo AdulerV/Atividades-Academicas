@@ -3,8 +3,8 @@ package ListasDeExercicios.Lista04.Questao05;
 public class Impressora extends EquipamentoMantido {
     private float valorTotalPecasTrocadas;
 
-    public Impressora(Cliente cliente, int numeroManutencao) {
-        super(cliente, numeroManutencao);
+    public Impressora(int numeroManutencao) {
+        super(numeroManutencao);
     }
 
     public float getValorTotalPecasTrocadas() {

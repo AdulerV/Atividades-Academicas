@@ -65,10 +65,10 @@ class ClienteTest {
     @Test
     void deveAdicionarFrete() {
         Cliente cliente = new Cliente();
-        FreteNormal frete1 = new FreteNormal(cliente, 1);
+        FreteNormal frete1 = new FreteNormal(1);
         cliente.adicionarFrete(frete1);
         assertTrue(cliente.verificarFrete(frete1));
-        assertEquals(1, cliente.getNumeroFretes());
+        assertEquals(1, cliente.obterQuantidadeFretes());
     }
 
     @Test
@@ -86,7 +86,7 @@ class ClienteTest {
     void deveImpedirFreteDuplicado() {
         try {
             Cliente cliente = new Cliente();
-            FreteNormal frete1 = new FreteNormal(cliente, 2);
+            FreteNormal frete1 = new FreteNormal(2);
             cliente.adicionarFrete(frete1);
             cliente.adicionarFrete(frete1);
             fail();
@@ -99,8 +99,8 @@ class ClienteTest {
     void deveImpedirFreteNumeroIgual() {
         try {
             Cliente cliente = new Cliente();
-            FreteNormal frete1 = new FreteNormal(cliente, 2);
-            FreteNormal frete2 = new FreteNormal(cliente, 2);
+            FreteNormal frete1 = new FreteNormal(2);
+            FreteNormal frete2 = new FreteNormal(2);
             cliente.adicionarFrete(frete1);
             cliente.adicionarFrete(frete2);
             fail();
@@ -112,7 +112,7 @@ class ClienteTest {
     @Test
     void deveRemoverFreteExistente() {
         Cliente cliente = new Cliente();
-        FreteNormal frete1 = new FreteNormal(cliente, 3);
+        FreteNormal frete1 = new FreteNormal(3);
         cliente.adicionarFrete(frete1);
         cliente.removerFrete(frete1);
         assertFalse(cliente.verificarFrete(frete1));
@@ -122,7 +122,7 @@ class ClienteTest {
     void deveImpedirRemoverFreteInexistente() {
         try {
             Cliente cliente = new Cliente();
-            FreteNormal frete1 = new FreteNormal(cliente, 4);
+            FreteNormal frete1 = new FreteNormal(4);
             cliente.removerFrete(frete1);
             fail();
         } catch (IllegalArgumentException e) {
@@ -133,8 +133,8 @@ class ClienteTest {
     @Test
     void deveConsultarFretes() {
         Cliente cliente = new Cliente();
-        FreteNormal frete1 = new FreteNormal(cliente, 11);
-        FreteNormal frete2 = new FreteNormal(cliente, 12);
+        FreteNormal frete1 = new FreteNormal(11);
+        FreteNormal frete2 = new FreteNormal(12);
         cliente.adicionarFrete(frete1);
         cliente.adicionarFrete(frete2);
         ArrayList<Integer> numeros = cliente.consultarFretes();
@@ -146,8 +146,8 @@ class ClienteTest {
     @Test
     void deveConsultarValoresFretes() {
         Cliente cliente = new Cliente();
-        FreteNormal frete1 = new FreteNormal(cliente, 21);
-        FreteNormal frete2 = new FreteNormal(cliente, 22);
+        FreteNormal frete1 = new FreteNormal(21);
+        FreteNormal frete2 = new FreteNormal(22);
         cliente.adicionarFrete(frete1);
         cliente.adicionarFrete(frete2);
         ArrayList<Float> valores = cliente.consultarValoresFretes();

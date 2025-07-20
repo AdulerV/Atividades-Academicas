@@ -70,7 +70,7 @@ class CursoTest {
     @Test
     public void deveRetornarNenhumAluno() {
         Curso curso = new Curso();
-        assertEquals(0, curso.getNumeroAlunos());
+        assertEquals(0, curso.obterQuantidadeAlunos());
     }
 
     @Test
@@ -78,7 +78,7 @@ class CursoTest {
         Curso curso = new Curso();
         Aluno aluno = new AlunoMensalista(curso, 1);
         curso.adicionarAluno(aluno);
-        assertEquals(1, curso.getNumeroAlunos());
+        assertEquals(1, curso.obterQuantidadeAlunos());
     }
 
     @Test
@@ -87,22 +87,21 @@ class CursoTest {
         Aluno alunoMensalista = new AlunoMensalista(curso, 1);
         curso.adicionarAluno(alunoMensalista);
 
-        Aluno alunoIntegral = new AlunoIntegral(curso, 1);
+        Aluno alunoIntegral = new AlunoIntegral(curso, 2);
         curso.adicionarAluno(alunoIntegral);
 
-        Aluno alunoParcial = new AlunoParcial(curso, 1);
+        Aluno alunoParcial = new AlunoParcial(curso, 3);
         curso.adicionarAluno(alunoParcial);
 
-        assertEquals(3, curso.getNumeroAlunos());
+        assertEquals(3, curso.obterQuantidadeAlunos());
     }
 
     @Test
     void deveAdicionarAluno() {
         Curso curso = new Curso();
-        curso.setAlunos(new ArrayList<>());
         Aluno aluno = new AlunoIntegral(curso, 1);
         curso.adicionarAluno(aluno);
-        assertEquals(1, curso.getNumeroAlunos());
+        assertEquals(1, curso.obterQuantidadeAlunos());
         assertTrue(curso.verificarAluno(aluno));
     }
 
@@ -110,7 +109,7 @@ class CursoTest {
     void deveImpedirAlunoNulo() {
         try {
             Curso curso = new Curso();
-            curso.setAlunos(new ArrayList<>());
+
             curso.adicionarAluno(null);
             fail();
         } catch (IllegalArgumentException e) {
@@ -122,7 +121,6 @@ class CursoTest {
     void deveImpedirAlunoDuplicado() {
         try {
             Curso curso = new Curso();
-            curso.setAlunos(new ArrayList<>());
             Aluno aluno = new AlunoIntegral(curso, 1);
             curso.adicionarAluno(aluno);
             curso.adicionarAluno(aluno);
@@ -133,9 +131,22 @@ class CursoTest {
     }
 
     @Test
+    void deveImpedirAlunoMatriculaIgual() {
+        try {
+            Curso curso = new Curso();
+            Aluno aluno1 = new AlunoIntegral(curso, 1);
+            Aluno aluno2 = new AlunoIntegral(curso, 1);
+            curso.adicionarAluno(aluno1);
+            curso.adicionarAluno(aluno2);
+            fail();
+        } catch (IllegalArgumentException e) {
+            assertEquals("Aluno inválido!", e.getMessage());
+        }
+    }
+
+    @Test
     void deveRemoverAluno() {
         Curso curso = new Curso();
-        curso.setAlunos(new ArrayList<>());
         Aluno aluno = new AlunoIntegral(curso, 1);
         curso.adicionarAluno(aluno);
         curso.removerAluno(aluno);
@@ -146,7 +157,7 @@ class CursoTest {
     void deveImpedirRemoverAlunoInexistente() {
         try {
             Curso curso = new Curso();
-            curso.setAlunos(new ArrayList<>());
+
             Aluno aluno = new AlunoIntegral(curso, 1);
             curso.removerAluno(aluno);
             fail();
@@ -156,30 +167,79 @@ class CursoTest {
     }
 
     @Test
-    void deveConsultarDadosDosAlunos() {
+    void deveConsultarMatriculaAluno() {
         Curso curso = new Curso();
-        curso.setAlunos(new ArrayList<>());
 
-        AlunoIntegral aluno1 = new AlunoIntegral(curso, 101);
-        aluno1.setNome("João");
-        aluno1.setEndereco("Rua A");
-        aluno1.setNumParcelas(6);
-        aluno1.setValorMensalidade(300.0f);
-        curso.adicionarAluno(aluno1);
+        AlunoIntegral aluno = new AlunoIntegral(curso, 101);
+        curso.adicionarAluno(aluno);
 
         ArrayList<Integer> matriculas = curso.consultarAlunosPorMatricula();
-        ArrayList<String> nomes = curso.consultarAlunosPorNome();
-        ArrayList<String> enderecos = curso.consultarAlunosPorEndereco();
-        ArrayList<Curso> cursos = curso.consultarAlunosPorCurso();
-        ArrayList<Integer> parcelas = curso.consultarAlunosPorNumParcelas();
-        ArrayList<Float> valores = curso.consultarAlunosPorValorMensalidade();
 
         assertEquals(1, matriculas.size());
         assertEquals(101, matriculas.get(0));
+    }
+
+    @Test
+    void deveConsultarNomeAluno() {
+        Curso curso = new Curso();
+
+        AlunoIntegral aluno = new AlunoIntegral(curso, 101);
+        aluno.setNome("João");
+        curso.adicionarAluno(aluno);
+
+        ArrayList<String> nomes = curso.consultarAlunosPorNome();
+
         assertEquals("João", nomes.get(0));
+    }
+
+    @Test
+    void deveConsultarEnderecoAluno() {
+        Curso curso = new Curso();
+
+        AlunoIntegral aluno = new AlunoIntegral(curso, 101);
+        aluno.setEndereco("Rua A");
+        curso.adicionarAluno(aluno);
+
+        ArrayList<String> enderecos = curso.consultarAlunosPorEndereco();
+
         assertEquals("Rua A", enderecos.get(0));
+    }
+
+    @Test
+    void deveConsultarCursoAluno() {
+        Curso curso = new Curso();
+
+        AlunoIntegral aluno = new AlunoIntegral(curso, 101);
+        curso.adicionarAluno(aluno);
+
+        ArrayList<Curso> cursos = curso.consultarAlunosPorCurso();
+
         assertEquals(curso, cursos.get(0));
+    }
+
+    @Test
+    void deveConsultarNumeroParcelasAluno() {
+        Curso curso = new Curso();
+
+        AlunoIntegral aluno = new AlunoIntegral(curso, 101);
+        aluno.setNumeroParcelas(6);
+        curso.adicionarAluno(aluno);
+
+        ArrayList<Integer> parcelas = curso.consultarAlunosPorNumeroParcelas();
+
         assertEquals(6, parcelas.get(0));
+    }
+
+    @Test
+    void deveConsultarValorMensalidadeAluno() {
+        Curso curso = new Curso();
+
+        AlunoIntegral aluno = new AlunoIntegral(curso, 101);
+        aluno.setValorMensalidade(300.0f);
+        curso.adicionarAluno(aluno);
+
+        ArrayList<Float> valores = curso.consultarAlunosPorValorMensalidade();
+
         assertEquals(300.0f, valores.get(0));
     }
 }

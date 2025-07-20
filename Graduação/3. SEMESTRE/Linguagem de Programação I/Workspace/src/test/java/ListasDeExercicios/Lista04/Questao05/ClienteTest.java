@@ -65,10 +65,10 @@ class ClienteTest {
     @Test
     void deveAdicionarEquipamento() {
         Cliente cliente = new Cliente();
-        EquipamentoMantido equipamento1 = new Monitor(cliente, 1);
+        EquipamentoMantido equipamento1 = new Monitor(1);
         cliente.adicionarEquipamento(equipamento1);
         assertTrue(cliente.verificarEquipamentoEmManutencao(equipamento1));
-        assertEquals(1, cliente.getNumeroEquipamentos());
+        assertEquals(1, cliente.obterQuantidadeEquipamentos());
     }
 
     @Test
@@ -86,7 +86,7 @@ class ClienteTest {
     void deveImpedirEquipamentoDuplicado() {
         try {
             Cliente cliente = new Cliente();
-                EquipamentoMantido equipamento1 = new Monitor(cliente, 2);
+            EquipamentoMantido equipamento1 = new Monitor(2);
             cliente.adicionarEquipamento(equipamento1);
             cliente.adicionarEquipamento(equipamento1);
             fail();
@@ -99,8 +99,8 @@ class ClienteTest {
     void deveImpedirEquipamentoNumeroIgual() {
         try {
             Cliente cliente = new Cliente();
-            EquipamentoMantido equipamento1 = new Monitor(cliente, 3);
-            EquipamentoMantido equipamento2 = new Monitor(cliente, 3);
+            EquipamentoMantido equipamento1 = new Monitor(3);
+            EquipamentoMantido equipamento2 = new Monitor(3);
             cliente.adicionarEquipamento(equipamento1);
             cliente.adicionarEquipamento(equipamento2);
             fail();
@@ -112,7 +112,7 @@ class ClienteTest {
     @Test
     void deveRemoverEquipamento() {
         Cliente cliente = new Cliente();
-        EquipamentoMantido equipamento1 = new Monitor(cliente, 4);
+        EquipamentoMantido equipamento1 = new Monitor(4);
         cliente.adicionarEquipamento(equipamento1);
         cliente.removerEquipamento(equipamento1);
         assertFalse(cliente.verificarEquipamentoEmManutencao(equipamento1));
@@ -122,7 +122,7 @@ class ClienteTest {
     void deveImpedirRemoverEquipamentoInexistente() {
         try {
             Cliente cliente = new Cliente();
-            EquipamentoMantido equipamento1 = new Monitor(cliente, 5);
+            EquipamentoMantido equipamento1 = new Monitor(5);
             cliente.removerEquipamento(equipamento1);
             fail();
         } catch (IllegalArgumentException e) {
@@ -133,8 +133,8 @@ class ClienteTest {
     @Test
     void deveConsultarEquipamentos() {
         Cliente cliente = new Cliente();
-        EquipamentoMantido equipamento1 = new Monitor(cliente, 6);
-        EquipamentoMantido equipamento2 = new Monitor(cliente, 7);
+        EquipamentoMantido equipamento1 = new Monitor(6);
+        EquipamentoMantido equipamento2 = new Monitor(7);
         cliente.adicionarEquipamento(equipamento1);
         cliente.adicionarEquipamento(equipamento2);
         ArrayList<Integer> numeros = cliente.consultarEquipamentosEmManutencao();
@@ -147,14 +147,14 @@ class ClienteTest {
     void deveConsultarValoresManutencao() {
         Cliente cliente = new Cliente();
 
-        Monitor equipamento1 = new Monitor(cliente, 8);
+        Monitor equipamento1 = new Monitor(8);
         equipamento1.setValorMaoObra(100.0f);
 
-        CPU equipamento2 = new CPU(cliente, 9);
+        CPU equipamento2 = new CPU(9);
         equipamento2.setValorMaoObra(200.0f);
         equipamento2.setValorTotalPecasTrocadas(100.0f);
 
-        Impressora equipamento3 = new Impressora(cliente, 10);
+        Impressora equipamento3 = new Impressora(10);
         equipamento3.setValorMaoObra(250.0f);
         equipamento3.setValorTotalPecasTrocadas(120.0f);
 

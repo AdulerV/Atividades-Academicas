@@ -7,7 +7,7 @@ import static org.junit.jupiter.api.Assertions.*;
 class ReservaQuartoDuploTest {
     @Test
     void deveInserirNumeroRefeicoes() {
-        ReservaQuartoDuplo reserva = new ReservaQuartoDuplo(new Hospede(), 1);
+        ReservaQuartoDuplo reserva = new ReservaQuartoDuplo(1);
         reserva.setNumeroRefeicoes(1);
         assertEquals(1, reserva.getNumeroRefeicoes());
     }
@@ -15,7 +15,7 @@ class ReservaQuartoDuploTest {
     @Test
     void deveImpedirNumeroRefeicoesNegativo() {
         try {
-            ReservaQuartoDuplo reserva = new ReservaQuartoDuplo(new Hospede(), 1);
+            ReservaQuartoDuplo reserva = new ReservaQuartoDuplo(1);
             reserva.setNumeroRefeicoes(-1);
             fail();
         } catch (IllegalArgumentException e) {
@@ -25,7 +25,7 @@ class ReservaQuartoDuploTest {
 
     @Test
     void deveCalcularValor() {
-        ReservaQuartoDuplo reserva = new ReservaQuartoDuplo(new Hospede(), 1);
+        ReservaQuartoDuplo reserva = new ReservaQuartoDuplo(1);
         reserva.setNumeroDiasHospedagem(3);
         reserva.setNumeroRefeicoes(5);
         assertEquals(290.0f, reserva.calcularValor());
@@ -33,7 +33,7 @@ class ReservaQuartoDuploTest {
 
     @Test
     void deveAceitarZeroRefeicoes() {
-        ReservaQuartoDuplo reserva = new ReservaQuartoDuplo(new Hospede(), 1);
+        ReservaQuartoDuplo reserva = new ReservaQuartoDuplo(1);
         reserva.setNumeroDiasHospedagem(2);
         reserva.setNumeroRefeicoes(0);
         assertEquals(160.0f, reserva.calcularValor());

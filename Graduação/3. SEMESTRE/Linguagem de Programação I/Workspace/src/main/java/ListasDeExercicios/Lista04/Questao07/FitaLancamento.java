@@ -3,8 +3,8 @@ package ListasDeExercicios.Lista04.Questao07;
 public class FitaLancamento extends FitaEmprestada {
     private float valorAluguelDiario;
 
-    public FitaLancamento(Cliente cliente, String data, int numeroDias, float valorAluguelDiario) {
-        super(cliente, data, numeroDias);
+    public FitaLancamento(String data, int numeroDias, float valorAluguelDiario) {
+        super(data, numeroDias);
         setValorAluguel(valorAluguelDiario);
     }
 

@@ -7,13 +7,13 @@ import static org.junit.jupiter.api.Assertions.*;
 class FreteUrgenteTest {
     @Test
     void deveRetornarTaxaEntrega() {
-        FreteUrgente freteUrgente = new FreteUrgente(new Cliente(), 1);
+        FreteUrgente freteUrgente = new FreteUrgente(1);
         assertEquals(0.03f, freteUrgente.getTaxaEntrega());
     }
 
     @Test
     void deveDefinirNumeroItens() {
-        FreteUrgente freteUrgente = new FreteUrgente(new Cliente(), 2);
+        FreteUrgente freteUrgente = new FreteUrgente(2);
         freteUrgente.setNumeroItens(1);
         assertEquals(1, freteUrgente.getNumeroItens());
     }
@@ -21,7 +21,7 @@ class FreteUrgenteTest {
     @Test
     void deveImpedirNumeroItensInvalido() {
         try {
-            FreteUrgente freteUrgente = new FreteUrgente(new Cliente(), 3);
+            FreteUrgente freteUrgente = new FreteUrgente(3);
             freteUrgente.setNumeroItens(0);
             fail();
         } catch (IllegalArgumentException e) {
@@ -31,7 +31,7 @@ class FreteUrgenteTest {
 
     @Test
     void deveCalcularValorFreteUrgente() {
-        FreteUrgente freteUrgente = new FreteUrgente(new Cliente(), 4);
+        FreteUrgente freteUrgente = new FreteUrgente(4);
         freteUrgente.setValor(100.0f);
         freteUrgente.setNumeroItens(2);
         assertEquals(123.0f, freteUrgente.calcularValor());

@@ -4,7 +4,6 @@ public abstract class Vaga {
     protected int numero;
     protected String placa;
     protected int periodo;
-    protected Cliente cliente;
 
     public Vaga(int numero, int periodo) {
         setNumero(numero);
@@ -42,14 +41,6 @@ public abstract class Vaga {
             throw new IllegalArgumentException("Período inválido!");
         }
         this.periodo = periodo;
-    }
-
-    public Cliente getCliente() {
-        return cliente;
-    }
-
-    public void setCliente(Cliente cliente) {
-        this.cliente = cliente;
     }
 
     public abstract float calcularValor();

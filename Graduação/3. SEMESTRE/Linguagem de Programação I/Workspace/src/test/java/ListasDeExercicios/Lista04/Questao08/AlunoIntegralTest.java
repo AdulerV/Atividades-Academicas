@@ -8,7 +8,7 @@ class AlunoIntegralTest {
     @Test
     void deveCalcularMensalidade() {
         AlunoIntegral alunoIntegral = new AlunoIntegral(new Curso(), 1);
-        alunoIntegral.setNumParcelas(10);
+        alunoIntegral.setNumeroParcelas(10);
         assertEquals(10, alunoIntegral.calcularMensalidade());
     }
 }

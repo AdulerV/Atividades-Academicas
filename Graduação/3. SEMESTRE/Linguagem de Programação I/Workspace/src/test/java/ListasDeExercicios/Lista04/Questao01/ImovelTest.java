@@ -24,25 +24,6 @@ class ImovelTest {
     }
 
     @Test
-    void deveInserirContribuinte() {
-        Contribuinte contribuinte = new Contribuinte();
-        Imovel lote = new Lote();
-        lote.setContribuinte(contribuinte);
-        assertEquals(contribuinte, lote.getContribuinte());
-    }
-
-    @Test
-    void deveImpedirContribuinteNulo() {
-        try {
-            Imovel lote = new Lote();
-            lote.setContribuinte(null);
-            fail();
-        } catch (IllegalArgumentException e) {
-            assertEquals("Contribuinte inválido!", e.getMessage());
-        }
-    }
-
-    @Test
     void deveCalcularValorImovel() {
         Imovel lote = new Lote();
         lote.setMetragemQuadrada(100);

@@ -4,8 +4,8 @@ public class FreteUrgente extends Frete {
     private final float taxaEntrega;
     private int numeroItens;
 
-    public FreteUrgente(Cliente cliente, int numero) {
-        super(cliente, numero);
+    public FreteUrgente(int numero) {
+        super(numero);
         this.taxaEntrega = 0.03f;
     }
 
