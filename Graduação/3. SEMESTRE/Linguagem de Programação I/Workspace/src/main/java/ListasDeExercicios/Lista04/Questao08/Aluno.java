@@ -1,7 +1,5 @@
 package ListasDeExercicios.Lista04.Questao08;
 
-import ListasDeExercicios.Lista04.Questao06.Vaga;
-
 public abstract class Aluno {
     protected int matricula;
     protected String nome;
